@@ -22,11 +22,19 @@ def getLinks():
         div = soup.find("div", {"id": "bodyContent"})
         allLinks = div.find_all("a")
 
+        print("AVANT MODIFICATIONS")
+        print("\n\n")
         for i in allLinks:
             print(i)
-            if 'href="#' in str(i):
-                print("LIEN DE MERDE")
+            if 'href="#' in str(i) or ':' in str(i) or '/w/' in str(i):
+                print("LIEN INCORRECT") #plus poli, pour moins énerver le code
+                allLinks.pop(counter)
             counter = counter + 1
+
+        print("\n\n")
+        print("APRES MODIFICATIONS")
+        for i in allLinks:
+            print(i)
         
 
 firstBorne, firstBorneUrl = getBorne()
