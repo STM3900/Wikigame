@@ -6,7 +6,7 @@ import eel
 
 #https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Page_au_hasard
 def getBorne():
-    with urllib.request.urlopen('https://fr.wikipedia.org/wiki/Brock_Boeser') as response:
+    with urllib.request.urlopen('https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Page_au_hasard') as response:
         webpage = response.read()
         soup = BeautifulSoup(webpage, 'html.parser')
         h1 = soup.find("h1").get_text()
@@ -27,14 +27,24 @@ def getLinks():
         for i in allLinks:
             print(i)
             if 'href="#' in str(i) or ':' in str(i) or '/w/' in str(i):
-                print("LIEN INCORRECT") #plus poli, pour moins énerver le code
+                print("LIEN INCORRECT") #plus poli, pour moins énerver le code 
                 allLinks.pop(counter)
             counter = counter + 1
 
         print("\n\n")
-        print("APRES MODIFICATIONS")
+        print("APRES MODIFICATIONS - NON FILTRÉ")
         for i in allLinks:
             print(i)
+        
+        print("\n\n")
+        print("APRES MODIFICATIONS - FILTRÉ")
+        allLinks2 = list(dict.fromkeys(allLinks))
+        if allLinks2 != allLinks:
+            print("DOUBLON DÉTECTÉ")
+
+        for i in allLinks2:
+            print(i)
+
         
 
 firstBorne, firstBorneUrl = getBorne()
