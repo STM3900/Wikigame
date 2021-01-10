@@ -3,6 +3,8 @@ import urllib.request
 import os
 import eel
 
+import re
+
 
 #https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Page_au_hasard
 def getBorne():
@@ -25,25 +27,32 @@ def getLinks():
         print("AVANT MODIFICATIONS")
         print("\n\n")
         for i in allLinks:
-            print(i)
+            #print(i)
             if 'href="#' in str(i) or ':' in str(i) or '/w/' in str(i):
-                print("LIEN INCORRECT") #plus poli, pour moins énerver le code 
+                #print("LIEN INCORRECT") #plus poli, pour moins énerver le code 
                 allLinks.pop(counter)
             counter = counter + 1
 
         print("\n\n")
         print("APRES MODIFICATIONS - NON FILTRÉ")
-        for i in allLinks:
-            print(i)
-        
-        print("\n\n")
-        print("APRES MODIFICATIONS - FILTRÉ")
+
         allLinks2 = list(dict.fromkeys(allLinks))
+        allLinksTitle = []
+
         if allLinks2 != allLinks:
             print("DOUBLON DÉTECTÉ")
 
         for i in allLinks2:
             print(i)
+
+        for i in allLinks2:
+            text = str(i)
+            m = re.search('>(.+?)</a>', text)
+            if m:
+                found = m.group(1)
+            print(found)
+            
+
 
         
 
