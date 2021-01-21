@@ -8,7 +8,7 @@ import re
 
 #https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Page_au_hasard
 def getBorne():
-    with urllib.request.urlopen('https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Page_au_hasard') as response:
+    with urllib.request.urlopen('https://fr.wikipedia.org/wiki/Jean_Journet') as response:
         webpage = response.read()
         soup = BeautifulSoup(webpage, 'html.parser')
         h1 = soup.find("h1").get_text()
@@ -16,42 +16,43 @@ def getBorne():
         return h1, h1Url
 
 def getLinks():
-    counter = 0
     validLinks = []
     with urllib.request.urlopen("https://fr.wikipedia.org/wiki/{}".format(firstBorneUrl)) as response:
         webpage = response.read()
         soup = BeautifulSoup(webpage, 'html.parser')
-        div = soup.find("div", {"id": "bodyContent"})
+        div = soup.find("div", {"id": "mw-content-text"})
         allLinks = div.find_all("a")
 
         print("AVANT MODIFICATIONS")
         print("\n\n")
+        allGoodLinks = []
         for i in allLinks:
-            #print(i)
-            if 'href="#' in str(i) or ':' in str(i) or '/w/' in str(i):
-                #print("LIEN INCORRECT") #plus poli, pour moins énerver le code 
-                allLinks.pop(counter)
-            counter = counter + 1
+            iString = str(i)
+            if '/wiki/' in iString and ':' not in iString:
+                print("LIEN CORRECT") #plus poli, pour moins énerver le code 
+                print("-----------------------")
+                print(i)
+                print("-----------------------")
+                allGoodLinks.append(i)
 
         print("\n\n")
         print("APRES MODIFICATIONS - NON FILTRÉ")
 
-        allLinks2 = list(dict.fromkeys(allLinks))
+        allGoodLinksUnique = list(dict.fromkeys(allGoodLinks))
         allLinksTitle = []
 
-        if allLinks2 != allLinks:
+        if allGoodLinksUnique != allGoodLinks:
             print("DOUBLON DÉTECTÉ")
 
-        for i in allLinks2:
+        for i in allGoodLinksUnique:
             print(i)
 
-        for i in allLinks2:
+        for i in allGoodLinksUnique:
             text = str(i)
             m = re.search('>(.+?)</a>', text)
             if m:
                 found = m.group(1)
             print(found)
-            
 
 
         

@@ -1,390 +1,338 @@
 D:\Documents et autres\Epsi\B3\ECOLE\Python\Code\Wikigame>python tp.py
-Brock Boeser > Brock Boeser
+Paul Theunis > Paul Theunis
 AVANT MODIFICATIONS
 
-<a class="image" href="/wiki/Fichier:Ice_hockey_pictogram.svg"><img alt="" class="noviewer" data-file-height="300" data-file-width="300" decoding="async" height="35" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ice_hockey_pictogram.svg/35px-Ice_hockey_pictogram.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ice_hockey_pictogram.svg/53px-Ice_hockey_pictogram.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ice_hockey_pictogram.svg/70px-Ice_hockey_pictogram.svg.png 2x" width="35"/></a>
-LIEN INCORRECT
-<a href="/wiki/Hockey_sur_glace" title="Hockey sur glace">hockey sur glace</a>
-<a href="/wiki/Aide:Comment_modifier_une_page" title="Aide:Comment modifier une page">comment ?</a>
-LIEN INCORRECT
-<a class="image" href="/wiki/Fichier:Brock_Boeser_2016.jpg"><img alt="Description de l'image Brock Boeser 2016.jpg." data-file-height="3296" data-file-width="2994" decoding="async" height="242" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Brock_Boeser_2016.jpg/220px-Brock_Boeser_2016.jpg" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Brock_Boeser_2016.jpg/330px-Brock_Boeser_2016.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/74/Brock_Boeser_2016.jpg/440px-Brock_Boeser_2016.jpg 2x" width="220"/></a>
-LIEN INCORRECT
-<a class="image" href="/wiki/Fichier:Flag_of_the_United_States.svg" title="Drapeau des États-Unis"><img alt="Drapeau des États-Unis" class="noviewer thumbborder" data-file-height="650" data-file-width="1235" decoding="async" height="11" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/20px-Flag_of_the_United_States.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/30px-Flag_of_the_United_States.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/40px-Flag_of_the_United_States.svg.png 2x" width="20"/></a>
-LIEN INCORRECT
-<a href="/wiki/25_f%C3%A9vrier_en_sport" title="25 février en sport">25 février</a>
-<a href="/wiki/1997_en_hockey_sur_glace" title="1997 en hockey sur glace">1997</a>
-<a href="/wiki/Burnsville_(Minnesota)" title="Burnsville (Minnesota)">Burnsville (Minnesota)</a>
-<a href="/wiki/%C3%89tats-Unis" title="États-Unis">États-Unis</a>
-<a href="/wiki/Position_(hockey_sur_glace)" title="Position (hockey sur glace)">Position</a>
-<a class="mw-redirect" href="/wiki/Ailier_droit_(hockey_sur_glace)" title="Ailier droit (hockey sur glace)">Ailier droit</a>
-<a href="/wiki/Tir_(hockey_sur_glace)" title="Tir (hockey sur glace)">Tire de la</a>
-<a href="/wiki/Ligue_nationale_de_hockey" title="Ligue nationale de hockey">LNH</a>
-<a href="/wiki/Canucks_de_Vancouver" title="Canucks de Vancouver">Canucks de Vancouver</a>
-<a href="/wiki/Rep%C3%AAchage_d%27entr%C3%A9e_dans_la_LNH" title="Repêchage d'entrée dans la LNH">Repêc. LNH</a>
-<a href="/wiki/Rep%C3%AAchage_d%27entr%C3%A9e_dans_la_LNH_2015" title="Repêchage d'entrée dans la LNH 2015">2015</a>
-<a href="/wiki/Canucks_de_Vancouver" title="Canucks de Vancouver">Canucks de Vancouver</a>
-<a class="external text" href="https://fr.wikipedia.org/w/index.php?title=Brock_Boeser&amp;action=edit">modifier</a>
-LIEN INCORRECT
-<a href="/wiki/25_f%C3%A9vrier_en_sport" title="25 février en sport">25 février</a>
-<a href="/wiki/1997_en_hockey_sur_glace" title="1997 en hockey sur glace">1997</a>
-<a href="/wiki/Burnsville_(Minnesota)" title="Burnsville (Minnesota)">Burnsville</a>
-<a href="/wiki/Minnesota" title="Minnesota">Minnesota</a>
-<a href="/wiki/%C3%89tats-Unis" title="États-Unis">États-Unis</a>
-<a href="/wiki/Sport_professionnel" title="Sport professionnel">professionnel</a>
-<a href="/wiki/Hockey_sur_glace" title="Hockey sur glace">hockey sur glace</a>
-<a class="mw-redirect" href="/wiki/Ailier_(hockey_sur_glace)" title="Ailier (hockey sur glace)">ailier droit</a>
-<a href="#cite_note-elite-1"><span class="cite_crochet">[</span>1<span class="cite_crochet">]</span></a>
-LIEN INCORRECT
-<a href="#En_club"><span class="tocnumber">1.1</span> <span class="toctext">En club</span></a>
-LIEN INCORRECT
-<a href="#En_club_2"><span class="tocnumber">2.1</span> <span class="toctext">En club</span></a>
-LIEN INCORRECT
-<a href="#Références"><span class="tocnumber">3</span> <span class="toctext">Références</span></a>
-LIEN INCORRECT
-<a href="/w/index.php?title=Brock_Boeser&amp;action=edit&amp;section=1" title="Modifier la section : Biographie">modifier le code</a>
-LIEN INCORRECT
-<a href="/w/index.php?title=Brock_Boeser&amp;action=edit&amp;section=2" title="Modifier la section : En club">modifier le code</a>
-LIEN INCORRECT
-<a href="/wiki/Musketeers_de_Sioux_City" title="Musketeers de Sioux City">Musketeers de Sioux City</a>
-<a href="/wiki/Black_Hawks_de_Waterloo" title="Black Hawks de Waterloo">Black Hawks de Waterloo</a>
-<a href="/wiki/Rep%C3%AAchage_d%27entr%C3%A9e_dans_la_LNH_2015" title="Repêchage d'entrée dans la LNH 2015">repêchage d'entrée dans la LNH 2015</a>
-<a href="/wiki/Canucks_de_Vancouver" title="Canucks de Vancouver">Canucks de Vancouver</a>
-<a href="#cite_note-hdb-2"><span class="cite_crochet">[</span>2<span class="cite_crochet">]</span></a>
-LIEN INCORRECT
-<a href="/w/index.php?title=Brock_Boeser&amp;action=edit&amp;section=3" title="Modifier la section : Statistiques">modifier le code</a>
-LIEN INCORRECT
-<a href="/w/index.php?title=Brock_Boeser&amp;action=edit&amp;section=4" title="Modifier la section : En club">modifier le code</a>
-LIEN INCORRECT
-<a href="#cite_note-hdb-2"><span class="cite_crochet">[</span>2<span class="cite_crochet">]</span></a>
-LIEN INCORRECT
-<a href="/wiki/S%C3%A9rie_%C3%A9liminatoire" title="Série éliminatoire">Séries éliminatoires</a>
-<a href="/wiki/Musketeers_de_Sioux_City" title="Musketeers de Sioux City">Musketeers de Sioux City</a>
-<a href="/wiki/United_States_Hockey_League" title="United States Hockey League">USHL</a>
-<a href="/wiki/Black_Hawks_de_Waterloo" title="Black Hawks de Waterloo">Black Hawks de Waterloo</a>
-<a href="/wiki/Fighting_Hawks_du_Dakota_du_Nord" title="Fighting Hawks du Dakota du Nord">Fighting Hawks du Dakota du Nord</a>
-<a class="mw-redirect" href="/wiki/Championnat_NCAA_de_hockey_sur_glace_masculin" title="Championnat NCAA de hockey sur glace masculin">NCAA</a>
-<a href="/wiki/Saison_2016-2017_de_la_LNH" title="Saison 2016-2017 de la LNH">2016-2017</a>
-<a href="/wiki/Canucks_de_Vancouver" title="Canucks de Vancouver">Canucks de Vancouver</a>
-<a href="/wiki/Ligue_nationale_de_hockey" title="Ligue nationale de hockey">LNH</a>
-<a href="/wiki/Saison_2017-2018_de_la_LNH" title="Saison 2017-2018 de la LNH">2017-2018</a>
-<a href="/wiki/Saison_2018-2019_de_la_LNH" title="Saison 2018-2019 de la LNH">2018-2019</a>
-<a href="/wiki/Saison_2019-2020_de_la_LNH" title="Saison 2019-2020 de la LNH">2019-2020</a>
-<a class="mw-editsection-visualeditor" href="/w/index.php?title=Brock_Boeser&amp;veaction=edit&amp;section=5" title="Modifier la section : Au niveau international">modifier</a>
-LIEN INCORRECT
-<a href="/wiki/Championnat_du_monde_junior_de_hockey_sur_glace_2016" title="Championnat du monde junior de hockey sur glace 2016">2016</a>
-<a href="/wiki/Championnat_du_monde_junior_de_hockey_sur_glace" title="Championnat du monde junior de hockey sur glace">Championnat du monde junior</a>
-<a class="mw-editsection-visualeditor" href="/w/index.php?title=Brock_Boeser&amp;veaction=edit&amp;section=6" title="Modifier la section : Références">modifier</a>
-LIEN INCORRECT
-<a href="#cite_ref-elite_1-0">↑</a>
-LIEN INCORRECT
-<a href="#cite_ref-hdb_2-0">a</a>
-LIEN INCORRECT
-<a class="external text" href="http://www.hockeydb.com/ihdb/stats/pdisplay.php3?pid=172649" rel="nofollow">« <cite style="font-style:normal;"><i>Brock Boeser <span class="lang-en" lang="en">hockey statistics &amp; profile</span></i></cite> »</a>
-LIEN INCORRECT
-<a class="external text" href="https://fr.wikipedia.org/w/index.php?title=Mod%C3%A8le:Palette_Premiers_choix_du_rep%C3%AAchage_des_Canucks_de_Vancouver&amp;action=edit"><abbr class="abbr" title="Modifier ce modèle. Merci de prévisualiser avant de sauvegarder.">m</abbr></a>
-LIEN INCORRECT
-<a href="/wiki/Canucks_de_Vancouver" title="Canucks de Vancouver">Canucks de Vancouver</a>
-<a href="/wiki/Dale_Tallon" title="Dale Tallon">Tallon</a>
-<a href="/wiki/Jocelyn_Guevremont" title="Jocelyn Guevremont">Guevremont</a>
-<a href="/wiki/Don_Lever" title="Don Lever">Lever</a>
-<a href="/wiki/Dennis_Ververgaert" title="Dennis Ververgaert">Ververgaert</a>
-<a href="/wiki/Rick_Blight" title="Rick Blight">Blight</a>
-<a href="/wiki/Jere_Gillis" title="Jere Gillis">Gillis</a>
-<a href="/wiki/Bill_Derlago" title="Bill Derlago">Derlago</a>
-<a href="/wiki/Rick_Vaive" title="Rick Vaive">Vaive</a>
-<a href="/wiki/Rick_Lanz" title="Rick Lanz">Lanz</a>
-<a href="/wiki/Garth_Butcher" title="Garth Butcher">Butcher</a>
-<a href="/wiki/Michel_Petit_(hockey_sur_glace)" title="Michel Petit (hockey sur glace)">Petit</a>
-<a href="/wiki/Cam_Neely" title="Cam Neely">Neely</a>
-<a href="/wiki/Jean-Jacques_Daigneault" title="Jean-Jacques Daigneault">Daigneault</a>
-<a href="/wiki/Jim_Sandlak" title="Jim Sandlak">Sandlak</a>
-<a href="/wiki/Dan_Woodley" title="Dan Woodley">Woodley</a>
-<a href="/wiki/Trevor_Linden" title="Trevor Linden">Linden</a>
-<a href="/wiki/Jason_Herter" title="Jason Herter">Herter</a>
-<a href="/wiki/Petr_Nedv%C4%9Bd" title="Petr Nedvěd">Nedvěd</a>
-<a href="/wiki/Alek_Stojanov" title="Alek Stojanov">Stojanov</a>
-<a class="new" href="/w/index.php?title=Libor_Polasek&amp;action=edit&amp;redlink=1" title="Libor Polasek (page inexistante)">Polasek</a>
-LIEN INCORRECT
-<a href="/wiki/Mattias_%C3%96hlund" title="Mattias Öhlund">Öhlund</a>
-<a href="/wiki/Joshua_Holden" title="Joshua Holden">Holden</a>
-<a href="/wiki/Brad_Ference" title="Brad Ference">Ference</a>
-<a href="/wiki/Bryan_Allen" title="Bryan Allen">Allen</a>
-<a href="/wiki/Daniel_Sedin" title="Daniel Sedin">Sedin</a>
-<a href="/wiki/Nathan_Smith_(hockey_sur_glace)" title="Nathan Smith (hockey sur glace)">Smith</a>
-<a href="/wiki/R._J._Umberger" title="R. J. Umberger">Umberger</a>
-<a href="/wiki/Ryan_Kesler" title="Ryan Kesler">Kesler</a>
-<a href="/wiki/Cory_Schneider" title="Cory Schneider">Schneider</a>
-<a href="/wiki/Luc_Bourdon_(hockey_sur_glace)" title="Luc Bourdon (hockey sur glace)">Bourdon</a>
-<a href="/wiki/Michael_Grabner" title="Michael Grabner">Grabner</a>
-<a href="/wiki/Patrick_White_(hockey_sur_glace)" title="Patrick White (hockey sur glace)">White</a>
-<a href="/wiki/Cody_Hodgson" title="Cody Hodgson">Hodgson</a>
-<a href="/wiki/Jordan_Schroeder" title="Jordan Schroeder">Schroeder</a>
-<a href="/wiki/Nicklas_Jensen" title="Nicklas Jensen">Jensen</a>
-<a href="/wiki/Brendan_Gaunce" title="Brendan Gaunce">Gaunce</a>
-<a href="/wiki/Bo_Horvat" title="Bo Horvat">Horvat</a>
-<a href="/wiki/Jake_Virtanen" title="Jake Virtanen">Virtanen</a>
-<a class="mw-selflink selflink">Boeser</a>
-<a href="/wiki/Olli_Juolevi" title="Olli Juolevi">Juolevi</a>
-<a href="/wiki/Elias_Pettersson" title="Elias Pettersson">Pettersson</a>
-<a href="/wiki/Quinton_Hughes" title="Quinton Hughes">Hughes</a>
-<a href="/wiki/Vassili_Podkolzine" title="Vassili Podkolzine">Podkolzine</a>
-<a class="new" href="/w/index.php?title=Joni_Jurmo&amp;action=edit&amp;redlink=1" title="Joni Jurmo (page inexistante)">Jurmo</a>
-LIEN INCORRECT
-<a href="/wiki/Portail:Hockey_sur_glace" title="Portail:Hockey sur glace">Portail du hockey sur glace</a>
-LIEN INCORRECT
-<a href="/wiki/Portail:%C3%89tats-Unis" title="Portail:États-Unis">Portail des États-Unis</a>
-LIEN INCORRECT
-<a href="/wiki/Cat%C3%A9gorie:Accueil" title="Catégorie:Accueil">Catégories</a>
-LIEN INCORRECT
-<a href="/wiki/Cat%C3%A9gorie:Naissance_%C3%A0_Burnsville_(Minnesota)" title="Catégorie:Naissance à Burnsville (Minnesota)">Naissance à Burnsville (Minnesota)</a>
-LIEN INCORRECT
-<a href="/wiki/Cat%C3%A9gorie:Choix_de_premier_tour_au_rep%C3%AAchage_d%27entr%C3%A9e_dans_la_LNH" title="Catégorie:Choix de premier tour au repêchage d'entrée dans la LNH">Choix de premier tour au repêchage d'entrée dans la LNH</a>
-LIEN INCORRECT
-<a href="/wiki/Cat%C3%A9gorie:Attaquant_de_hockey_sur_glace" title="Catégorie:Attaquant de hockey sur glace">Attaquant de hockey sur glace</a>
-LIEN INCORRECT
-<a href="/wiki/Cat%C3%A9gorie:Joueur_des_Black_Hawks_de_Waterloo" title="Catégorie:Joueur des Black Hawks de Waterloo">Joueur des Black Hawks de Waterloo</a>
-LIEN INCORRECT
-<a href="/wiki/Cat%C3%A9gorie:Joueur_des_Canucks_de_Vancouver" title="Catégorie:Joueur des Canucks de Vancouver">Joueur des Canucks de Vancouver</a>
-LIEN INCORRECT
-<a href="/wiki/Cat%C3%A9gorie:Wikip%C3%A9dia:%C3%A9bauche_hockey_sur_glace" title="Catégorie:Wikipédia:ébauche hockey sur glace">Wikipédia:ébauche hockey sur glace</a>
-LIEN INCORRECT
-<a href="/wiki/Cat%C3%A9gorie:Article_utilisant_une_Infobox" title="Catégorie:Article utilisant une Infobox">Article utilisant une Infobox</a>
-LIEN INCORRECT
-<a href="/wiki/Cat%C3%A9gorie:Portail:Sports_d%27hiver/Articles_li%C3%A9s" title="Catégorie:Portail:Sports d'hiver/Articles liés">Portail:Sports d'hiver/Articles liés</a>
-LIEN INCORRECT
-<a href="/wiki/Cat%C3%A9gorie:Portail:%C3%89tats-Unis/Articles_li%C3%A9s" title="Catégorie:Portail:États-Unis/Articles liés">Portail:États-Unis/Articles liés</a>
-LIEN INCORRECT
-<a href="/wiki/Cat%C3%A9gorie:Portail:Am%C3%A9rique_du_Nord/Articles_li%C3%A9s" title="Catégorie:Portail:Amérique du Nord/Articles liés">Portail:Amérique du Nord/Articles liés</a>
-LIEN INCORRECT
-<a href="/wiki/Cat%C3%A9gorie:Portail:Biographie/Articles_li%C3%A9s/Sport" title="Catégorie:Portail:Biographie/Articles liés/Sport">Portail:Biographie/Articles liés/Sport</a>
-LIEN INCORRECT
+## LIEN CORRECT
+
+## <a href="/wiki/Football" title="Football">footballeur</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/Belgique" title="Belgique">belge</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/Belgique" title="Belgique">Belge</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/16_mars_en_sport" title="16 mars en sport">16 mars</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1952_en_football" title="1952 en football">1952</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/Coursel" title="Coursel">Coursel</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/Belgique" title="Belgique">Belgique</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/Taille_(anthropom%C3%A9trie)" title="Taille (anthropométrie)">Taille</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/Milieu_de_terrain" title="Milieu de terrain">Milieu de terrain</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/Entra%C3%AEneur" title="Entraîneur">Entraîneur</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1971_en_football" title="1971 en football">1971</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1972_en_football" title="1972 en football">1972</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/K_Beringen_FC" title="K Beringen FC">FC Beringen</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1974_en_football" title="1974 en football">1974</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1981_en_football" title="1981 en football">1981</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/KRC_Genk" title="KRC Genk">KFC Winterslag</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1981_en_football" title="1981 en football">1981</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1987_en_football" title="1987 en football">1987</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/KSK_Beveren" title="KSK Beveren">KSK Beveren</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1987_en_football" title="1987 en football">1987</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1988_en_football" title="1988 en football">1988</a>
+
+## LIEN CORRECT
+
+## <a class="mw-redirect" href="/wiki/FC_Malines" title="FC Malines">FC Malines</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1988_en_football" title="1988 en football">1988</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1989_en_football" title="1989 en football">1989</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/K_Sint-Niklaasse_SK_Excelsior" title="K Sint-Niklaasse SK Excelsior">Sint-Niklaasse SK</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1984_en_football" title="1984 en football">1984</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/%C3%89quipe_de_Belgique_de_football" title="Équipe de Belgique de football">Belgique</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1990_en_football" title="1990 en football">1990</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1991_en_football" title="1991 en football">1991</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/KRC_Genk" title="KRC Genk">KRC Genk</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1992_en_football" title="1992 en football">1992</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1994_en_football" title="1994 en football">1994</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/SV_Zulte_Waregem" title="SV Zulte Waregem">KSV Waregem</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1996_en_football" title="1996 en football">1996</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1997_en_football" title="1997 en football">1997</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/KSK_Beveren" title="KSK Beveren">KSK Beveren</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/Football" title="Football">footballeur</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/Belgique" title="Belgique">belge</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/16_mars_en_sport" title="16 mars en sport">16 mars</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1952_en_football" title="1952 en football">1952</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/Coursel" title="Coursel">Coursel</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/Belgique" title="Belgique">Belgique</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/Milieu_de_terrain" title="Milieu de terrain">milieu de terrain</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/KRC_Genk" title="KRC Genk">KFC Winterslag</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/KSK_Beveren" title="KSK Beveren">KSK Beveren</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/%C3%89quipe_de_Belgique_de_football" title="Équipe de Belgique de football">équipe nationale</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1984_en_football" title="1984 en football">1984</a>
+
+## LIEN CORRECT
+
+## <a class="mw-redirect" href="/wiki/FC_Malines" title="FC Malines">FC Malines</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1987_en_football" title="1987 en football">1987</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1988_en_football" title="1988 en football">1988</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/Coupe_d%27Europe_des_vainqueurs_de_coupe_de_football_1987-1988" title="Coupe d'Europe des vainqueurs de coupe de football 1987-1988">finale de la Coupe d'Europe des Vainqueurs de Coupe</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/Stade_de_la_Meinau" title="Stade de la Meinau">stade de la Meinau</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/Ajax_Amsterdam" title="Ajax Amsterdam">Ajax Amsterdam</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/K_Sint-Niklaasse_SK_Excelsior" title="K Sint-Niklaasse SK Excelsior">Sint-Niklaasse SK</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/%C3%89quipe_de_Belgique_de_football" title="Équipe de Belgique de football">International belge</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1984_en_football" title="1984 en football">1984</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/Championnat_de_Belgique_de_football" title="Championnat de Belgique de football">Vice-Champion de Belgique</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/1988_en_football" title="1988 en football">1988</a>
+
+## LIEN CORRECT
+
+## <a class="mw-redirect" href="/wiki/FC_Malines" title="FC Malines">FC Malines</a>
+
+## LIEN CORRECT
+
+## <a href="/wiki/Coupe_d%27Europe_des_vainqueurs_de_coupe_de_football_1987-1988" title="Coupe d'Europe des vainqueurs de coupe de football 1987-1988">Vainqueur de la Coupe d'Europe des Vainqueurs de Coupe en 1988</a>
+
+## LIEN CORRECT
+
+## <a class="mw-redirect" href="/wiki/FC_Malines" title="FC Malines">FC Malines</a>
+
+## LIEN CORRECT
+
+## <a class="mw-redirect" href="/wiki/Union_royale_belge_des_soci%C3%A9t%C3%A9s_de_football_association" title="Union royale belge des sociétés de football association">URBSFA</a>
 
 APRES MODIFICATIONS - NON FILTRÉ
-<a href="/wiki/Aide:%C3%89bauche" title="Aide:Ébauche">ébauche</a>
-<a href="/wiki/Hockey_sur_glace" title="Hockey sur glace">hockey sur glace</a>
-<a href="/wiki/Projet:Accueil" title="Projet:Accueil">projets correspondants</a>
-<a href="/wiki/Nationalit%C3%A9" title="Nationalité">Nationalité</a>
-<a href="/wiki/%C3%89tats-Unis" title="États-Unis">États-Unis</a>
-<a href="/wiki/25_f%C3%A9vrier_en_sport" title="25 février en sport">25 février</a>
-<a href="/wiki/1997_en_hockey_sur_glace" title="1997 en hockey sur glace">1997</a>
-<a href="/wiki/Burnsville_(Minnesota)" title="Burnsville (Minnesota)">Burnsville (Minnesota)</a>
-<a href="/wiki/%C3%89tats-Unis" title="États-Unis">États-Unis</a>
-<a href="/wiki/Position_(hockey_sur_glace)" title="Position (hockey sur glace)">Position</a>
-<a class="mw-redirect" href="/wiki/Ailier_droit_(hockey_sur_glace)" title="Ailier droit (hockey sur glace)">Ailier droit</a>
-<a href="/wiki/Tir_(hockey_sur_glace)" title="Tir (hockey sur glace)">Tire de la</a>
-<a href="/wiki/Ligue_nationale_de_hockey" title="Ligue nationale de hockey">LNH</a>
-<a href="/wiki/Canucks_de_Vancouver" title="Canucks de Vancouver">Canucks de Vancouver</a>
-<a href="/wiki/Rep%C3%AAchage_d%27entr%C3%A9e_dans_la_LNH" title="Repêchage d'entrée dans la LNH">Repêc. LNH</a>
-<a href="/wiki/Rep%C3%AAchage_d%27entr%C3%A9e_dans_la_LNH_2015" title="Repêchage d'entrée dans la LNH 2015">2015</a>
-<a href="/wiki/Canucks_de_Vancouver" title="Canucks de Vancouver">Canucks de Vancouver</a>
-<a href="/wiki/Mod%C3%A8le:Infobox_Personnalit%C3%A9_du_hockey_sur_glace" title="Consultez la documentation du modèle"><img alt="Consultez la documentation du modèle" data-file-height="512" data-file-width="512" decoding="async" height="12" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/38/Info_Simple.svg/12px-Info_Simple.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/38/Info_Simple.svg/18px-Info_Simple.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/38/Info_Simple.svg/24px-Info_Simple.svg.png 2x" width="12"/></a>
-<a href="/wiki/25_f%C3%A9vrier_en_sport" title="25 février en sport">25 février</a>
-<a href="/wiki/1997_en_hockey_sur_glace" title="1997 en hockey sur glace">1997</a>
-<a href="/wiki/Burnsville_(Minnesota)" title="Burnsville (Minnesota)">Burnsville</a>
-<a href="/wiki/Minnesota" title="Minnesota">Minnesota</a>
-<a href="/wiki/%C3%89tats-Unis" title="États-Unis">États-Unis</a>
-<a href="/wiki/Sport_professionnel" title="Sport professionnel">professionnel</a>
-<a href="/wiki/Hockey_sur_glace" title="Hockey sur glace">hockey sur glace</a>
-<a class="mw-redirect" href="/wiki/Ailier_(hockey_sur_glace)" title="Ailier (hockey sur glace)">ailier droit</a>
-<a href="#Biographie"><span class="tocnumber">1</span> <span class="toctext">Biographie</span></a>
-<a href="#Statistiques"><span class="tocnumber">2</span> <span class="toctext">Statistiques</span></a>
-<a href="#Au_niveau_international"><span class="tocnumber">2.2</span> <span class="toctext">Au niveau international</span></a>
-<a class="mw-editsection-visualeditor" href="/w/index.php?title=Brock_Boeser&amp;veaction=edit&amp;section=1" title="Modifier la section : Biographie">modifier</a>
-<a class="mw-editsection-visualeditor" href="/w/index.php?title=Brock_Boeser&amp;veaction=edit&amp;section=2" title="Modifier la section : En club">modifier</a>
-<a href="/wiki/United_States_Hockey_League" title="United States Hockey League">USHL</a>
-<a href="/wiki/Musketeers_de_Sioux_City" title="Musketeers de Sioux City">Musketeers de Sioux City</a>
-<a href="/wiki/Black_Hawks_de_Waterloo" title="Black Hawks de Waterloo">Black Hawks de Waterloo</a>
-<a href="/wiki/Rep%C3%AAchage_d%27entr%C3%A9e_dans_la_LNH_2015" title="Repêchage d'entrée dans la LNH 2015">repêchage d'entrée dans la LNH 2015</a>
-<a href="/wiki/Canucks_de_Vancouver" title="Canucks de Vancouver">Canucks de Vancouver</a>
-<a class="mw-editsection-visualeditor" href="/w/index.php?title=Brock_Boeser&amp;veaction=edit&amp;section=3" title="Modifier la section : Statistiques">modifier</a>
-<a class="mw-editsection-visualeditor" href="/w/index.php?title=Brock_Boeser&amp;veaction=edit&amp;section=4" title="Modifier la section : En club">modifier</a>
-<a href="/wiki/Statistiques_du_hockey_sur_glace" title="Statistiques du hockey sur glace">statistiques du hockey sur glace</a>
-<a href="/wiki/Saison_sportive" title="Saison sportive">Saison régulière</a>
-<a href="/wiki/S%C3%A9rie_%C3%A9liminatoire" title="Série éliminatoire">Séries éliminatoires</a>
-<a href="/wiki/Musketeers_de_Sioux_City" title="Musketeers de Sioux City">Musketeers de Sioux City</a>
-<a href="/wiki/United_States_Hockey_League" title="United States Hockey League">USHL</a>
-<a href="/wiki/Black_Hawks_de_Waterloo" title="Black Hawks de Waterloo">Black Hawks de Waterloo</a>
-<a href="/wiki/Fighting_Hawks_du_Dakota_du_Nord" title="Fighting Hawks du Dakota du Nord">Fighting Hawks du Dakota du Nord</a>
-<a class="mw-redirect" href="/wiki/Championnat_NCAA_de_hockey_sur_glace_masculin" title="Championnat NCAA de hockey sur glace masculin">NCAA</a>
-<a href="/wiki/Saison_2016-2017_de_la_LNH" title="Saison 2016-2017 de la LNH">2016-2017</a>
-<a href="/wiki/Canucks_de_Vancouver" title="Canucks de Vancouver">Canucks de Vancouver</a>
-<a href="/wiki/Ligue_nationale_de_hockey" title="Ligue nationale de hockey">LNH</a>
-<a href="/wiki/Saison_2017-2018_de_la_LNH" title="Saison 2017-2018 de la LNH">2017-2018</a>
-<a href="/wiki/Saison_2018-2019_de_la_LNH" title="Saison 2018-2019 de la LNH">2018-2019</a>
-<a href="/wiki/Saison_2019-2020_de_la_LNH" title="Saison 2019-2020 de la LNH">2019-2020</a>
-<a href="/w/index.php?title=Brock_Boeser&amp;action=edit&amp;section=5" title="Modifier la section : Au niveau international">modifier le code</a>
-<a href="/wiki/Championnat_du_monde_junior_de_hockey_sur_glace_2016" title="Championnat du monde junior de hockey sur glace 2016">2016</a>
-<a href="/wiki/Championnat_du_monde_junior_de_hockey_sur_glace" title="Championnat du monde junior de hockey sur glace">Championnat du monde junior</a>
-<a href="/w/index.php?title=Brock_Boeser&amp;action=edit&amp;section=6" title="Modifier la section : Références">modifier le code</a>
-<a class="external text" href="https://www.eliteprospects.com/player.php?player=248381" rel="nofollow">« <cite style="font-style:normal;"><i>Brock Boeser</i></cite> »</a>
-<a href="#cite_ref-hdb_2-1">b</a>
-<a href="/wiki/Mod%C3%A8le:Palette_Premiers_choix_du_rep%C3%AAchage_des_Canucks_de_Vancouver" title="Modèle:Palette Premiers choix du repêchage des Canucks de Vancouver"><abbr class="abbr" title="Voir ce modèle.">v</abbr></a>
-<a href="/wiki/Draft_(sport)" title="Draft (sport)">repêchages</a>
-<a href="/wiki/Canucks_de_Vancouver" title="Canucks de Vancouver">Canucks de Vancouver</a>
-<a href="/wiki/Dale_Tallon" title="Dale Tallon">Tallon</a>
-<a href="/wiki/Jocelyn_Guevremont" title="Jocelyn Guevremont">Guevremont</a>
-<a href="/wiki/Don_Lever" title="Don Lever">Lever</a>
-<a href="/wiki/Dennis_Ververgaert" title="Dennis Ververgaert">Ververgaert</a>
-<a href="/wiki/Rick_Blight" title="Rick Blight">Blight</a>
-<a href="/wiki/Jere_Gillis" title="Jere Gillis">Gillis</a>
-<a href="/wiki/Bill_Derlago" title="Bill Derlago">Derlago</a>
-<a href="/wiki/Rick_Vaive" title="Rick Vaive">Vaive</a>
-<a href="/wiki/Rick_Lanz" title="Rick Lanz">Lanz</a>
-<a href="/wiki/Garth_Butcher" title="Garth Butcher">Butcher</a>
-<a href="/wiki/Michel_Petit_(hockey_sur_glace)" title="Michel Petit (hockey sur glace)">Petit</a>
-<a href="/wiki/Cam_Neely" title="Cam Neely">Neely</a>
-<a href="/wiki/Jean-Jacques_Daigneault" title="Jean-Jacques Daigneault">Daigneault</a>
-<a href="/wiki/Jim_Sandlak" title="Jim Sandlak">Sandlak</a>
-<a href="/wiki/Dan_Woodley" title="Dan Woodley">Woodley</a>
-<a href="/wiki/Trevor_Linden" title="Trevor Linden">Linden</a>
-<a href="/wiki/Jason_Herter" title="Jason Herter">Herter</a>
-<a href="/wiki/Petr_Nedv%C4%9Bd" title="Petr Nedvěd">Nedvěd</a>
-<a href="/wiki/Alek_Stojanov" title="Alek Stojanov">Stojanov</a>
-<a class="new" href="/w/index.php?title=Mike_Wilson_(hockey_sur_glace)&amp;action=edit&amp;redlink=1" title="Mike Wilson (hockey sur glace) (page inexistante)">Wilson</a>
-<a href="/wiki/Mattias_%C3%96hlund" title="Mattias Öhlund">Öhlund</a>
-<a href="/wiki/Joshua_Holden" title="Joshua Holden">Holden</a>
-<a href="/wiki/Brad_Ference" title="Brad Ference">Ference</a>
-<a href="/wiki/Bryan_Allen" title="Bryan Allen">Allen</a>
-<a href="/wiki/Daniel_Sedin" title="Daniel Sedin">Sedin</a>
-<a href="/wiki/Nathan_Smith_(hockey_sur_glace)" title="Nathan Smith (hockey sur glace)">Smith</a>
-<a href="/wiki/R._J._Umberger" title="R. J. Umberger">Umberger</a>
-<a href="/wiki/Ryan_Kesler" title="Ryan Kesler">Kesler</a>
-<a href="/wiki/Cory_Schneider" title="Cory Schneider">Schneider</a>
-<a href="/wiki/Luc_Bourdon_(hockey_sur_glace)" title="Luc Bourdon (hockey sur glace)">Bourdon</a>
-<a href="/wiki/Michael_Grabner" title="Michael Grabner">Grabner</a>
-<a href="/wiki/Patrick_White_(hockey_sur_glace)" title="Patrick White (hockey sur glace)">White</a>
-<a href="/wiki/Cody_Hodgson" title="Cody Hodgson">Hodgson</a>
-<a href="/wiki/Jordan_Schroeder" title="Jordan Schroeder">Schroeder</a>
-<a href="/wiki/Nicklas_Jensen" title="Nicklas Jensen">Jensen</a>
-<a href="/wiki/Brendan_Gaunce" title="Brendan Gaunce">Gaunce</a>
-<a href="/wiki/Bo_Horvat" title="Bo Horvat">Horvat</a>
-<a href="/wiki/Jake_Virtanen" title="Jake Virtanen">Virtanen</a>
-<a class="mw-selflink selflink">Boeser</a>
-<a href="/wiki/Olli_Juolevi" title="Olli Juolevi">Juolevi</a>
-<a href="/wiki/Elias_Pettersson" title="Elias Pettersson">Pettersson</a>
-<a href="/wiki/Quinton_Hughes" title="Quinton Hughes">Hughes</a>
-<a href="/wiki/Vassili_Podkolzine" title="Vassili Podkolzine">Podkolzine</a>
-<a href="/wiki/Portail:Hockey_sur_glace" title="Portail du hockey sur glace"><img alt="" class="noviewer" data-file-height="1400" data-file-width="1528" decoding="async" height="24" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/69/Amateur_ice_hockey_skates_trans.png/26px-Amateur_ice_hockey_skates_trans.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/69/Amateur_ice_hockey_skates_trans.png/39px-Amateur_ice_hockey_skates_trans.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/69/Amateur_ice_hockey_skates_trans.png/52px-Amateur_ice_hockey_skates_trans.png 2x" width="26"/></a>
-<a href="/wiki/Portail:%C3%89tats-Unis" title="Portail des États-Unis"><img alt="" class="noviewer thumbborder" data-file-height="650" data-file-width="1235" decoding="async" height="24" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/46px-Flag_of_the_United_States.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/69px-Flag_of_the_United_States.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/92px-Flag_of_the_United_States.svg.png 2x" width="46"/></a>
-<a dir="ltr" href="https://fr.wikipedia.org/w/index.php?title=Brock_Boeser&amp;oldid=175107015">https://fr.wikipedia.org/w/index.php?title=Brock*Boeser&amp;oldid=175107015</a>
-<a href="/wiki/Cat%C3%A9gorie:Naissance_en_f%C3%A9vrier_1997" title="Catégorie:Naissance en février 1997">Naissance en février 1997</a>
-<a href="/wiki/Cat%C3%A9gorie:Joueur_am%C3%A9ricain_de_hockey_sur_glace" title="Catégorie:Joueur américain de hockey sur glace">Joueur américain de hockey sur glace</a>
-<a href="/wiki/Cat%C3%A9gorie:Choix_de_rep%C3%AAchage_des_Canucks_de_Vancouver" title="Catégorie:Choix de repêchage des Canucks de Vancouver">Choix de repêchage des Canucks de Vancouver</a>
-<a href="/wiki/Cat%C3%A9gorie:Joueur_des_Musketeers_de_Sioux_City" title="Catégorie:Joueur des Musketeers de Sioux City">Joueur des Musketeers de Sioux City</a>
-<a href="/wiki/Cat%C3%A9gorie:Joueur_des_Fighting_Hawks_du_Dakota_du_Nord" title="Catégorie:Joueur des Fighting Hawks du Dakota du Nord">Joueur des Fighting Hawks du Dakota du Nord</a>
-<a href="/wiki/Cat%C3%A9gorie:Joueur_d%27un_Match_des*%C3%A9toiles_de_la_Ligue_nationale_de_hockey" title="Catégorie:Joueur d'un Match des étoiles de la Ligue nationale de hockey">Joueur d'un Match des étoiles de la Ligue nationale de hockey</a>
-<a href="/wiki/Cat%C3%A9gorie:Joueur_en_activit%C3%A9_de_hockey_sur_glace" title="Catégorie:Joueur en activité de hockey sur glace">Joueur en activité de hockey sur glace</a>
-<a href="/wiki/Cat%C3%A9gorie:Portail:Hockey_sur_glace/Articles_li%C3%A9s" title="Catégorie:Portail:Hockey sur glace/Articles liés">Portail:Hockey sur glace/Articles liés</a>
-<a href="/wiki/Cat%C3%A9gorie:Portail:Sport/Articles_li%C3%A9s" title="Catégorie:Portail:Sport/Articles liés">Portail:Sport/Articles liés</a>
-<a href="/wiki/Cat%C3%A9gorie:Portail:Am%C3%A9rique/Articles_li%C3%A9s" title="Catégorie:Portail:Amérique/Articles liés">Portail:Amérique/Articles liés</a>
-<a href="/wiki/Cat%C3%A9gorie:Wikip%C3%A9dia:Article_biographique" title="Catégorie:Wikipédia:Article biographique">Wikipédia:Article biographique</a>
-
-APRES MODIFICATIONS - FILTRÉ
 DOUBLON DÉTECTÉ
-<a href="/wiki/Aide:%C3%89bauche" title="Aide:Ébauche">ébauche</a>
-<a href="/wiki/Hockey_sur_glace" title="Hockey sur glace">hockey sur glace</a>
-<a href="/wiki/Projet:Accueil" title="Projet:Accueil">projets correspondants</a>
-<a href="/wiki/Nationalit%C3%A9" title="Nationalité">Nationalité</a>
-<a href="/wiki/%C3%89tats-Unis" title="États-Unis">États-Unis</a>
-<a href="/wiki/25_f%C3%A9vrier_en_sport" title="25 février en sport">25 février</a>
-<a href="/wiki/1997_en_hockey_sur_glace" title="1997 en hockey sur glace">1997</a>
-<a href="/wiki/Burnsville_(Minnesota)" title="Burnsville (Minnesota)">Burnsville (Minnesota)</a>
-<a href="/wiki/Position_(hockey_sur_glace)" title="Position (hockey sur glace)">Position</a>
-<a class="mw-redirect" href="/wiki/Ailier_droit_(hockey_sur_glace)" title="Ailier droit (hockey sur glace)">Ailier droit</a>
-<a href="/wiki/Tir_(hockey_sur_glace)" title="Tir (hockey sur glace)">Tire de la</a>
-<a href="/wiki/Ligue_nationale_de_hockey" title="Ligue nationale de hockey">LNH</a>
-<a href="/wiki/Canucks_de_Vancouver" title="Canucks de Vancouver">Canucks de Vancouver</a>
-<a href="/wiki/Rep%C3%AAchage_d%27entr%C3%A9e_dans_la_LNH" title="Repêchage d'entrée dans la LNH">Repêc. LNH</a>
-<a href="/wiki/Rep%C3%AAchage_d%27entr%C3%A9e_dans_la_LNH_2015" title="Repêchage d'entrée dans la LNH 2015">2015</a>
-<a href="/wiki/Mod%C3%A8le:Infobox_Personnalit%C3%A9_du_hockey_sur_glace" title="Consultez la documentation du modèle"><img alt="Consultez la documentation du modèle" data-file-height="512" data-file-width="512" decoding="async" height="12" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/38/Info_Simple.svg/12px-Info_Simple.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/38/Info_Simple.svg/18px-Info_Simple.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/38/Info_Simple.svg/24px-Info_Simple.svg.png 2x" width="12"/></a>
-<a href="/wiki/Burnsville_(Minnesota)" title="Burnsville (Minnesota)">Burnsville</a>
-<a href="/wiki/Minnesota" title="Minnesota">Minnesota</a>
-<a href="/wiki/Sport_professionnel" title="Sport professionnel">professionnel</a>
-<a class="mw-redirect" href="/wiki/Ailier_(hockey_sur_glace)" title="Ailier (hockey sur glace)">ailier droit</a>
-<a href="#Biographie"><span class="tocnumber">1</span> <span class="toctext">Biographie</span></a>
-<a href="#Statistiques"><span class="tocnumber">2</span> <span class="toctext">Statistiques</span></a>
-<a href="#Au_niveau_international"><span class="tocnumber">2.2</span> <span class="toctext">Au niveau international</span></a>
-<a class="mw-editsection-visualeditor" href="/w/index.php?title=Brock_Boeser&amp;veaction=edit&amp;section=1" title="Modifier la section : Biographie">modifier</a>
-<a class="mw-editsection-visualeditor" href="/w/index.php?title=Brock_Boeser&amp;veaction=edit&amp;section=2" title="Modifier la section : En club">modifier</a>
-<a href="/wiki/United_States_Hockey_League" title="United States Hockey League">USHL</a>
-<a href="/wiki/Musketeers_de_Sioux_City" title="Musketeers de Sioux City">Musketeers de Sioux City</a>
-<a href="/wiki/Black_Hawks_de_Waterloo" title="Black Hawks de Waterloo">Black Hawks de Waterloo</a>
-<a href="/wiki/Rep%C3%AAchage_d%27entr%C3%A9e_dans_la_LNH_2015" title="Repêchage d'entrée dans la LNH 2015">repêchage d'entrée dans la LNH 2015</a>
-<a class="mw-editsection-visualeditor" href="/w/index.php?title=Brock_Boeser&amp;veaction=edit&amp;section=3" title="Modifier la section : Statistiques">modifier</a>
-<a class="mw-editsection-visualeditor" href="/w/index.php?title=Brock_Boeser&amp;veaction=edit&amp;section=4" title="Modifier la section : En club">modifier</a>
-<a href="/wiki/Statistiques_du_hockey_sur_glace" title="Statistiques du hockey sur glace">statistiques du hockey sur glace</a>
-<a href="/wiki/Saison_sportive" title="Saison sportive">Saison régulière</a>
-<a href="/wiki/S%C3%A9rie_%C3%A9liminatoire" title="Série éliminatoire">Séries éliminatoires</a>
-<a href="/wiki/Fighting_Hawks_du_Dakota_du_Nord" title="Fighting Hawks du Dakota du Nord">Fighting Hawks du Dakota du Nord</a>
-<a class="mw-redirect" href="/wiki/Championnat_NCAA_de_hockey_sur_glace_masculin" title="Championnat NCAA de hockey sur glace masculin">NCAA</a>
-<a href="/wiki/Saison_2016-2017_de_la_LNH" title="Saison 2016-2017 de la LNH">2016-2017</a>
-<a href="/wiki/Saison_2017-2018_de_la_LNH" title="Saison 2017-2018 de la LNH">2017-2018</a>
-<a href="/wiki/Saison_2018-2019_de_la_LNH" title="Saison 2018-2019 de la LNH">2018-2019</a>
-<a href="/wiki/Saison_2019-2020_de_la_LNH" title="Saison 2019-2020 de la LNH">2019-2020</a>
-<a href="/w/index.php?title=Brock_Boeser&amp;action=edit&amp;section=5" title="Modifier la section : Au niveau international">modifier le code</a>
-<a href="/wiki/Championnat_du_monde_junior_de_hockey_sur_glace_2016" title="Championnat du monde junior de hockey sur glace 2016">2016</a>
-<a href="/wiki/Championnat_du_monde_junior_de_hockey_sur_glace" title="Championnat du monde junior de hockey sur glace">Championnat du monde junior</a>
-<a href="/w/index.php?title=Brock_Boeser&amp;action=edit&amp;section=6" title="Modifier la section : Références">modifier le code</a>
-<a class="external text" href="https://www.eliteprospects.com/player.php?player=248381" rel="nofollow">« <cite style="font-style:normal;"><i>Brock Boeser</i></cite> »</a>
-<a href="#cite_ref-hdb_2-1">b</a>
-<a href="/wiki/Mod%C3%A8le:Palette_Premiers_choix_du_rep%C3%AAchage_des_Canucks_de_Vancouver" title="Modèle:Palette Premiers choix du repêchage des Canucks de Vancouver"><abbr class="abbr" title="Voir ce modèle.">v</abbr></a>
-<a href="/wiki/Draft_(sport)" title="Draft (sport)">repêchages</a>
-<a href="/wiki/Dale_Tallon" title="Dale Tallon">Tallon</a>
-<a href="/wiki/Jocelyn_Guevremont" title="Jocelyn Guevremont">Guevremont</a>
-<a href="/wiki/Don_Lever" title="Don Lever">Lever</a>
-<a href="/wiki/Dennis_Ververgaert" title="Dennis Ververgaert">Ververgaert</a>
-<a href="/wiki/Rick_Blight" title="Rick Blight">Blight</a>
-<a href="/wiki/Jere_Gillis" title="Jere Gillis">Gillis</a>
-<a href="/wiki/Bill_Derlago" title="Bill Derlago">Derlago</a>
-<a href="/wiki/Rick_Vaive" title="Rick Vaive">Vaive</a>
-<a href="/wiki/Rick_Lanz" title="Rick Lanz">Lanz</a>
-<a href="/wiki/Garth_Butcher" title="Garth Butcher">Butcher</a>
-<a href="/wiki/Michel_Petit_(hockey_sur_glace)" title="Michel Petit (hockey sur glace)">Petit</a>
-<a href="/wiki/Cam_Neely" title="Cam Neely">Neely</a>
-<a href="/wiki/Jean-Jacques_Daigneault" title="Jean-Jacques Daigneault">Daigneault</a>
-<a href="/wiki/Jim_Sandlak" title="Jim Sandlak">Sandlak</a>
-<a href="/wiki/Dan_Woodley" title="Dan Woodley">Woodley</a>
-<a href="/wiki/Trevor_Linden" title="Trevor Linden">Linden</a>
-<a href="/wiki/Jason_Herter" title="Jason Herter">Herter</a>
-<a href="/wiki/Petr_Nedv%C4%9Bd" title="Petr Nedvěd">Nedvěd</a>
-<a href="/wiki/Alek_Stojanov" title="Alek Stojanov">Stojanov</a>
-<a class="new" href="/w/index.php?title=Mike_Wilson_(hockey_sur_glace)&amp;action=edit&amp;redlink=1" title="Mike Wilson (hockey sur glace) (page inexistante)">Wilson</a>
-<a href="/wiki/Mattias_%C3%96hlund" title="Mattias Öhlund">Öhlund</a>
-<a href="/wiki/Joshua_Holden" title="Joshua Holden">Holden</a>
-<a href="/wiki/Brad_Ference" title="Brad Ference">Ference</a>
-<a href="/wiki/Bryan_Allen" title="Bryan Allen">Allen</a>
-<a href="/wiki/Daniel_Sedin" title="Daniel Sedin">Sedin</a>
-<a href="/wiki/Nathan_Smith_(hockey_sur_glace)" title="Nathan Smith (hockey sur glace)">Smith</a>
-<a href="/wiki/R._J._Umberger" title="R. J. Umberger">Umberger</a>
-<a href="/wiki/Ryan_Kesler" title="Ryan Kesler">Kesler</a>
-<a href="/wiki/Cory_Schneider" title="Cory Schneider">Schneider</a>
-<a href="/wiki/Luc_Bourdon_(hockey_sur_glace)" title="Luc Bourdon (hockey sur glace)">Bourdon</a>
-<a href="/wiki/Michael_Grabner" title="Michael Grabner">Grabner</a>
-<a href="/wiki/Patrick_White_(hockey_sur_glace)" title="Patrick White (hockey sur glace)">White</a>
-<a href="/wiki/Cody_Hodgson" title="Cody Hodgson">Hodgson</a>
-<a href="/wiki/Jordan_Schroeder" title="Jordan Schroeder">Schroeder</a>
-<a href="/wiki/Nicklas_Jensen" title="Nicklas Jensen">Jensen</a>
-<a href="/wiki/Brendan_Gaunce" title="Brendan Gaunce">Gaunce</a>
-<a href="/wiki/Bo_Horvat" title="Bo Horvat">Horvat</a>
-<a href="/wiki/Jake_Virtanen" title="Jake Virtanen">Virtanen</a>
-<a class="mw-selflink selflink">Boeser</a>
-<a href="/wiki/Olli_Juolevi" title="Olli Juolevi">Juolevi</a>
-<a href="/wiki/Elias_Pettersson" title="Elias Pettersson">Pettersson</a>
-<a href="/wiki/Quinton_Hughes" title="Quinton Hughes">Hughes</a>
-<a href="/wiki/Vassili_Podkolzine" title="Vassili Podkolzine">Podkolzine</a>
-<a href="/wiki/Portail:Hockey_sur_glace" title="Portail du hockey sur glace"><img alt="" class="noviewer" data-file-height="1400" data-file-width="1528" decoding="async" height="24" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/69/Amateur_ice_hockey_skates_trans.png/26px-Amateur_ice_hockey_skates_trans.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/69/Amateur_ice_hockey_skates_trans.png/39px-Amateur_ice_hockey_skates_trans.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/69/Amateur_ice_hockey_skates_trans.png/52px-Amateur_ice_hockey_skates_trans.png 2x" width="26"/></a>
-<a href="/wiki/Portail:%C3%89tats-Unis" title="Portail des États-Unis"><img alt="" class="noviewer thumbborder" data-file-height="650" data-file-width="1235" decoding="async" height="24" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/46px-Flag_of_the_United_States.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/69px-Flag_of_the_United_States.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/92px-Flag_of_the_United_States.svg.png 2x" width="46"/></a>
-<a dir="ltr" href="https://fr.wikipedia.org/w/index.php?title=Brock_Boeser&amp;oldid=175107015">https://fr.wikipedia.org/w/index.php?title=Brock*Boeser&amp;oldid=175107015</a>
-<a href="/wiki/Cat%C3%A9gorie:Naissance_en_f%C3%A9vrier_1997" title="Catégorie:Naissance en février 1997">Naissance en février 1997</a>
-<a href="/wiki/Cat%C3%A9gorie:Joueur_am%C3%A9ricain_de_hockey_sur_glace" title="Catégorie:Joueur américain de hockey sur glace">Joueur américain de hockey sur glace</a>
-<a href="/wiki/Cat%C3%A9gorie:Choix_de_rep%C3%AAchage_des_Canucks_de_Vancouver" title="Catégorie:Choix de repêchage des Canucks de Vancouver">Choix de repêchage des Canucks de Vancouver</a>
-<a href="/wiki/Cat%C3%A9gorie:Joueur_des_Musketeers_de_Sioux_City" title="Catégorie:Joueur des Musketeers de Sioux City">Joueur des Musketeers de Sioux City</a>
-<a href="/wiki/Cat%C3%A9gorie:Joueur_des_Fighting_Hawks_du_Dakota_du_Nord" title="Catégorie:Joueur des Fighting Hawks du Dakota du Nord">Joueur des Fighting Hawks du Dakota du Nord</a>
-<a href="/wiki/Cat%C3%A9gorie:Joueur_d%27un_Match_des*%C3%A9toiles_de_la_Ligue_nationale_de_hockey" title="Catégorie:Joueur d'un Match des étoiles de la Ligue nationale de hockey">Joueur d'un Match des étoiles de la Ligue nationale de hockey</a>
-<a href="/wiki/Cat%C3%A9gorie:Joueur_en_activit%C3%A9_de_hockey_sur_glace" title="Catégorie:Joueur en activité de hockey sur glace">Joueur en activité de hockey sur glace</a>
-<a href="/wiki/Cat%C3%A9gorie:Portail:Hockey_sur_glace/Articles_li%C3%A9s" title="Catégorie:Portail:Hockey sur glace/Articles liés">Portail:Hockey sur glace/Articles liés</a>
-<a href="/wiki/Cat%C3%A9gorie:Portail:Sport/Articles_li%C3%A9s" title="Catégorie:Portail:Sport/Articles liés">Portail:Sport/Articles liés</a>
-<a href="/wiki/Cat%C3%A9gorie:Portail:Am%C3%A9rique/Articles_li%C3%A9s" title="Catégorie:Portail:Amérique/Articles liés">Portail:Amérique/Articles liés</a>
-<a href="/wiki/Cat%C3%A9gorie:Wikip%C3%A9dia:Article_biographique" title="Catégorie:Wikipédia:Article biographique">Wikipédia:Article biographique</a>
+<a href="/wiki/Football" title="Football">footballeur</a>
+<a href="/wiki/Belgique" title="Belgique">belge</a>
+<a href="/wiki/Belgique" title="Belgique">Belge</a>
+<a href="/wiki/16_mars_en_sport" title="16 mars en sport">16 mars</a>
+<a href="/wiki/1952_en_football" title="1952 en football">1952</a>
+<a href="/wiki/Coursel" title="Coursel">Coursel</a>
+<a href="/wiki/Belgique" title="Belgique">Belgique</a>
+<a href="/wiki/Taille_(anthropom%C3%A9trie)" title="Taille (anthropométrie)">Taille</a>
+<a href="/wiki/Milieu_de_terrain" title="Milieu de terrain">Milieu de terrain</a>
+<a href="/wiki/Entra%C3%AEneur" title="Entraîneur">Entraîneur</a>
+<a href="/wiki/1971_en_football" title="1971 en football">1971</a>
+<a href="/wiki/1972_en_football" title="1972 en football">1972</a>
+<a href="/wiki/K_Beringen_FC" title="K Beringen FC">FC Beringen</a>
+<a href="/wiki/1974_en_football" title="1974 en football">1974</a>
+<a href="/wiki/1981_en_football" title="1981 en football">1981</a>
+<a href="/wiki/KRC_Genk" title="KRC Genk">KFC Winterslag</a>
+<a href="/wiki/1987_en_football" title="1987 en football">1987</a>
+<a href="/wiki/KSK_Beveren" title="KSK Beveren">KSK Beveren</a>
+<a href="/wiki/1988_en_football" title="1988 en football">1988</a>
+<a class="mw-redirect" href="/wiki/FC_Malines" title="FC Malines">FC Malines</a>
+<a href="/wiki/1989_en_football" title="1989 en football">1989</a>
+<a href="/wiki/K_Sint-Niklaasse_SK_Excelsior" title="K Sint-Niklaasse SK Excelsior">Sint-Niklaasse SK</a>
+<a href="/wiki/1984_en_football" title="1984 en football">1984</a>
+<a href="/wiki/%C3%89quipe_de_Belgique_de_football" title="Équipe de Belgique de football">Belgique</a>
+<a href="/wiki/1990_en_football" title="1990 en football">1990</a>
+<a href="/wiki/1991_en_football" title="1991 en football">1991</a>
+<a href="/wiki/KRC_Genk" title="KRC Genk">KRC Genk</a>
+<a href="/wiki/1992_en_football" title="1992 en football">1992</a>
+<a href="/wiki/1994_en_football" title="1994 en football">1994</a>
+<a href="/wiki/SV_Zulte_Waregem" title="SV Zulte Waregem">KSV Waregem</a>
+<a href="/wiki/1996_en_football" title="1996 en football">1996</a>
+<a href="/wiki/1997_en_football" title="1997 en football">1997</a>
+<a href="/wiki/Milieu_de_terrain" title="Milieu de terrain">milieu de terrain</a>
+<a href="/wiki/%C3%89quipe_de_Belgique_de_football" title="Équipe de Belgique de football">équipe nationale</a>
+<a href="/wiki/Coupe_d%27Europe_des_vainqueurs_de_coupe_de_football_1987-1988" title="Coupe d'Europe des vainqueurs de coupe de football 1987-1988">finale de la Coupe d'Europe des Vainqueurs de Coupe</a>
+<a href="/wiki/Stade_de_la_Meinau" title="Stade de la Meinau">stade de la Meinau</a>
+<a href="/wiki/Ajax_Amsterdam" title="Ajax Amsterdam">Ajax Amsterdam</a>
+<a href="/wiki/%C3%89quipe_de_Belgique_de_football" title="Équipe de Belgique de football">International belge</a>
+<a href="/wiki/Championnat_de_Belgique_de_football" title="Championnat de Belgique de football">Vice-Champion de Belgique</a>
+<a href="/wiki/Coupe_d%27Europe_des_vainqueurs_de_coupe_de_football_1987-1988" title="Coupe d'Europe des vainqueurs de coupe de football 1987-1988">Vainqueur de la Coupe d'Europe des Vainqueurs de Coupe en 1988</a>
+<a class="mw-redirect" href="/wiki/Union_royale_belge_des_soci%C3%A9t%C3%A9s_de_football_association" title="Union royale belge des sociétés de football association">URBSFA</a>
+footballeur
+belge
+Belge
+16 mars
+1952
+Coursel
+Belgique
+Taille
+Milieu de terrain
+Entraîneur
+1971
+1972
+FC Beringen
+1974
+1981
+KFC Winterslag
+1987
+KSK Beveren
+1988
+FC Malines
+1989
+Sint-Niklaasse SK
+1984
+Belgique
+1990
+1991
+KRC Genk
+1992
+1994
+KSV Waregem
+1996
+1997
+milieu de terrain
+équipe nationale
+finale de la Coupe d'Europe des Vainqueurs de Coupe
+stade de la Meinau
+Ajax Amsterdam
+International belge
+Vice-Champion de Belgique
+Vainqueur de la Coupe d'Europe des Vainqueurs de Coupe en 1988
+URBSFA
 
 D:\Documents et autres\Epsi\B3\ECOLE\Python\Code\Wikigame>
