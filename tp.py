@@ -5,6 +5,8 @@ import eel
 
 import re
 eel.init("")
+firstLoad = True
+counter = 0
 
 #https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Page_au_hasard
 def getBorne():
@@ -22,8 +24,20 @@ def getLinks(borneUrl): #la borneUrl est en réalité la fin de l'url d'une page
         webpage = response.read()
         soup = BeautifulSoup(webpage, 'html.parser')
 
+        global firstLoad
+        global newLink
+        global counter
+
+        if firstLoad:
+            oldLink = ''
+            firstLoad = False
+        else:
+            oldLink = newLink
+
         newLink = soup.find("h1").get_text()
         print(newLink)
+        print(oldLink)
+        
         div = soup.find("div", {"id": "mw-content-text"})
         allLinks = div.find_all("a")
 
@@ -64,8 +78,10 @@ def getLinks(borneUrl): #la borneUrl est en réalité la fin de l'url d'une page
             <script type="text/javascript" src="/eel.js"></script>
         </head>
             <body>
+            <h3>Essai numéro : {}</h3>
             <h1>{}</h1>
-        """.format(newLink))
+            <h2>{}</h2>
+        """.format(counter, newLink, oldLink))
         for i in range(len(allGoodLinksUnique)):
             f.write("""        <button onclick="nextPage('{}')">{}</button><br>\n""".format(allGoodLinksUrl[i], allGoodLinksTitre[i]))
                 
@@ -80,6 +96,7 @@ def getLinks(borneUrl): #la borneUrl est en réalité la fin de l'url d'une page
         </html>
         """)
         f.close()
+        counter = counter + 1
 
 
 firstBorne, firstBorneUrl = getBorne()
