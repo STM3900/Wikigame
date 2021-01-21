@@ -4,6 +4,7 @@ import os
 import eel
 
 import re
+eel.init("")
 
 #https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Page_au_hasard
 def getBorne():
@@ -14,7 +15,8 @@ def getBorne():
         h1Url = h1.replace(" ", "_")
         return h1, h1Url
 
-def getLinks(borneUrl):
+@eel.expose
+def getLinks(borneUrl): #la borneUrl est en réalité la fin de l'url d'une page wikipedia
     validLinks = []
     with urllib.request.urlopen("https://fr.wikipedia.org/wiki/{}".format(borneUrl)) as response:
         webpage = response.read()
@@ -46,13 +48,24 @@ def getLinks(borneUrl):
         for i in allGoodLinksUnique:
             print(i)
 
+        allGoodLinksTitre = []
         for i in allGoodLinksUnique:
             text = str(i)
             m = re.search('>(.+?)</a>', text)
             if m:
-                found = m.group(1)
-            print(found)
+                allGoodLinksTitre.append(m.group(1)) 
+        
+        allGoodLinksUrl = []
+        for i in allGoodLinksUnique:
+            text = str(i)
+            m = re.search('/wiki/(.+?)"', text)
+            if m:
+                allGoodLinksUrl.append(m.group(1))
 
+        for i in allGoodLinksUrl: 
+            print(i)
+
+        #création de l'html et insertion des données
         currentPath = os.path.dirname(__file__)
         currentPath = os.path.join(currentPath,"wiki.html")
         f = open(currentPath,'w+', encoding='utf-8')
@@ -62,15 +75,21 @@ def getLinks(borneUrl):
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Les articles la</title>    
+            <title>Wikigame</title>    
+            <script type="text/javascript" src="/eel.js"></script>
         </head>
             <body>
         """)
-
-        for i in allGoodLinksUnique:
-            f.write("""        {}<br>\n""".format(i))
+        for i in range(len(allGoodLinksUnique)):
+            f.write("""        <button onclick="nextPage('{}')">{}</button><br>\n""".format(allGoodLinksUrl[i], allGoodLinksTitre[i]))
                 
         f.write("""
+                <script>
+                    const nextPage = (url) => {
+                        eel.getLinks(url)
+                        document.location.reload();
+                    }
+                </script>
             </body>
         </html>
         """)
@@ -83,3 +102,4 @@ lastBorne, lastBorneUrl = getBorne()
 print("{} > {}".format(firstBorne, lastBorne))
 getLinks(firstBorneUrl)
 
+eel.start('wiki.html', mode="chrome-app")
