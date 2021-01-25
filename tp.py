@@ -90,10 +90,12 @@ def getLinks(borneUrl, counterPoints = 1): #la borneUrl est en réalité la fin 
                 <body>
                 <h2>{} > {}<h2>
                 <h3>Essai numéro : {}</h3>
-                <h1>{}</h1>
+                <h1>{}</h1>""".format(firstBorne, lastBorne, counter, newLink))
+            if len(allLinksVisited) > 1:
+                f.write("""
                 <h2>Page d'avant : {}</h2>
                 <button onclick="goBackJS(`{}`)">Revenir en arrière ? (coute deux coups)</button>
-            """.format(firstBorne, lastBorne, counter, newLink, oldLink, allLinksVisited[-1])) #allLinksVisited[-1] représente le dernier lien du tableau de tous les liens parcouru
+                """.format(oldLink, allLinksVisited[-1])) #allLinksVisited[-1] représente le dernier lien du tableau de tous les liens parcouru
             for i in range(len(allGoodLinksUnique)):
                 f.write("""        <button onclick="nextPage(`{}`)">{}</button><br>\n""".format(allGoodLinksUrl[i], allGoodLinksTitre[i]))
                     
