@@ -11,6 +11,7 @@ import re
 eel.init("")
 firstLoad = True
 counter = 0
+allLinksVisited = []
 
 #Fonction renvoyant l'url d'une page au pif ainsi que son titre
 def getBorne():
@@ -90,14 +91,20 @@ def getLinks(borneUrl): #la borneUrl est en réalité la fin de l'url d'une page
                 <h3>Essai numéro : {}</h3>
                 <h1>{}</h1>
                 <h2>Page d'avant : {}</h2>
-            """.format(firstBorne, lastBorne, counter, newLink, oldLink))
+                <button onclick="goBackJS(`{}`)">Revenir en arrière ? (coute deux coups)</button>
+            """.format(firstBorne, lastBorne, counter, newLink, oldLink, allLinksVisited[-1])) #allLinksVisited[-1] représente le dernier lien du tableau de tous les liens parcouru
             for i in range(len(allGoodLinksUnique)):
-                f.write("""        <button onclick="nextPage('{}')">{}</button><br>\n""".format(allGoodLinksUrl[i], allGoodLinksTitre[i]))
+                f.write("""        <button onclick="nextPage(`{}`)">{}</button><br>\n""".format(allGoodLinksUrl[i], allGoodLinksTitre[i]))
                     
             f.write("""
                     <script>
                         const nextPage = (url) => {
                             eel.getLinks(url)
+                            document.location.reload();
+                        }
+
+                        const goBackJS = (url) => {
+                            eel.goBack(url)
                             document.location.reload();
                         }
                     </script>
@@ -106,6 +113,13 @@ def getLinks(borneUrl): #la borneUrl est en réalité la fin de l'url d'une page
             """)
             f.close()
             counter = counter + 1
+            allLinksVisited.append(borneUrl)
+
+@eel.expose
+def goBack(lien):
+    global counter
+    counter = counter + 2
+    getLinks(lien)
 
 def endGame():
     #création de l'html et insertion des données
@@ -134,6 +148,8 @@ def endGame():
 
 firstBorne, firstBorneUrl = getBorne()
 lastBorne, lastBorneUrl = getBorne()
+
+allLinksVisited.append(firstBorneUrl)
 
 print("{} > {}".format(firstBorne, lastBorne))
 getLinks(firstBorneUrl)

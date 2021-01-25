@@ -1,15 +1,42 @@
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wikigame</title>    
-        <script type="text/javascript" src="/eel.js"></script>
-    </head>
-        <body>
-        <h1>Bravo ! Vous êtes arrivé sur la bonne page ! (Robert Lyon > Liste des routes régionales de la Slovénie)<h1>
-        <h2>Il vous a fallu 4 essai(s)</h2>
-        </body>
-    </html>
-    
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Wikigame</title>    
+                <script type="text/javascript" src="/eel.js"></script>
+            </head>
+                <body>
+                <h2>Pierre-Alain Menneron > L'Embuscade (film, 1941)<h2>
+                <h3>Essai numéro : 12</h3>
+                <h1>Pierre-Alain Menneron</h1>
+                <h2>Page d'avant : Orléans</h2>
+                <button onclick="goBackJS(`Orl%C3%A9ans`)">Revenir en arrière ? (coute deux coups)</button>
+                    <button onclick="nextPage(`Bobsleigh`)">bobsleigh</button><br>
+        <button onclick="nextPage(`6_avril`)">6</button><br>
+        <button onclick="nextPage(`Avril_1975`)">avril</button><br>
+        <button onclick="nextPage(`1975`)">1975</button><br>
+        <button onclick="nextPage(`Orl%C3%A9ans`)">Orléans</button><br>
+        <button onclick="nextPage(`France`)">Français</button><br>
+        <button onclick="nextPage(`Bobsleigh`)">Pilote de bobsleigh</button><br>
+        <button onclick="nextPage(`Bobsleigh`)">bobeur</button><br>
+        <button onclick="nextPage(`Fran%C3%A7ais`)">français</button><br>
+        <button onclick="nextPage(`Jeux_olympiques_d%27hiver_de_2006`)">Jeux olympiques d'hiver de 2006</button><br>
+        <button onclick="nextPage(`Turin`)">Turin</button><br>
+        <button onclick="nextPage(`Italie`)">Italie</button><br>
+
+                    <script>
+                        const nextPage = (url) => {
+                            eel.getLinks(url)
+                            document.location.reload();
+                        }
+
+                        const goBackJS = (url) => {
+                            eel.goBack(url)
+                            document.location.reload();
+                        }
+                    </script>
+                </body>
+            </html>
+            
