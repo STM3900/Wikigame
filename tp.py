@@ -24,7 +24,7 @@ def getBorne():
 
 #GetLinks permet à partir d'un lien wiki de générer une page html avec tous les liens et d'autres trucs
 @eel.expose #Pour qu'on puisse appeller la fonction dans le js de l'html que l'on génère
-def getLinks(borneUrl): #la borneUrl est en réalité la fin de l'url d'une page wikipedia
+def getLinks(borneUrl, counterPoints = 1): #la borneUrl est en réalité la fin de l'url d'une page wikipedia
     print(borneUrl)
     print(lastBorneUrl)
     validLinks = []
@@ -74,6 +74,7 @@ def getLinks(borneUrl): #la borneUrl est en réalité la fin de l'url d'une page
 
 
             #création de l'html et insertion des données
+            counter = counter + counterPoints
             currentPath = os.path.dirname(__file__)
             currentPath = os.path.join(currentPath,"wiki.html")
             f = open(currentPath,'w+', encoding='utf-8')
@@ -104,7 +105,7 @@ def getLinks(borneUrl): #la borneUrl est en réalité la fin de l'url d'une page
                         }
 
                         const goBackJS = (url) => {
-                            eel.goBack(url)
+                            eel.getLinks(url, 2)
                             document.location.reload();
                         }
                     </script>
@@ -112,14 +113,7 @@ def getLinks(borneUrl): #la borneUrl est en réalité la fin de l'url d'une page
             </html>
             """)
             f.close()
-            counter = counter + 1
             allLinksVisited.append(borneUrl)
-
-@eel.expose
-def goBack(lien):
-    global counter
-    counter = counter + 2
-    getLinks(lien)
 
 def endGame():
     #création de l'html et insertion des données
