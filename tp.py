@@ -26,26 +26,26 @@ def getBorne():
 def getLinks(borneUrl): #la borneUrl est en réalité la fin de l'url d'une page wikipedia
     print(borneUrl)
     print(lastBorneUrl)
-    if(borneUrl == lastBorneUrl):
-        endGame()
-    else:
-        validLinks = []
-        with urllib.request.urlopen("https://fr.wikipedia.org/wiki/{}".format(borneUrl)) as response:
-            webpage = response.read()
-            soup = BeautifulSoup(webpage, 'html.parser')
+    validLinks = []
+    with urllib.request.urlopen("https://fr.wikipedia.org/wiki/{}".format(borneUrl)) as response:
+        webpage = response.read()
+        soup = BeautifulSoup(webpage, 'html.parser')
 
-            global firstLoad
-            global newLink
-            global counter
+        global firstLoad
+        global newLink
+        global counter
 
-            if firstLoad:
-                oldLink = ''
-                firstLoad = False
-            else:
-                oldLink = newLink
+        if firstLoad:
+            oldLink = ''
+            firstLoad = False
+        else:
+            oldLink = newLink
 
-            newLink = soup.find("h1").get_text()
-            
+        newLink = soup.find("h1").get_text()
+
+        if(newLink == lastBorne):
+            endGame()
+        else:
             div = soup.find("div", {"id": "mw-content-text"})
             allLinks = div.find_all("a")
 
