@@ -24,7 +24,7 @@ def getBorne():
 
 #GetLinks permet à partir d'un lien wiki de générer une page html avec tous les liens et d'autres trucs
 @eel.expose #Pour qu'on puisse appeller la fonction dans le js de l'html que l'on génère
-def getLinks(borneUrl, counterPoints = 1): #la borneUrl est en réalité la fin de l'url d'une page wikipedia
+def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en réalité la fin de l'url d'une page wikipedia
     print(borneUrl)
     print(lastBorneUrl)
     validLinks = []
@@ -95,7 +95,7 @@ def getLinks(borneUrl, counterPoints = 1): #la borneUrl est en réalité la fin 
                 f.write("""
                 <h2>Page d'avant : {}</h2>
                 <button onclick="goBackJS(`{}`)">Revenir en arrière ? (coute deux coups)</button>
-                """.format(oldLink, allLinksVisited[-1])) #allLinksVisited[-1] représente le dernier lien du tableau de tous les liens parcouru
+                """.format(allLinksVisited[-1], allLinksVisited[-1])) #allLinksVisited[-1] représente le dernier lien du tableau de tous les liens parcouru
             for i in range(len(allGoodLinksUnique)):
                 f.write("""        <button onclick="nextPage(`{}`)">{}</button><br>\n""".format(allGoodLinksUrl[i], allGoodLinksTitre[i]))
                     
@@ -107,7 +107,7 @@ def getLinks(borneUrl, counterPoints = 1): #la borneUrl est en réalité la fin 
                         }
 
                         const goBackJS = (url) => {
-                            eel.getLinks(url, 2)
+                            eel.goBack(url)
                             document.location.reload();
                         }
                     </script>
@@ -115,7 +115,14 @@ def getLinks(borneUrl, counterPoints = 1): #la borneUrl est en réalité la fin 
             </html>
             """)
             f.close()
-            allLinksVisited.append(borneUrl)
+            if addTab:
+                allLinksVisited.append(borneUrl)
+            print(allLinksVisited)
+
+@eel.expose
+def goBack(url):
+    getLinks(url, 2, False)
+
 
 def endGame():
     #création de l'html et insertion des données
