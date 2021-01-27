@@ -23,28 +23,41 @@ def getBorne():
         h1Url = h1.replace(" ", "_")
         return h1, h1Url
 
+firstBorne, firstBorneUrl = getBorne()
+lastBorne, lastBorneUrl = getBorne()
+
 #GetLinks permet à partir d'un lien wiki de générer une page html avec tous les liens et d'autres trucs
 @eel.expose #Pour qu'on puisse appeller la fonction dans le js de l'html que l'on génère
 def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en réalité la fin de l'url d'une page wikipedia
     print(borneUrl)
-    print(lastBorneUrl)
     validLinks = []
     with urllib.request.urlopen("https://fr.wikipedia.org/wiki/{}".format(borneUrl)) as response:
         webpage = response.read()
         soup = BeautifulSoup(webpage, 'html.parser')
-
+        
         global firstLoad
         global newLink
         global counter
 
-        if firstLoad:
-            firstLoad = False
+        global firstBorne
+        global firstBorneUrl
+        global lastBorne
+        global lastBorneUrl
 
         newLink = soup.find("h1").get_text()
 
         if(newLink == lastBorne):
-            endGame()
+            if(firstLoad):
+
+                firstBorne, firstBorneUrl = getBorne()
+                lastBorne, lastBorneUrl = getBorne()
+                getLinks(firstBorneUrl)
+            else:
+                endGame()
         else:
+            if firstLoad:
+                firstLoad = False
+
             div = soup.find("div", {"id": "mw-content-text"})
             allLinks = div.find_all("a")
 
@@ -156,9 +169,6 @@ def endGame():
     """.format(firstBorne, lastBorne, counter))
 
     f.close()
-
-firstBorne, firstBorneUrl = getBorne()
-lastBorne, lastBorneUrl = getBorne()
 
 print("{} > {}".format(firstBorne, lastBorne))
 getLinks(firstBorneUrl)
