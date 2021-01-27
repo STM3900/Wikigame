@@ -12,6 +12,7 @@ eel.init("")
 firstLoad = True
 counter = 0
 allLinksVisited = []
+allTitlesVisited = []
 
 #Fonction renvoyant l'url d'une page au pif ainsi que son titre
 def getBorne():
@@ -37,10 +38,7 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
         global counter
 
         if firstLoad:
-            oldLink = ''
             firstLoad = False
-        else:
-            oldLink = newLink
 
         newLink = soup.find("h1").get_text()
 
@@ -72,9 +70,16 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
                 if m:
                     allGoodLinksUrl.append(m.group(1))
 
-            if not addTab:
+            if addTab:
+                print("Génération du tableau : {}".format(borneUrl))
+                allLinksVisited.append(borneUrl)
+                allTitlesVisited.append(newLink)
+            else:
                 allLinksVisited.pop()
+                allTitlesVisited.pop()
 
+            print(allLinksVisited)
+            print(allTitlesVisited)
             #création de l'html et insertion des données
             counter = counter + counterPoints
             currentPath = os.path.dirname(__file__)
@@ -93,11 +98,11 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
                 <h2>{} > {}<h2>
                 <h3>Essai numéro : {}</h3>
                 <h1>{}</h1>""".format(firstBorne, lastBorne, counter, newLink))
-            if len(allLinksVisited) > 0:
+            if len(allLinksVisited) > 1:
                 f.write("""
                 <h2>Page d'avant : {}</h2>
                 <button onclick="goBackJS(`{}`)">Revenir en arrière ? (coute deux coups)</button>
-                """.format(allLinksVisited[-1], allLinksVisited[-1])) #allLinksVisited[-1] représente le dernier lien du tableau de tous les liens parcouru
+                """.format(allTitlesVisited[-2], allLinksVisited[-2])) #allLinksVisited[-1] représente le dernier lien du tableau de tous les liens parcouru
             for i in range(len(allGoodLinksUnique)):
                 f.write("""        <button onclick="nextPage(`{}`)">{}</button><br>\n""".format(allGoodLinksUrl[i], allGoodLinksTitre[i]))
                     
@@ -120,11 +125,6 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
             </html>
             """)
             f.close()
-            if addTab:
-                print("Génération du tableau : {}".format(borneUrl))
-                allLinksVisited.append(borneUrl)
-            
-            print(allLinksVisited)
 
             if not firstLoad:
                 eel.reloadPage()
