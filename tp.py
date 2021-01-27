@@ -72,6 +72,8 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
                 if m:
                     allGoodLinksUrl.append(m.group(1))
 
+            if not addTab:
+                allLinksVisited.pop()
 
             #cr√©ation de l'html et insertion des donn√©es
             counter = counter + counterPoints
@@ -91,7 +93,7 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
                 <h2>{} > {}<h2>
                 <h3>Essai num√©ro : {}</h3>
                 <h1>{}</h1>""".format(firstBorne, lastBorne, counter, newLink))
-            if len(allLinksVisited) > 1:
+            if len(allLinksVisited) > 0:
                 f.write("""
                 <h2>Page d'avant : {}</h2>
                 <button onclick="goBackJS(`{}`)">Revenir en arri√®re ? (coute deux coups)</button>
@@ -101,14 +103,17 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
                     
             f.write("""
                     <script>
+                        eel.expose(reloadPage);
+                        function reloadPage() {
+                         document.location.reload();
+                        }
+
                         const nextPage = (url) => {
                             eel.getLinks(url)
-                            document.location.reload();
                         }
 
                         const goBackJS = (url) => {
                             eel.goBack(url)
-                            document.location.reload();
                         }
                     </script>
                 </body>
@@ -116,8 +121,13 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
             """)
             f.close()
             if addTab:
+                print("G√©n√©ration du tableau : {}".format(borneUrl))
                 allLinksVisited.append(borneUrl)
+            
             print(allLinksVisited)
+
+            if not firstLoad:
+                eel.reloadPage()
 
 @eel.expose
 def goBack(url):
@@ -145,14 +155,10 @@ def endGame():
     </html>
     """.format(firstBorne, lastBorne, counter))
 
-            
-
     f.close()
 
 firstBorne, firstBorneUrl = getBorne()
 lastBorne, lastBorneUrl = getBorne()
-
-allLinksVisited.append(firstBorneUrl)
 
 print("{} > {}".format(firstBorne, lastBorne))
 getLinks(firstBorneUrl)
