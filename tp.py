@@ -16,7 +16,8 @@ allTitlesVisited = []
 
 #Fonction renvoyant l'url d'une page au pif ainsi que son titre
 def getBorne():
-    with urllib.request.urlopen('https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Page_au_hasard') as response:
+    cleanUrl = urllib.parse.quote('https://fr.wikipedia.org/wiki/Spécial:Page_au_hasard', safe=':/')
+    with urllib.request.urlopen(cleanUrl) as response:
         webpage = response.read()
         soup = BeautifulSoup(webpage, 'html.parser')
         h1 = soup.find("h1").get_text()
@@ -31,7 +32,8 @@ lastBorne, lastBorneUrl = getBorne()
 def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en réalité la fin de l'url d'une page wikipedia
     print(borneUrl)
     validLinks = []
-    with urllib.request.urlopen("https://fr.wikipedia.org/wiki/{}".format(borneUrl)) as response:
+    cleanUrl = urllib.parse.quote("https://fr.wikipedia.org/wiki/{}".format(borneUrl), safe=':/')
+    with urllib.request.urlopen(cleanUrl) as response:
         webpage = response.read()
         soup = BeautifulSoup(webpage, 'html.parser')
         
