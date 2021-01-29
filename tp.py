@@ -16,7 +16,12 @@ allTitlesVisited = []
 
 #Fonction renvoyant l'url d'une page au pif ainsi que son titre
 def getBorne():
-    cleanUrl = urllib.parse.quote('https://fr.wikipedia.org/wiki/Spécial:Page_au_hasard', safe=':/')
+    global firstLoad
+   
+    if(firstLoad):
+        cleanUrl = urllib.parse.quote('https://fr.wikipedia.org/wiki/Spécial:Page_au_hasard', safe=':/')
+    else:
+        cleanUrl = 'https://fr.wikipedia.org/wiki/Spécial:Page_au_hasard'
     with urllib.request.urlopen(cleanUrl) as response:
         webpage = response.read()
         soup = BeautifulSoup(webpage, 'html.parser')
@@ -30,14 +35,21 @@ lastBorne, lastBorneUrl = getBorne()
 #GetLinks permet à partir d'un lien wiki de générer une page html avec tous les liens et d'autres trucs
 @eel.expose #Pour qu'on puisse appeller la fonction dans le js de l'html que l'on génère
 def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en réalité la fin de l'url d'une page wikipedia
+    global firstLoad
+    
     print(borneUrl)
     validLinks = []
-    cleanUrl = urllib.parse.quote("https://fr.wikipedia.org/wiki/{}".format(borneUrl), safe=':/')
+    if(firstLoad):
+        cleanUrl = urllib.parse.quote("https://fr.wikipedia.org/wiki/{}".format(borneUrl), safe=':/')
+    else:
+        print('aaaaaaaaaaaaaaaaaaaaaa')
+        cleanUrl = "https://fr.wikipedia.org/wiki/{}".format(borneUrl)
+    print(firstLoad)
+    print(cleanUrl)
     with urllib.request.urlopen(cleanUrl) as response:
         webpage = response.read()
         soup = BeautifulSoup(webpage, 'html.parser')
         
-        global firstLoad
         global newLink
         global counter
 
@@ -50,7 +62,6 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
 
         if(newLink == lastBorne):
             if(firstLoad):
-
                 firstBorne, firstBorneUrl = getBorne()
                 lastBorne, lastBorneUrl = getBorne()
                 getLinks(firstBorneUrl)
@@ -93,7 +104,6 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
                 allLinksVisited.pop()
                 allTitlesVisited.pop()
 
-            print(allLinksVisited)
             print(allTitlesVisited)
             #création de l'html et insertion des données
             counter = counter + counterPoints
@@ -107,21 +117,36 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Wikigame</title>    
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="style.css">
+                <script src="https://kit.fontawesome.com/373a1c097b.js" crossorigin="anonymous"></script>
                 <script type="text/javascript" src="/eel.js"></script>
             </head>
                 <body>
-                <h2>{} > {}<h2>
-                <h3>Essai numéro : {}</h3>
-                <h1>{}</h1>""".format(firstBorne, lastBorne, counter, newLink))
+                <nav>
+                    <p>{} > {}<p/>
+                </nav>
+                <header>
+                    <section>
+                        <h1>{}</h1>
+                    </section>
+                    <section>
+                        <h1>Coup n°{}</h1>
+                    </section>
+                </header>""".format(firstBorne, lastBorne, newLink, counter))
             if len(allLinksVisited) > 1:
                 f.write("""
-                <h2>Page d'avant : {}</h2>
-                <button onclick="goBackJS(`{}`)">Revenir en arrière ? (coute deux coups)</button>
+                <div class='previous-div'>
+                    <h2>Page d'avant : {}</h2>
+                    <button onclick="goBackJS(`{}`)"><i class="fas fa-backward"></i> Revenir en arrière ? (coute deux coups)</button>
+                </div>
                 """.format(allTitlesVisited[-2], allLinksVisited[-2])) #allLinksVisited[-1] représente le dernier lien du tableau de tous les liens parcouru
+            f.write('<article class="wiki-links">')
             for i in range(len(allGoodLinksUnique)):
-                f.write("""        <button onclick="nextPage(`{}`)">{}</button><br>\n""".format(allGoodLinksUrl[i], allGoodLinksTitre[i]))
-                    
+                f.write("""        <section onclick='nextPage(`{}`)'><p>{}</p></section>\n""".format(allGoodLinksUrl[i], allGoodLinksTitre[i]))
             f.write("""
+            </article>
                     <script>
                         eel.expose(reloadPage);
                         function reloadPage() {

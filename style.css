@@ -1,0 +1,113 @@
+/*Polices :
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Serif', serif;
+*/
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav p {
+  color: rgb(35, 35, 35);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+header h1 {
+  font-family: "PT Serif", serif;
+  font-size: 50px;
+}
+
+.previous-div {
+  margin-top: -45px;
+  margin-bottom: 50px;
+}
+
+.previous-div h2 {
+  font-size: 22px;
+  color: rgb(50, 50, 50);
+  margin-top: -5px;
+  margin-bottom: 30px;
+}
+
+.previous-div button {
+  background-color: rgb(50, 50, 50);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.previous-div button:hover {
+  cursor: pointer;
+  transform: rotate(-1deg);
+}
+
+.previous-div button:active {
+  transform: rotate(-1deg) scale(0.98);
+}
+
+.previous-div button i {
+  margin-right: 8px;
+  transition: 0.3s;
+}
+
+.wiki-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.wiki-links section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  height: 100px;
+  width: 300px;
+
+  border-radius: 2px;
+  background: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.wiki-links section:hover {
+  cursor: pointer;
+  transform: scale(0.98) rotate(1deg);
+}
+
+.wiki-links section:active {
+  transform: scale(0.95);
+}
+
+.wiki-links section p {
+  text-align: center;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
