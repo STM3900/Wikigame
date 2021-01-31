@@ -32,6 +32,11 @@ def getBorne():
 firstBorne, firstBorneUrl = getBorne()
 lastBorne, lastBorneUrl = getBorne()
 
+firstBorne = "Gnocchi"
+firstBorneUrl = "Gnocchi"
+lastBorne = "Grenoble"
+lastBorneUrl = "Grenoble"
+
 #GetLinks permet à partir d'un lien wiki de générer une page html avec tous les liens et d'autres trucs
 @eel.expose #Pour qu'on puisse appeller la fonction dans le js de l'html que l'on génère
 def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en réalité la fin de l'url d'une page wikipedia
@@ -66,11 +71,9 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
                 lastBorne, lastBorneUrl = getBorne()
                 getLinks(firstBorneUrl)
             else:
+                print("Victoire !")
                 endGame()
         else:
-            if firstLoad:
-                firstLoad = False
-
             div = soup.find("div", {"id": "mw-content-text"})
             allLinks = div.find_all("a")
 
@@ -176,6 +179,8 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
 
             if not firstLoad:
                 eel.reloadPage()
+            else:
+                firstLoad = False
 
 @eel.expose
 def goBack(url):
@@ -193,17 +198,24 @@ def endGame():
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wikigame</title>    
+        <title>Wikigame | Victoire !</title>    
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/373a1c097b.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="/eel.js"></script>
     </head>
         <body>
-        <h1>Bravo ! Vous êtes arrivé sur la bonne page ! ({} > {})<h1>
-        <h2>Il vous a fallu {} essai(s)</h2>
+        <div class="victory-div">
+            <h1>Bravo ! Vous êtes arrivé sur la bonne page ! ({} > {})<h1>
+            <h2>Il vous a fallu {} essai(s)</h2>
+        </div>
         </body>
     </html>
     """.format(firstBorne, lastBorne, counter))
 
     f.close()
+    eel.reloadPage()
 
 print("{} > {}".format(firstBorne, lastBorne))
 getLinks(firstBorneUrl)

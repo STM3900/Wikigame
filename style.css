@@ -116,6 +116,22 @@ header h1 {
   margin-left: 10px;
 }
 
+.victory-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.victory-div h1 {
+  font-family: "PT Serif", serif;
+  font-size: 50px;
+}
+
 .hide {
   opacity: 0;
 }
