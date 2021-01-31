@@ -37,12 +37,12 @@ lastBorne, lastBorneUrl = getBorne()
 def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en réalité la fin de l'url d'une page wikipedia
     global firstLoad
     
-    print(borneUrl)
     validLinks = []
-    if(firstLoad):
+    if(firstLoad or not("%" in borneUrl)):
+        print('Formatage du lien !')
         cleanUrl = urllib.parse.quote("https://fr.wikipedia.org/wiki/{}".format(borneUrl), safe=':/')
     else:
-        print('aaaaaaaaaaaaaaaaaaaaaa')
+        print('Lien ok, pas besoin de formater')
         cleanUrl = "https://fr.wikipedia.org/wiki/{}".format(borneUrl)
     print(firstLoad)
     print(cleanUrl)
@@ -139,7 +139,7 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
                 f.write("""
                 <div class='previous-div'>
                     <h2>Page d'avant : {}</h2>
-                    <button onclick="goBackJS(`{}`)"><i class="fas fa-backward"></i> Revenir en arrière ? (coute deux coups)</button>
+                    <button onclick="goBackJS(`{}`)"><i class="fas fa-backward"></i>Revenir en arrière ? (coute deux coups)</button>
                 </div>
                 """.format(allTitlesVisited[-2], allLinksVisited[-2])) #allLinksVisited[-1] représente le dernier lien du tableau de tous les liens parcouru
             f.write('<article class="wiki-links">')
