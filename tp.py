@@ -148,17 +148,25 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
             f.write("""
             </article>
                     <script>
+                        const hideLinks = document.querySelector('.wiki-links');
+
                         eel.expose(reloadPage);
                         function reloadPage() {
                          document.location.reload();
                         }
 
+                        const hideLinksFunction = () => {
+                            hideLinks.classList.add('hide');
+                        }
+
                         const nextPage = (url) => {
-                            eel.getLinks(url)
+                            hideLinksFunction();
+                            eel.getLinks(url);
                         }
 
                         const goBackJS = (url) => {
-                            eel.goBack(url)
+                            hideLinksFunction();
+                            eel.goBack(url);
                         }
                     </script>
                 </body>

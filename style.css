@@ -78,6 +78,10 @@ header h1 {
   align-content: center;
   flex-wrap: wrap;
   gap: 1em;
+
+  animation-name: fade-in;
+  animation-duration: 0.3s;
+  transition: 0.3s;
 }
 
 .wiki-links section {
@@ -112,6 +116,10 @@ header h1 {
   margin-left: 10px;
 }
 
+.hide {
+  opacity: 0;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -119,15 +127,5 @@ header h1 {
 
   to {
     opacity: 1;
-  }
-}
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
   }
 }
