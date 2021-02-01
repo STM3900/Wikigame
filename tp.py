@@ -206,13 +206,16 @@ def endGame():
         <script type="text/javascript" src="/eel.js"></script>
     </head>
         <body>
+        <nav>
+            <p>{} > {}<p/>
+        </nav>
         <div class="victory-div">
-            <h1>Bravo ! Vous êtes arrivé sur la bonne page ! ({} > {})<h1>
-            <h2>Il vous a fallu {} essai(s)</h2>
+            <h1>Victoire !<h1>
+            <h2>Il vous a fallu {} {}</h2>
         </div>
         </body>
     </html>
-    """.format(firstBorne, lastBorne, counter))
+    """.format(firstBorne, lastBorne, counter, "coup" if counter < 2 else "coups" ))
 
     f.close()
     eel.reloadPage()
