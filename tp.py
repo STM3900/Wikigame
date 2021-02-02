@@ -34,8 +34,8 @@ lastBorne, lastBorneUrl = getBorne()
 
 firstBorne = "Gnocchi"
 firstBorneUrl = "Gnocchi"
-lastBorne = "Grenoble"
-lastBorneUrl = "Grenoble"
+lastBorne = "Italie"
+lastBorneUrl = "Italie"
 
 #GetLinks permet à partir d'un lien wiki de générer une page html avec tous les liens et d'autres trucs
 @eel.expose #Pour qu'on puisse appeller la fonction dans le js de l'html que l'on génère
@@ -188,6 +188,7 @@ def goBack(url):
 
 
 def endGame():
+    allTitlesVisited.append(lastBorne)
     #création de l'html et insertion des données
     currentPath = os.path.dirname(__file__)
     currentPath = os.path.join(currentPath,"wiki.html")
@@ -214,8 +215,11 @@ def endGame():
             <h2>Il vous a fallu {} {}</h2>
             <p>votre parcours :</p>
             <p>""".format(firstBorne, lastBorne, counter, "coup" if counter < 2 else "coups" ))
-    for i in allTitlesVisited:
-        f.write("""        <span>{} ></span>""".format(i))
+    for i in range(len(allTitlesVisited)):
+        if(i != len(allTitlesVisited) - 1):
+            f.write("""        <span>{} ></span>""".format(allTitlesVisited[i]))
+        else:
+            f.write("""        <span>{}</span>""".format(allTitlesVisited[i]))
     f.write(""" 
         </p>
         </div>
