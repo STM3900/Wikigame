@@ -134,7 +134,8 @@ header h1 {
 }
 
 .victory-div h2 {
-  font-size: 24px;
+  margin-top: 5px;
+  font-size: 22px;
   color: rgb(50, 50, 50);
 }
 

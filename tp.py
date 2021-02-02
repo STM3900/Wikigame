@@ -212,10 +212,16 @@ def endGame():
         <div class="victory-div">
             <h1>Victoire !<h1>
             <h2>Il vous a fallu {} {}</h2>
+            <p>votre parcours :</p>
+            <p>""".format(firstBorne, lastBorne, counter, "coup" if counter < 2 else "coups" ))
+    for i in allTitlesVisited:
+        f.write("""        <span>{} ></span>""".format(i))
+    f.write(""" 
+        </p>
         </div>
         </body>
     </html>
-    """.format(firstBorne, lastBorne, counter, "coup" if counter < 2 else "coups" ))
+    """)
 
     f.close()
     eel.reloadPage()
