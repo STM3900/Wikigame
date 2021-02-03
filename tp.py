@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import urllib.request
 import os
 import eel
+import time
 
 import re
 
@@ -32,8 +33,8 @@ def getBorne():
 firstBorne, firstBorneUrl = getBorne()
 lastBorne, lastBorneUrl = getBorne()
 
-firstBorne = "Gnocchi"
-firstBorneUrl = "Gnocchi"
+firstBorne = "Pok√©mon"
+firstBorneUrl = "Pok√©mon"
 lastBorne = "Italie"
 lastBorneUrl = "Italie"
 
@@ -80,7 +81,7 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
             allGoodLinks = []
             for i in allLinks:
                 iString = str(i)
-                if '/wiki/' in iString and ':' not in iString:
+                if "/wiki/" in iString and ':' not in iString and "src=" not in iString:
                     allGoodLinks.append(i)
 
             allGoodLinksUnique = list(dict.fromkeys(allGoodLinks))
@@ -176,9 +177,13 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
             </html>
             """)
             f.close()
-
             if not firstLoad:
-                eel.reloadPage()
+                try:
+                    eel.reloadPage()
+                except:
+                    print("YA EU L'ERREUR AAAAAAAAAAAAAA")
+                    time.sleep(2)
+                    eel.reloadPage()
             else:
                 firstLoad = False
 
