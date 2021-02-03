@@ -213,7 +213,6 @@ def endGame():
         <div class="victory-div">
             <h1>Victoire !<h1>
             <h2>Il vous a fallu {} {}</h2>
-            <p>votre parcours :</p>
             <p>""".format(firstBorne, lastBorne, counter, "coup" if counter < 2 else "coups" ))
     for i in range(len(allTitlesVisited)):
         if(i != len(allTitlesVisited) - 1):
