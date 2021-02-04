@@ -33,8 +33,8 @@ def getBorne():
 firstBorne, firstBorneUrl = getBorne()
 lastBorne, lastBorneUrl = getBorne()
 
-firstBorne = "Pok√©mon"
-firstBorneUrl = "Pok√©mon"
+firstBorne = "Gnocchi"
+firstBorneUrl = "Gnocchi"
 lastBorne = "Italie"
 lastBorneUrl = "Italie"
 
@@ -128,6 +128,7 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
                 <script type="text/javascript" src="/eel.js"></script>
             </head>
                 <body>
+                <aside class="loading hide">Chargement...</aside>
                 <nav>
                     <p>{} > {}<p/>
                 </nav>
@@ -136,7 +137,7 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
                         <h1>{}</h1>
                     </section>
                     <section>
-                        <h1>Coup n¬∞{}</h1>
+                        <h1 class="counter">Coup n¬∞{}</h1>
                     </section>
                 </header>""".format(firstBorne, lastBorne, newLink, counter))
             if len(allLinksVisited) > 1:
@@ -153,6 +154,7 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
             </article>
                     <script>
                         const hideLinks = document.querySelector('.wiki-links');
+                        const loading = document.querySelector('.loading');
 
                         eel.expose(reloadPage);
                         function reloadPage() {
@@ -161,6 +163,8 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
 
                         const hideLinksFunction = () => {
                             hideLinks.classList.add('hide');
+                            loading.style.animationPlayState = "running";
+                            loading.classList.remove('hide');
                         }
 
                         const nextPage = (url) => {
