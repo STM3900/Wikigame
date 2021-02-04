@@ -77,6 +77,17 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
         else:
             div = soup.find("div", {"id": "mw-content-text"})
             allLinks = div.find_all("a")
+            descriptionSeleteur = div.find("b")
+            description2 = descriptionSeleteur.find_parent("p")
+            description = description2.find_all(text=True)
+            descriptionFinal = []
+
+            for i in description:
+                iString = str(i)
+                #if "[" not in iString and "]" not in iString:
+                descriptionFinal.append(i)
+            print(descriptionFinal)
+            print(''.join(descriptionFinal))
 
             allGoodLinks = []
             for i in allLinks:
@@ -147,7 +158,9 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
                     <button onclick="goBackJS(`{}`)"><i class="fas fa-backward"></i>Revenir en arri√®re ? (coute deux coups)</button>
                 </div>
                 """.format(allTitlesVisited[-2], allLinksVisited[-2])) #allLinksVisited[-1] repr√©sente le dernier lien du tableau de tous les liens parcouru
-            f.write('<article class="wiki-links">')
+            f.write("""
+                <p class="">{}<p>
+                <article class="wiki-links">""".format(''.join(descriptionFinal)))
             for i in range(len(allGoodLinksUnique)):
                 f.write("""        <section onclick='nextPage(`{}`)'><p>{}</p></section>\n""".format(allGoodLinksUrl[i], allGoodLinksTitre[i]))
             f.write("""

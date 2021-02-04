@@ -83,6 +83,10 @@ header h1 {
   transition: 0.3s;
 }
 
+.description {
+  margin-bottom: 25px;
+}
+
 .wiki-links {
   display: flex;
   flex-direction: row;
