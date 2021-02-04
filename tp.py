@@ -186,8 +186,7 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
                     eel.reloadPage()
                 except:
                     print("YA EU L'ERREUR AAAAAAAAAAAAAA")
-                    time.sleep(2)
-                    eel.reloadPage()
+                    getLinks(borneUrl)
             else:
                 firstLoad = False
 
