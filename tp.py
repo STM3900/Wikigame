@@ -83,19 +83,13 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
             descriptionFinal = []
 
             descCounter = 0
-            descValid = True
             for i in description:
                 iString = str(i)
-                if not(iString.isnumeric() and description[descCounter-1] == '[' and description[descCounter+1] == ']') and descValid:
+                if not((iString == '[' and description[descCounter + 1].isdigit()) or iString.isdigit() or (iString == ']' and description[descCounter - 1].isdigit()) or (iString == ',' and description[descCounter - 1] == ']' and description[descCounter + 1] == '[')):
                     descriptionFinal.append(i)
-                else:
-                    descriptionFinal.pop()
-                    if not descValid:
-                        descValid = True
-                    else:
-                        descValid = False
                 descCounter = descCounter + 1
 
+            print(description)
             print(''.join(description))
             print(''.join(descriptionFinal))
 
