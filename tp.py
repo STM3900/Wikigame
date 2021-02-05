@@ -82,11 +82,21 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
             description = description2.find_all(text=True)
             descriptionFinal = []
 
+            descCounter = 0
+            descValid = True
             for i in description:
                 iString = str(i)
-                #if "[" not in iString and "]" not in iString:
-                descriptionFinal.append(i)
-            print(descriptionFinal)
+                if not(iString.isnumeric() and description[descCounter-1] == '[' and description[descCounter+1] == ']') and descValid:
+                    descriptionFinal.append(i)
+                else:
+                    descriptionFinal.pop()
+                    if not descValid:
+                        descValid = True
+                    else:
+                        descValid = False
+                descCounter = descCounter + 1
+
+            print(''.join(description))
             print(''.join(descriptionFinal))
 
             allGoodLinks = []
@@ -159,7 +169,7 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
                 </div>
                 """.format(allTitlesVisited[-2], allLinksVisited[-2])) #allLinksVisited[-1] repr√©sente le dernier lien du tableau de tous les liens parcouru
             f.write("""
-                <p class="">{}<p>
+                <p class="description">{}<p>
                 <article class="wiki-links">""".format(''.join(descriptionFinal)))
             for i in range(len(allGoodLinksUnique)):
                 f.write("""        <section onclick='nextPage(`{}`)'><p>{}</p></section>\n""".format(allGoodLinksUrl[i], allGoodLinksTitre[i]))
