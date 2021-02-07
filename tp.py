@@ -93,7 +93,7 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
                 asideMenu.decompose()
 
             description2 = div.find("p", {"class": None})
-            print(description2)
+            #print(description2)
 
             descriptionStyle = description2.find("style")
             if(descriptionStyle != None):
@@ -111,10 +111,10 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
 
             
             descdescriptionFinal = ''.join(descriptionFinal)
-            print(descdescriptionFinal)
+            #print(descdescriptionFinal)
             descdescriptionFinal = descdescriptionFinal.replace("(√âcouter)", '')
             descdescriptionFinal = descdescriptionFinal.replace(" ,", ',')
-            print(descdescriptionFinal)
+            #print(descdescriptionFinal)
             
             allGoodLinks = []
             for i in allLinks:
@@ -189,7 +189,10 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r√
             f.write("""
                 <article class="wiki-links">""")
             for i in range(len(allGoodLinksUnique)):
-                f.write("""        <section onclick='nextPage(`{}`)'><p>{}</p></section>\n""".format(allGoodLinksUrl[i], allGoodLinksTitre[i]))
+                try:
+                    f.write("""        <section onclick='nextPage(`{}`)'><p>{}</p></section>\n""".format(allGoodLinksUrl[i], allGoodLinksTitre[i]))
+                except:
+                    print("Erreur de out of range, mais je sais pas pourquoi √ßa a lieu")
             f.write("""
             </article>
                     <script>
