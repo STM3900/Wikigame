@@ -75,25 +75,24 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
 
             toolBox = div.find_all("div", {"class": "bandeau-container"})
             if(toolBox == None):
-                print("pas de bandeau détecté, tout va bien")
+                print("pas de bandeau détecté, pas de traitement requis")
             else:
-                print("bandeau détecté, on le tej")
+                print("bandeau détecté, suppression...")
                 for i in range(len(toolBox)):
                     toolBox[i].decompose()
 
 
             asideMenu = div.find("div", {"class": "infobox_v3"})
             if(asideMenu == None):
-                print("Pas de menu v3 détecté, tranquille")
+                print("Pas de menu v3 détecté, pas de traitements requis")
                 asideMenu = div.find("table", {"class": ["infobox_v2", "infobox", "DebutCarte"]})
                 if(asideMenu != None):
                     asideMenu.decompose()
             else:
-                print("Menu v3 détecté, on le tej")
+                print("Menu v3 détecté,suppression...")
                 asideMenu.decompose()
 
             description2 = div.find("p", {"class": None})
-            #print(description2)
 
             descriptionStyle = description2.find("style")
             if(descriptionStyle != None):
@@ -111,10 +110,8 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
 
             
             descdescriptionFinal = ''.join(descriptionFinal)
-            #print(descdescriptionFinal)
             descdescriptionFinal = descdescriptionFinal.replace("(Écouter)", '')
             descdescriptionFinal = descdescriptionFinal.replace(" ,", ',')
-            #print(descdescriptionFinal)
             
             allGoodLinks = []
             for i in allLinks:
@@ -228,12 +225,10 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
                 try:
                     eel.reloadPage()
                 except:
-                    print("YA EU L'ERREUR AAAAAAAAAAAAAA")
-                    time.sleep(1)
-                    getLinks(borneUrl)
+                    print("Erreur connue mais sans solution pour cette version - relancez le script")
             else:
                 firstLoad = False
-            print("\n\n\n")
+            print("\n\n")
 
 @eel.expose
 def goBack(url):
