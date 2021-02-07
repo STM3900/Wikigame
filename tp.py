@@ -33,8 +33,8 @@ def getBorne():
 firstBorne, firstBorneUrl = getBorne()
 lastBorne, lastBorneUrl = getBorne()
 
-firstBorne = "Gnocchi"
-firstBorneUrl = "Gnocchi"
+firstBorne = "Groupe frère"
+firstBorneUrl = "Groupe_frère"
 lastBorne = "Italie"
 lastBorneUrl = "Italie"
 
@@ -77,6 +77,16 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
         else:
             div = soup.find("div", {"id": "mw-content-text"})
             allLinks = div.find_all("a")
+
+            try:
+                toolBox = div.find_all("div", {"class": "bandeau-container"})
+            except:
+                print("pas de bandeau détecté, tout va bien")
+            else:
+                print("bandeau détecté, ont le tej")
+                for i in range(len(toolBox)):
+                    toolBox[i].decompose()
+
             descriptionSeleteur = div.find("b")
             description2 = descriptionSeleteur.find_parent("p")
             description = description2.find_all(text=True)
@@ -90,8 +100,6 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
                 descCounter = descCounter + 1
 
             print(description)
-            print(''.join(description))
-            print(''.join(descriptionFinal))
 
             allGoodLinks = []
             for i in allLinks:
@@ -257,4 +265,4 @@ def endGame():
 print("{} > {}".format(firstBorne, lastBorne))
 getLinks(firstBorneUrl)
 
-eel.start('wiki.html', mode="chrome-app")
+eel.start('wiki.html', mode="firefox-app")
