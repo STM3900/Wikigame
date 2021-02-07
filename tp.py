@@ -33,11 +33,6 @@ def getBorne():
 firstBorne, firstBorneUrl = getBorne()
 lastBorne, lastBorneUrl = getBorne()
 
-firstBorne = "Groupe frère"
-firstBorneUrl = "Groupe_frère"
-lastBorne = "Italie"
-lastBorneUrl = "Italie"
-
 #GetLinks permet à partir d'un lien wiki de générer une page html avec tous les liens et d'autres trucs
 @eel.expose #Pour qu'on puisse appeller la fonction dans le js de l'html que l'on génère
 def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en réalité la fin de l'url d'une page wikipedia
@@ -78,17 +73,32 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
             div = soup.find("div", {"id": "mw-content-text"})
             allLinks = div.find_all("a")
 
-            try:
-                toolBox = div.find_all("div", {"class": "bandeau-container"})
-            except:
+            toolBox = div.find_all("div", {"class": "bandeau-container"})
+            if(toolBox == None):
                 print("pas de bandeau détecté, tout va bien")
             else:
-                print("bandeau détecté, ont le tej")
+                print("bandeau détecté, on le tej")
                 for i in range(len(toolBox)):
                     toolBox[i].decompose()
 
-            descriptionSeleteur = div.find("b")
-            description2 = descriptionSeleteur.find_parent("p")
+
+            asideMenu = div.find("div", {"class": "infobox_v3"})
+            if(asideMenu == None):
+                print("Pas de menu v3 détecté, tranquille")
+                asideMenu = div.find("table", {"class": ["infobox_v2", "infobox", "DebutCarte"]})
+                if(asideMenu != None):
+                    asideMenu.decompose()
+            else:
+                print("Menu v3 détecté, on le tej")
+                asideMenu.decompose()
+
+            description2 = div.find("p", {"class": None})
+            print(description2)
+
+            descriptionStyle = description2.find("style")
+            if(descriptionStyle != None):
+                descriptionStyle.decompose()
+
             description = description2.find_all(text=True)
             descriptionFinal = []
 
@@ -99,8 +109,13 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
                     descriptionFinal.append(i)
                 descCounter = descCounter + 1
 
-            print(description)
-
+            
+            descdescriptionFinal = ''.join(descriptionFinal)
+            print(descdescriptionFinal)
+            descdescriptionFinal = descdescriptionFinal.replace("(Écouter)", '')
+            descdescriptionFinal = descdescriptionFinal.replace(" ,", ',')
+            print(descdescriptionFinal)
+            
             allGoodLinks = []
             for i in allLinks:
                 iString = str(i)
@@ -172,7 +187,7 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
                 """.format(allTitlesVisited[-2], allLinksVisited[-2])) #allLinksVisited[-1] représente le dernier lien du tableau de tous les liens parcouru
             f.write("""
                 <p class="description">{}<p>
-                <article class="wiki-links">""".format(''.join(descriptionFinal)))
+                <article class="wiki-links">""".format(descdescriptionFinal))
             for i in range(len(allGoodLinksUnique)):
                 f.write("""        <section onclick='nextPage(`{}`)'><p>{}</p></section>\n""".format(allGoodLinksUrl[i], allGoodLinksTitre[i]))
             f.write("""
@@ -211,9 +226,11 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
                     eel.reloadPage()
                 except:
                     print("YA EU L'ERREUR AAAAAAAAAAAAAA")
+                    time.sleep(1)
                     getLinks(borneUrl)
             else:
                 firstLoad = False
+            print("\n\n\n")
 
 @eel.expose
 def goBack(url):
