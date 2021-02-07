@@ -37,6 +37,7 @@ header h1 {
   font-family: "PT Serif", serif;
   font-size: 50px;
   margin-top: 70px;
+  margin-bottom: 15px;
 }
 
 .counter {
@@ -45,7 +46,6 @@ header h1 {
 }
 
 .previous-div {
-  margin-top: -45px;
   margin-bottom: 50px;
 }
 
@@ -85,6 +85,8 @@ header h1 {
 
 .description {
   margin-bottom: 25px;
+  width: 75%;
+  text-align: justify;
 }
 
 .wiki-links {

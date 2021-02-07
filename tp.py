@@ -177,17 +177,17 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
                     <section>
                         <h1 class="counter">Coup n°{}</h1>
                     </section>
-                </header>""".format(firstBorne, lastBorne, newLink, counter))
+                </header>
+                <p class="description">{}<p>""".format(firstBorne, lastBorne, newLink, counter, descdescriptionFinal))
             if len(allLinksVisited) > 1:
                 f.write("""
                 <div class='previous-div'>
-                    <h2>Page d'avant : {}</h2>
+                    <h2>Page précédente : {}</h2>
                     <button onclick="goBackJS(`{}`)"><i class="fas fa-backward"></i>Revenir en arrière ? (coute deux coups)</button>
                 </div>
                 """.format(allTitlesVisited[-2], allLinksVisited[-2])) #allLinksVisited[-1] représente le dernier lien du tableau de tous les liens parcouru
             f.write("""
-                <p class="description">{}<p>
-                <article class="wiki-links">""".format(descdescriptionFinal))
+                <article class="wiki-links">""")
             for i in range(len(allGoodLinksUnique)):
                 f.write("""        <section onclick='nextPage(`{}`)'><p>{}</p></section>\n""".format(allGoodLinksUrl[i], allGoodLinksTitre[i]))
             f.write("""
