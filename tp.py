@@ -15,15 +15,20 @@ counter = 0
 allLinksVisited = []
 allTitlesVisited = []
 
+def formatLink(link = "Spécial:Page_au_hasard"):
+    global firstLoad
+    if(firstLoad or not('%' in link)):
+        print('Formatage du lien !')
+        cleanUrl = urllib.parse.quote("https://fr.wikipedia.org/wiki/{}".format(link), safe=':/')
+    else:
+        print('Lien ok, pas besoin de formater')
+        cleanUrl = "https://fr.wikipedia.org/wiki/{}".format(link)
+
+    return cleanUrl
+
 #Fonction renvoyant l'url d'une page au pif ainsi que son titre
 def getBorne():
-    global firstLoad
-   
-    if(firstLoad):
-        cleanUrl = urllib.parse.quote('https://fr.wikipedia.org/wiki/Spécial:Page_au_hasard', safe=':/')
-    else:
-        cleanUrl = 'https://fr.wikipedia.org/wiki/Spécial:Page_au_hasard'
-    with urllib.request.urlopen(cleanUrl) as response:
+    with urllib.request.urlopen(formatLink()) as response:
         webpage = response.read()
         soup = BeautifulSoup(webpage, 'html.parser')
         h1 = soup.find("h1").get_text()
@@ -37,17 +42,7 @@ lastBorne, lastBorneUrl = getBorne()
 @eel.expose #Pour qu'on puisse appeller la fonction dans le js de l'html que l'on génère
 def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en réalité la fin de l'url d'une page wikipedia
     global firstLoad
-    
-    validLinks = []
-    if(firstLoad or not("%" in borneUrl)):
-        print('Formatage du lien !')
-        cleanUrl = urllib.parse.quote("https://fr.wikipedia.org/wiki/{}".format(borneUrl), safe=':/')
-    else:
-        print('Lien ok, pas besoin de formater')
-        cleanUrl = "https://fr.wikipedia.org/wiki/{}".format(borneUrl)
-    print(firstLoad)
-    print(cleanUrl)
-    with urllib.request.urlopen(cleanUrl) as response:
+    with urllib.request.urlopen(formatLink(borneUrl)) as response:
         webpage = response.read()
         soup = BeautifulSoup(webpage, 'html.parser')
         
@@ -164,6 +159,7 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
                 <link rel="stylesheet" href="style.css">
                 <script src="https://kit.fontawesome.com/373a1c097b.js" crossorigin="anonymous"></script>
                 <script type="text/javascript" src="/eel.js"></script>
+                <script src="js/reload.js"></script>
             </head>
                 <body>
                 <aside class="loading hide">Chargement...</aside>
@@ -195,31 +191,7 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
                     print("Erreur de out of range, mais je sais pas pourquoi ça a lieu")
             f.write("""
             </article>
-                    <script>
-                        const hideLinks = document.querySelector('.wiki-links');
-                        const loading = document.querySelector('.loading');
-
-                        eel.expose(reloadPage);
-                        function reloadPage() {
-                         document.location.reload();
-                        }
-
-                        const hideLinksFunction = () => {
-                            hideLinks.classList.add('hide');
-                            loading.style.animationPlayState = "running";
-                            loading.classList.remove('hide');
-                        }
-
-                        const nextPage = (url) => {
-                            hideLinksFunction();
-                            eel.getLinks(url);
-                        }
-
-                        const goBackJS = (url) => {
-                            hideLinksFunction();
-                            eel.goBack(url);
-                        }
-                    </script>
+                    <script src="js/main.js"></script>
                 </body>
             </html>
             """)
@@ -285,4 +257,4 @@ def endGame():
 print("{} > {}".format(firstBorne, lastBorne))
 getLinks(firstBorneUrl)
 
-eel.start('wiki.html', mode="firefox-app")
+eel.start('wiki.html', mode="chrome-app")
