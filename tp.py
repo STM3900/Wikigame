@@ -15,6 +15,7 @@ counter = 0
 allLinksVisited = []
 allTitlesVisited = []
 
+#Fonction permetant de renvoyer un lien formaté, et prêt ) étre utilisé par urlopen
 def formatLink(link = "Spécial:Page_au_hasard"):
     global firstLoad
     if(firstLoad or not('%' in link)):
@@ -41,11 +42,11 @@ lastBorne, lastBorneUrl = getBorne()
 #GetLinks permet à partir d'un lien wiki de générer une page html avec tous les liens et d'autres trucs
 @eel.expose #Pour qu'on puisse appeller la fonction dans le js de l'html que l'on génère
 def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en réalité la fin de l'url d'une page wikipedia
-    global firstLoad
     with urllib.request.urlopen(formatLink(borneUrl)) as response:
         webpage = response.read()
         soup = BeautifulSoup(webpage, 'html.parser')
         
+        global firstLoad
         global newLink
         global counter
 
