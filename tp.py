@@ -39,6 +39,31 @@ def getBorne():
 firstBorne, firstBorneUrl = getBorne()
 lastBorne, lastBorneUrl = getBorne()
 
+def checkEndGame(title):
+    if title == lastBorne:
+        if firstLoad:
+            firstBorne, firstBorneUrl = getBorne()
+            lastBorne, lastBorneUrl = getBorne()
+            getLinks(firstBorneUrl)
+        else:
+            print("Victoire !")
+            endGame()
+    else:
+        loadpage()
+
+
+def openPage(url):
+    with urllib.request.urlopen(formatLink(url)) as response:
+        webpage = response.read()
+        soup = BeautifulSoup(webpage, 'html.parser')
+
+        global newTitle
+        newTitle = soup.find("h1").get_text()
+
+        checkEndGame(newTitle)
+
+#TODO : terminer la fonction openPage et faire celle pour afficher tous les trucs tavu
+
 #GetLinks permet à partir d'un lien wiki de générer une page html avec tous les liens et d'autres trucs
 @eel.expose #Pour qu'on puisse appeller la fonction dans le js de l'html que l'on génère
 def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en réalité la fin de l'url d'une page wikipedia
@@ -47,7 +72,7 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
         soup = BeautifulSoup(webpage, 'html.parser')
         
         global firstLoad
-        global newLink
+        global newTitle
         global counter
 
         global firstBorne
@@ -55,9 +80,9 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
         global lastBorne
         global lastBorneUrl
 
-        newLink = soup.find("h1").get_text()
+        
 
-        if(newLink == lastBorne):
+        if(newTitle == lastBorne):
             if(firstLoad):
                 firstBorne, firstBorneUrl = getBorne()
                 lastBorne, lastBorneUrl = getBorne()
@@ -137,7 +162,7 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
             if addTab:
                 print("Génération du tableau : {}".format(borneUrl))
                 allLinksVisited.append(borneUrl)
-                allTitlesVisited.append(newLink)
+                allTitlesVisited.append(newTitle)
             else:
                 allLinksVisited.pop()
                 allTitlesVisited.pop()
@@ -175,7 +200,7 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
                         <h1 class="counter">Coup n°{}</h1>
                     </section>
                 </header>
-                <p class="description">{}<p>""".format(firstBorne, lastBorne, newLink, counter, descdescriptionFinal))
+                <p class="description">{}<p>""".format(firstBorne, lastBorne, newTitle, counter, descdescriptionFinal))
             if len(allLinksVisited) > 1:
                 f.write("""
                 <div class='previous-div'>
