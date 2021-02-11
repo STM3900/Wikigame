@@ -14,10 +14,10 @@ const hideLinksFunction = () => {
 //fonctions python > js
 const nextPage = (url) => {
   hideLinksFunction();
-  eel.getLinks(url);
+  eel.initiate(url);
 };
 
 const goBackJS = (url) => {
   hideLinksFunction();
-  eel.goBack(url);
+  eel.initiate(url);
 };
