@@ -59,6 +59,47 @@ def checkEndGame(title):
     else:
         loadpage()
 
+def decomposeInvalidElements(div):
+    toolBox = div.find_all("div", {"class": "bandeau-container"})
+    if(toolBox == None):
+        print("pas de bandeau détecté, tout va bien")
+    else:
+        print("bandeau détecté, on le tej")
+        for i in range(len(toolBox)):
+            toolBox[i].decompose()
+
+    asideMenu = div.find("div", {"class": "infobox_v3"})
+    if(asideMenu == None):
+        print("Pas de menu v3 détecté, tranquille")
+        asideMenu = div.find("table", {"class": ["infobox_v2", "infobox", "DebutCarte"]})
+        if(asideMenu != None):
+            asideMenu.decompose()
+    else:
+        print("Menu v3 détecté, on le tej")
+        asideMenu.decompose()
+
+def getDescription(div):
+    description2 = div.find("p", {"class": None})
+
+    descriptionStyle = description2.find("style")
+    if(descriptionStyle != None):
+        descriptionStyle.decompose()
+
+    description = description2.find_all(text=True)
+    descriptionFinal = []
+
+    descCounter = 0
+    for i in description:
+        iString = str(i)
+        if not((iString == '[' and description[descCounter + 1].isdigit()) or iString.isdigit() or (iString == ']' and description[descCounter - 1].isdigit()) or (iString == ',' and description[descCounter - 1] == ']' and description[descCounter + 1] == '[')):
+            descriptionFinal.append(i)
+        descCounter = descCounter + 1
+
+    
+    descdescriptionFinal = ''.join(descriptionFinal)
+    descdescriptionFinal = descdescriptionFinal.replace("(Écouter)", '')
+    descdescriptionFinal = descdescriptionFinal.replace(" ,", ',')
+    return descdescriptionFinal
 
 def openPage(url):
     with urllib.request.urlopen(formatLink(url)) as response:
@@ -80,51 +121,13 @@ def loadpage(counterPoints = 1, addTab = True):
     global counter
     global firstLoad
 
+    print(currentUrl)
+
     div = currentPage.find("div", {"id": "mw-content-text"})
     allLinks = div.find_all("a")
 
-    toolBox = div.find_all("div", {"class": "bandeau-container"})
-    if(toolBox == None):
-        print("pas de bandeau détecté, tout va bien")
-    else:
-        print("bandeau détecté, on le tej")
-        for i in range(len(toolBox)):
-            toolBox[i].decompose()
-
-
-    asideMenu = div.find("div", {"class": "infobox_v3"})
-    if(asideMenu == None):
-        print("Pas de menu v3 détecté, tranquille")
-        asideMenu = div.find("table", {"class": ["infobox_v2", "infobox", "DebutCarte"]})
-        if(asideMenu != None):
-            asideMenu.decompose()
-    else:
-        print("Menu v3 détecté, on le tej")
-        asideMenu.decompose()
-
-    description2 = div.find("p", {"class": None})
-    #print(description2)
-
-    descriptionStyle = description2.find("style")
-    if(descriptionStyle != None):
-        descriptionStyle.decompose()
-
-    description = description2.find_all(text=True)
-    descriptionFinal = []
-
-    descCounter = 0
-    for i in description:
-        iString = str(i)
-        if not((iString == '[' and description[descCounter + 1].isdigit()) or iString.isdigit() or (iString == ']' and description[descCounter - 1].isdigit()) or (iString == ',' and description[descCounter - 1] == ']' and description[descCounter + 1] == '[')):
-            descriptionFinal.append(i)
-        descCounter = descCounter + 1
-
-    
-    descdescriptionFinal = ''.join(descriptionFinal)
-    #print(descdescriptionFinal)
-    descdescriptionFinal = descdescriptionFinal.replace("(Écouter)", '')
-    descdescriptionFinal = descdescriptionFinal.replace(" ,", ',')
-    #print(descdescriptionFinal)
+    decomposeInvalidElements(div)
+    descdescriptionFinal = getDescription(div)
     
     allGoodLinks = []
     for i in allLinks:
