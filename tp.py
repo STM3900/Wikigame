@@ -141,6 +141,18 @@ def getWikiLinks(allLinks):
 
     return allGoodLinksUnique, allGoodLinksTitre, allGoodLinksUrl
 
+def addLinkTitle(addTab):
+    global allLinksVisited
+    global allTitlesVisited
+
+    if addTab:
+        print("Génération du tableau : {}".format(currentUrl))
+        allLinksVisited.append(currentUrl)
+        allTitlesVisited.append(newTitle)
+    else:
+        allLinksVisited.pop()
+        allTitlesVisited.pop()
+
 #TODO : terminer la fonction openPage et faire celle pour afficher tous les trucs tavu et continuer la fonction chelou de loadpage
 def loadpage(counterPoints = 1, addTab = True):
     global currentPage
@@ -159,14 +171,7 @@ def loadpage(counterPoints = 1, addTab = True):
     descdescriptionFinal = getDescription(div)
 
     allGoodLinksUnique, allGoodLinksTitre, allGoodLinksUrl = getWikiLinks(allLinks)
-    
-    if addTab:
-        print("Génération du tableau : {}".format(currentUrl))
-        allLinksVisited.append(currentUrl)
-        allTitlesVisited.append(newTitle)
-    else:
-        allLinksVisited.pop()
-        allTitlesVisited.pop()
+    addLinkTitle(addTab)
 
     print(allTitlesVisited)
     #création de l'html et insertion des données
