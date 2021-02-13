@@ -17,6 +17,7 @@ allLinksVisited = []
 allTitlesVisited = []
 newTitle = ""
 currentUrl = ""
+div = ""
 
 #Fonction permetant de renvoyer un lien formaté, et prêt ) étre utilisé par urlopen
 def formatLink(link = "Spécial:Page_au_hasard"):
@@ -59,7 +60,9 @@ def checkEndGame(title):
     else:
         loadpage()
 
-def decomposeInvalidElements(div):
+def decomposeInvalidElements():
+    global div
+
     toolBox = div.find_all("div", {"class": "bandeau-container"})
     if(toolBox == None):
         print("pas de bandeau détecté, tout va bien")
@@ -113,22 +116,7 @@ def openPage(url):
 
     return soup
 
-#TODO : terminer la fonction openPage et faire celle pour afficher tous les trucs tavu et continuer la fonction chelou de loadpage
-def loadpage(counterPoints = 1, addTab = True):
-    global currentPage
-    global newTitle
-    global currentUrl
-    global counter
-    global firstLoad
-
-    print(currentUrl)
-
-    div = currentPage.find("div", {"id": "mw-content-text"})
-    allLinks = div.find_all("a")
-
-    decomposeInvalidElements(div)
-    descdescriptionFinal = getDescription(div)
-    
+def getWikiLinks(allLinks):
     allGoodLinks = []
     for i in allLinks:
         iString = str(i)
@@ -151,6 +139,27 @@ def loadpage(counterPoints = 1, addTab = True):
         if m:
             allGoodLinksUrl.append(m.group(1))
 
+    return allGoodLinksUnique, allGoodLinksTitre, allGoodLinksUrl
+
+#TODO : terminer la fonction openPage et faire celle pour afficher tous les trucs tavu et continuer la fonction chelou de loadpage
+def loadpage(counterPoints = 1, addTab = True):
+    global currentPage
+    global newTitle
+    global currentUrl
+    global counter
+    global firstLoad
+    global div
+
+    print(currentUrl)
+
+    div = currentPage.find("div", {"id": "mw-content-text"})
+    allLinks = div.find_all("a")
+
+    decomposeInvalidElements()
+    descdescriptionFinal = getDescription(div)
+
+    allGoodLinksUnique, allGoodLinksTitre, allGoodLinksUrl = getWikiLinks(allLinks)
+    
     if addTab:
         print("Génération du tableau : {}".format(currentUrl))
         allLinksVisited.append(currentUrl)
