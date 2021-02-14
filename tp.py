@@ -19,6 +19,9 @@ newTitle = ""
 currentUrl = ""
 div = ""
 
+counterIncrement = 1
+addTab = True
+
 #Fonction permetant de renvoyer un lien formaté, et prêt ) étre utilisé par urlopen
 def formatLink(link = "Spécial:Page_au_hasard"):
     global firstLoad
@@ -154,13 +157,16 @@ def addLinkTitle(addTab):
         allTitlesVisited.pop()
 
 #TODO : terminer la fonction openPage et faire celle pour afficher tous les trucs tavu et continuer la fonction chelou de loadpage
-def loadpage(counterPoints = 1, addTab = True):
+def loadpage():
     global currentPage
     global newTitle
     global currentUrl
     global counter
     global firstLoad
     global div
+
+    global counterIncrement
+    global addTab
 
     print(currentUrl)
 
@@ -175,7 +181,7 @@ def loadpage(counterPoints = 1, addTab = True):
 
     print(allTitlesVisited)
     #création de l'html et insertion des données
-    counter = counter + counterPoints
+    counter = counter + counterIncrement
     currentPath = os.path.dirname(__file__)
     currentPath = os.path.join(currentPath,"wiki.html")
     f = open(currentPath,'w+', encoding='utf-8')
@@ -237,6 +243,10 @@ def loadpage(counterPoints = 1, addTab = True):
             getLinks(currentUrl)
     else:
         firstLoad = False
+
+    counterIncrement = 1
+    addTab = True
+
     print("\n")
 
 
@@ -418,7 +428,13 @@ def getLinks(borneUrl, counterPoints = 1, addTab = True): #la borneUrl est en r�
 
 @eel.expose
 def goBack(url):
-    getLinks(url, 2, False)
+    global counterIncrement
+    global addTab
+
+    counterIncrement = 2
+    addTab = False
+    
+    initiate(url)
 
 
 def endGame():

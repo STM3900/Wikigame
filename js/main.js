@@ -19,5 +19,5 @@ const nextPage = (url) => {
 
 const goBackJS = (url) => {
   hideLinksFunction();
-  eel.initiate(url);
+  eel.goBack(url);
 };
