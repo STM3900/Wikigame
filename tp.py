@@ -388,10 +388,12 @@ lastBorne, lastBorneUrl = getBorne()
 # (AUCUNE VERIFICATION N'EST FAITE SUR CE QUE VOUS ÉCRIVEREZ)
 #TODO : Possiblité de choisir ses bornes directement dans l'interface (Prévu pour la v3, qui sortira peutêtreunjourjesaispasj'aitropdeprojets)
 
-firstBorne = "Septembre 1979"
-firstBorneUrl = "Septembre_1979"
+"""
+firstBorne = "Gnocchi"
+firstBorneUrl = "Gnocchi"
 lastBorne = "Grenoble"
 lastBorneURL = "Grenoble"
+"""
 
 
 print("{} > {}".format(firstBorne, lastBorne))
