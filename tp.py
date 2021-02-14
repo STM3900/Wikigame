@@ -97,7 +97,7 @@ def endGame():
         <title>Wikigame | Victoire !</title>    
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/373a1c097b.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="/eel.js"></script>
     </head>
@@ -250,7 +250,7 @@ def writeBeginningHtml(file, currentTitle, counter, descdescriptionFinal):
         <title>Wikigame</title>    
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/373a1c097b.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="/eel.js"></script> <!--Lancement d'eel, qui permet de faire discuter le js et le python autour d'une tasse de code-->
         <script src="js/reload.js"></script> <!--Import du fichier reload.js qui contient la fonction reload-->
