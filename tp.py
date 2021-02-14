@@ -156,36 +156,8 @@ def addLinkTitle(addTab):
         allLinksVisited.pop()
         allTitlesVisited.pop()
 
-#TODO : terminer la fonction openPage et faire celle pour afficher tous les trucs tavu et continuer la fonction chelou de loadpage
-def loadpage():
-    global currentPage
-    global newTitle
-    global currentUrl
-    global counter
-    global firstLoad
-    global div
-
-    global counterIncrement
-    global addTab
-
-    print(currentUrl)
-
-    div = currentPage.find("div", {"id": "mw-content-text"})
-    allLinks = div.find_all("a")
-
-    decomposeInvalidElements()
-    descdescriptionFinal = getDescription(div)
-
-    allGoodLinksUnique, allGoodLinksTitre, allGoodLinksUrl = getWikiLinks(allLinks)
-    addLinkTitle(addTab)
-
-    print(allTitlesVisited)
-    #création de l'html et insertion des données
-    counter = counter + counterIncrement
-    currentPath = os.path.dirname(__file__)
-    currentPath = os.path.join(currentPath,"wiki.html")
-    f = open(currentPath,'w+', encoding='utf-8')
-    f.write("""
+def writeHtml(file, newTitle, counter, descdescriptionFinal):
+    file.write("""
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -213,6 +185,41 @@ def loadpage():
             </section>
         </header>
         <p class="description">{}<p>""".format(firstBorne, lastBorne, newTitle, counter, descdescriptionFinal))
+
+
+#TODO : terminer la fonction openPage et faire celle pour afficher tous les trucs tavu et continuer la fonction chelou de loadpage
+def loadpage():
+    global currentPage
+    global newTitle
+    global currentUrl
+    global counter
+    global firstLoad
+    global div
+
+    global counterIncrement
+    global addTab
+
+    print(currentUrl)
+
+    div = currentPage.find("div", {"id": "mw-content-text"})
+    allLinks = div.find_all("a")
+
+    decomposeInvalidElements()
+    descdescriptionFinal = getDescription(div)
+
+    allGoodLinksUnique, allGoodLinksTitre, allGoodLinksUrl = getWikiLinks(allLinks)
+    addLinkTitle(addTab)
+
+    print(allTitlesVisited)
+    #création de l'html et insertion des données
+    counter = counter + counterIncrement
+
+    currentPath = os.path.dirname(__file__)
+    currentPath = os.path.join(currentPath,"wiki.html")
+    f = open(currentPath,'w+', encoding='utf-8')
+
+    generateHtml(f, newTitle, counter, descdescriptionFinal)
+
     if len(allLinksVisited) > 1:
         f.write("""
         <div class='previous-div'>
@@ -433,7 +440,7 @@ def goBack(url):
 
     counterIncrement = 2
     addTab = False
-    
+
     initiate(url)
 
 
