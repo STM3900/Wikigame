@@ -86,7 +86,7 @@ def endGame():
     allTitlesVisited.append(lastBorne)
     #création de l'html et insertion des données
     currentPath = os.path.dirname(__file__)
-    currentPath = os.path.join(currentPath,"wiki.html")
+    currentPath = os.path.join(currentPath,"index.html")
     f = open(currentPath,'w+', encoding='utf-8')
     f.write("""
     <!DOCTYPE html>
@@ -344,7 +344,7 @@ def loadpage():
 
     # Génération et écriture dans le fichier html
     currentPath = os.path.dirname(__file__)
-    currentPath = os.path.join(currentPath,"wiki.html")
+    currentPath = os.path.join(currentPath,"index.html")
     f = open(currentPath,'w+', encoding='utf-8')
 
     writeBeginningHtml(f, currentTitle, counter, descdescriptionFinal)
@@ -402,4 +402,4 @@ print("{} > {}".format(firstBorne, lastBorne))
 initiate(firstBorneUrl)
 
 # Lancement d'eel
-eel.start('wiki.html', mode="chrome-app")
+eel.start('index.html', mode="chrome-app")
