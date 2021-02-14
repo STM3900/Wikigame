@@ -186,6 +186,13 @@ def writeHtml(file, newTitle, counter, descdescriptionFinal):
         </header>
         <p class="description">{}<p>""".format(firstBorne, lastBorne, newTitle, counter, descdescriptionFinal))
 
+def writeGoBackhtml(file):
+        file.write("""
+        <div class='previous-div'>
+            <h2>Page précédente : {}</h2>
+            <button onclick="goBackJS(`{}`)"><i class="fas fa-backward"></i>Revenir en arrière ? (coute deux coups)</button>
+        </div>
+        """.format(allTitlesVisited[-2], allLinksVisited[-2])) #allLinksVisited[-1] représente le dernier lien du tableau de tous les liens parcouru
 
 #TODO : terminer la fonction openPage et faire celle pour afficher tous les trucs tavu et continuer la fonction chelou de loadpage
 def loadpage():
@@ -218,15 +225,10 @@ def loadpage():
     currentPath = os.path.join(currentPath,"wiki.html")
     f = open(currentPath,'w+', encoding='utf-8')
 
-    generateHtml(f, newTitle, counter, descdescriptionFinal)
-
+    writeHtml(f, newTitle, counter, descdescriptionFinal)
     if len(allLinksVisited) > 1:
-        f.write("""
-        <div class='previous-div'>
-            <h2>Page précédente : {}</h2>
-            <button onclick="goBackJS(`{}`)"><i class="fas fa-backward"></i>Revenir en arrière ? (coute deux coups)</button>
-        </div>
-        """.format(allTitlesVisited[-2], allLinksVisited[-2])) #allLinksVisited[-1] représente le dernier lien du tableau de tous les liens parcouru
+        writeGoBackhtml(f)
+    
     f.write("""
         <article class="wiki-links">""")
     for i in range(len(allGoodLinksUnique)):
