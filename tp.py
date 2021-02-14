@@ -8,6 +8,7 @@ import urllib.request
 import os
 import eel
 
+# Import des fonctions pour utliser les regex (il n'y en a pas beaucoup ne vous en faites pas)
 import re
 
 # Initialisation de eel
