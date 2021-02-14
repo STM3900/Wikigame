@@ -1,458 +1,226 @@
 
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Wikigame</title>    
-                <link rel="preconnect" href="https://fonts.gstatic.com">
-                <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif&display=swap" rel="stylesheet">
-                <link rel="stylesheet" href="style.css">
-                <script src="https://kit.fontawesome.com/373a1c097b.js" crossorigin="anonymous"></script>
-                <script type="text/javascript" src="/eel.js"></script>
-            </head>
-                <body>
-                <aside class="loading hide">Chargement...</aside>
-                <nav>
-                    <p>Gnocchi > Italie<p/>
-                </nav>
-                <header>
-                    <section>
-                        <h1>Beurre</h1>
-                    </section>
-                    <section>
-                        <h1 class="counter">Coup n°2</h1>
-                    </section>
-                </header>
-                <div class='previous-div'>
-                    <h2>Page d'avant : Gnocchi</h2>
-                    <button onclick="goBackJS(`Gnocchi`)"><i class="fas fa-backward"></i>Revenir en arrière ? (coute deux coups)</button>
-                </div>
-                
-                <p class="description">Le beurre est un  extrait, par barattage, de la crème issue du . Cet aliment est constitué par la matière grasse du lait seulement travaillée pour améliorer sa saveur, sa conservation et diversifier ses utilisations, que ce soit nature, notamment en tartine ou comme corps gras de cuisson des aliments, ou ingrédient de préparations culinaires et notamment pâtissières. Il est conditionné pour être utilisé sous la forme d'une pâte onctueuse, mais sa consistance, sensible à la température, passe rapidement de l'état solide, lorsque entreposé dans une ambiance fraîche, à l'état huileux dès le début de toute cuisson. Du sel y est ajouté parfois dans certaines régions pour accroître sa conservation.
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wikigame</title>    
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/373a1c097b.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/eel.js"></script>
+        <script src="js/reload.js"></script>
+    </head>
+        <body>
+        <aside class="loading hide">Chargement...</aside>
+        <nav>
+            <p>SS Ivernia > Andreï Osterman<p/>
+        </nav>
+        <header>
+            <section>
+                <h1>Gulf Stream</h1>
+            </section>
+            <section>
+                <h1 class="counter">Coup n°9</h1>
+            </section>
+        </header>
+        <p class="description">Le Gulf Stream (« courant du golfe » en anglais) est un courant océanique qui prend sa source entre la Floride et les Bahamas et se dilue dans l'océan Atlantique vers la longitude du Groenland. Son nom est abusivement utilisé pour désigner la dérive nord atlantique, voire l'ensemble de la circulation de surface de l'océan Atlantique nord.
 <p>
-                <article class="wiki-links">        <section onclick='nextPage(`Beurre_(homonymie)`)'><p>Beurre (homonymie)</p></section>
-        <section onclick='nextPage(`Beur`)'><p>Beur</p></section>
-        <section onclick='nextPage(`Beure`)'><p>Beure</p></section>
-        <section onclick='nextPage(`Antoine_Vollon`)'><p>Antoine Vollon</p></section>
-        <section onclick='nextPage(`Jean-Paul_Jeunet`)'><p>Jean-Paul Jeunet</p></section>
-        <section onclick='nextPage(`Arbois`)'><p>Arbois</p></section>
-        <section onclick='nextPage(`Marc_et_Paul_Haeberlin`)'><p>Marc et Paul Haeberlin</p></section>
-        <section onclick='nextPage(`Floris_van_Schooten`)'><p>Floris van Schooten</p></section>
-        <section onclick='nextPage(`Produit_laitier`)'><p>produit laitier</p></section>
-        <section onclick='nextPage(`Baratte`)'><p>barattage</p></section>
-        <section onclick='nextPage(`Cr%C3%A8me_(produit_laitier)`)'><p>crème</p></section>
-        <section onclick='nextPage(`Lait`)'><p>lait</p></section>
-        <section onclick='nextPage(`Aliment`)'><p>aliment</p></section>
-        <section onclick='nextPage(`Tartine`)'><p>tartine</p></section>
-        <section onclick='nextPage(`Corps_gras`)'><p>corps gras</p></section>
-        <section onclick='nextPage(`Cuisson`)'><p>cuisson</p></section>
-        <section onclick='nextPage(`P%C3%A2tissi%C3%A8re`)'><p>pâtissières</p></section>
-        <section onclick='nextPage(`Texture_des_aliments`)'><p>consistance</p></section>
-        <section onclick='nextPage(`Sel_alimentaire`)'><p>sel</p></section>
-        <section onclick='nextPage(`Jaune`)'><p>jaune</p></section>
-        <section onclick='nextPage(`Texture_des_aliments`)'><p>texture</p></section>
-        <section onclick='nextPage(`Mati%C3%A8res_grasses_alimentaires`)'><p>matières grasses alimentaires</p></section>
-        <section onclick='nextPage(`Beurre_de_cacao`)'><p>beurre de cacao</p></section>
-        <section onclick='nextPage(`Beurre_de_karit%C3%A9`)'><p>beurre de karité</p></section>
-        <section onclick='nextPage(`Nom_(grammaire)`)'><p>substantif</p></section>
-        <section onclick='nextPage(`Genre_grammatical`)'><p>masculin</p></section>
-        <section onclick='nextPage(`Latin_vulgaire`)'><p>latin vulgaire</p></section>
-        <section onclick='nextPage(`Latin`)'><p>latin</p></section>
-        <section onclick='nextPage(`Emprunt_lexical`)'><p>emprunté</p></section>
-        <section onclick='nextPage(`Grec_ancien`)'><p>grec</p></section>
-        <section onclick='nextPage(`Indo-europ%C3%A9en_commun`)'><p>indo-européen</p></section>
-        <section onclick='nextPage(`Anglais`)'><p>anglais</p></section>
-        <section onclick='nextPage(`N%C3%A9erlandais`)'><p>néerlandais</p></section>
-        <section onclick='nextPage(`Allemand`)'><p>allemand</p></section>
-        <section onclick='nextPage(`Offaly`)'><p>Offaly</p></section>
-        <section onclick='nextPage(`Bagdad`)'><p>musée de Bagdad</p></section>
-        <section onclick='nextPage(`Sumer`)'><p>Sumériens</p></section>
-        <section onclick='nextPage(`Barattage`)'><p>baratter</p></section>
-        <section onclick='nextPage(`Aryens`)'><p>Aryens</p></section>
-        <section onclick='nextPage(`Inde`)'><p>Inde</p></section>
-        <section onclick='nextPage(`Sahara`)'><p>Sahara</p></section>
-        <section onclick='nextPage(`Thrace`)'><p>Thraces</p></section>
-        <section onclick='nextPage(`Anaxandrid%C3%A8s`)'><p>Anaxandridès</p></section>
-        <section onclick='nextPage(`Produit_laitier`)'><p>produits laitiers</p></section>
-        <section onclick='nextPage(`Rome_antique`)'><p>Romains</p></section>
-        <section onclick='nextPage(`Barbare#Apparition_du_concept_dans_l’Antiquité`)'><p>barbares</p></section>
-        <section onclick='nextPage(`Lard`)'><p>lard</p></section>
-        <section onclick='nextPage(`Saindoux`)'><p>saindoux</p></section>
-        <section onclick='nextPage(`Huile_d%27olive`)'><p>huile d'olive</p></section>
-        <section onclick='nextPage(`Isigny-sur-Mer`)'><p>Isigny</p></section>
-        <section onclick='nextPage(`Gournay-en-Bray`)'><p>Gournay</p></section>
-        <section onclick='nextPage(`Chartres`)'><p>Chartres</p></section>
-        <section onclick='nextPage(`Vanves`)'><p>Vanves</p></section>
-        <section onclick='nextPage(`Babeurre`)'><p>babeurre</p></section>
-        <section onclick='nextPage(`Beurre_clarifi%C3%A9`)'><p>beurre clarifié</p></section>
-        <section onclick='nextPage(`1866`)'><p>1866</p></section>
-        <section onclick='nextPage(`Napol%C3%A9on_III`)'><p>Napoléon III</p></section>
-        <section onclick='nextPage(`Margarine`)'><p>margarine</p></section>
-        <section onclick='nextPage(`Hippolyte_M%C3%A8ge-Mouri%C3%A8s`)'><p>Hippolyte Mège-Mouriès</p></section>
-        <section onclick='nextPage(`Crise_du_beurre_de_2017`)'><p>crise du beurre</p></section>
-        <section onclick='nextPage(`Agriculteur`)'><p>agriculteurs</p></section>
-        <section onclick='nextPage(`Baratte`)'><p>baratte</p></section>
-        <section onclick='nextPage(`Fermentation`)'><p>fermentation</p></section>
-        <section onclick='nextPage(`Moule_%C3%A0_beurre`)'><p>moule</p></section>
-        <section onclick='nextPage(`Pain`)'><p>pain</p></section>
-        <section onclick='nextPage(`Tartine`)'><p>tartines</p></section>
-        <section onclick='nextPage(`Go%C3%BBt`)'><p>goût</p></section>
-        <section onclick='nextPage(`Mati%C3%A8re_grasse_alimentaire`)'><p>matière grasse</p></section>
-        <section onclick='nextPage(`Digestion`)'><p>digeste</p></section>
-        <section onclick='nextPage(`Point_de_fum%C3%A9e`)'><p>point de fumée</p></section>
-        <section onclick='nextPage(`Hydroperoxyde`)'><p>hydroperoxydes</p></section>
-        <section onclick='nextPage(`Ald%C3%A9hyde`)'><p>aldéhydes</p></section>
-        <section onclick='nextPage(`Ingr%C3%A9dients_de_cuisine`)'><p>ingrédient</p></section>
-        <section onclick='nextPage(`Recette_de_cuisine`)'><p>recettes</p></section>
-        <section onclick='nextPage(`P%C3%A2te_(p%C3%A2tisserie)`)'><p>pâtes à tarte</p></section>
-        <section onclick='nextPage(`P%C3%A2tisserie`)'><p>pâtisseries</p></section>
-        <section onclick='nextPage(`Sauce`)'><p>sauces</p></section>
-        <section onclick='nextPage(`Gaz_%C3%A0_effet_de_serre`)'><p>gaz à effet de serre</p></section>
-        <section onclick='nextPage(`Conservation_de_la_viande`)'><p>conservation de la viande</p></section>
-        <section onclick='nextPage(`Prairie_fleurie`)'><p>prairies</p></section>
-        <section onclick='nextPage(`Poaceae`)'><p>graminées</p></section>
-        <section onclick='nextPage(`Myriagramme#Multiples,_sous-multiples_et_autres_unités`)'><p>myriagrammes</p></section>
-        <section onclick='nextPage(`Beurres_compos%C3%A9s`)'><p>beurres composés</p></section>
-        <section onclick='nextPage(`Beurre_ma%C3%AEtre_d%27h%C3%B4tel`)'><p>beurre maître d'hôtel</p></section>
-        <section onclick='nextPage(`Beurre_blanc`)'><p>beurre blanc</p></section>
-        <section onclick='nextPage(`Beurre_rouge`)'><p>beurre rouge</p></section>
-        <section onclick='nextPage(`Beurre_noisette`)'><p>beurre noisette</p></section>
-        <section onclick='nextPage(`Beurre_noir`)'><p>beurre noir</p></section>
-        <section onclick='nextPage(`Raie`)'><p>raie</p></section>
-        <section onclick='nextPage(`Veau`)'><p>veau</p></section>
+        <div class='previous-div'>
+            <h2>Page précédente : Ruban bleu</h2>
+            <button onclick="goBackJS(`Ruban_bleu`)"><i class="fas fa-backward"></i>Revenir en arrière ? (coute deux coups)</button>
+        </div>
+        
+        <article class="wiki-links">        <section onclick='nextPage(`Anglais`)'><p>anglais</p></section>
+        <section onclick='nextPage(`Courant_marin`)'><p>courant océanique</p></section>
+        <section onclick='nextPage(`Floride`)'><p>Floride</p></section>
+        <section onclick='nextPage(`Bahamas`)'><p>Bahamas</p></section>
+        <section onclick='nextPage(`Oc%C3%A9an_Atlantique`)'><p>océan Atlantique</p></section>
+        <section onclick='nextPage(`Longitude`)'><p>longitude</p></section>
+        <section onclick='nextPage(`Groenland`)'><p>Groenland</p></section>
+        <section onclick='nextPage(`D%C3%A9rive_nord_atlantique`)'><p>dérive nord atlantique</p></section>
+        <section onclick='nextPage(`Am%C3%A9rindiens`)'><p>Amérindiens</p></section>
+        <section onclick='nextPage(`S%C3%A9minole`)'><p>Séminoles</p></section>
+        <section onclick='nextPage(`D%C3%A9couverte_et_exploration_de_l%27Am%C3%A9rique`)'><p>découverte de l'Amérique</p></section>
+        <section onclick='nextPage(`1513`)'><p>1513</p></section>
+        <section onclick='nextPage(`Juan_Ponce_de_Le%C3%B3n`)'><p>Juan Ponce de León</p></section>
+        <section onclick='nextPage(`Navire`)'><p>navires</p></section>
+        <section onclick='nextPage(`Eau`)'><p>eau</p></section>
+        <section onclick='nextPage(`Mer_des_Cara%C3%AFbes`)'><p>mer des Antilles</p></section>
+        <section onclick='nextPage(`1770`)'><p>1770</p></section>
+        <section onclick='nextPage(`%C3%89tats-Unis`)'><p>Américain</p></section>
+        <section onclick='nextPage(`Benjamin_Franklin`)'><p>Benjamin Franklin</p></section>
+        <section onclick='nextPage(`Cartographie`)'><p>cartographie</p></section>
+        <section onclick='nextPage(`Grande-Bretagne`)'><p>Grande-Bretagne</p></section>
+        <section onclick='nextPage(`Courant_de_Floride`)'><p>courant de Floride</p></section>
+        <section onclick='nextPage(`D%C3%A9troit_de_Floride`)'><p>détroit de Floride</p></section>
+        <section onclick='nextPage(`Cap_Hatteras`)'><p>cap Hatteras</p></section>
+        <section onclick='nextPage(`Courant_du_Labrador`)'><p>courant du Labrador</p></section>
+        <section onclick='nextPage(`Plioc%C3%A8ne`)'><p>pliocène</p></section>
+        <section onclick='nextPage(`Isthme_de_Panama#Géologie`)'><p>fermeture de l'isthme de Panama</p></section>
+        <section onclick='nextPage(`Circulation_thermohaline`)'><p>circulation thermohaline</p></section>
+        <section onclick='nextPage(`Densit%C3%A9`)'><p>densité</p></section>
+        <section onclick='nextPage(`Chlorure_de_sodium`)'><p>salinité</p></section>
+        <section onclick='nextPage(`Temp%C3%A9rature`)'><p>température</p></section>
+        <section onclick='nextPage(`Arctique`)'><p>arctiques</p></section>
+        <section onclick='nextPage(`Arctique`)'><p>Arctique</p></section>
+        <section onclick='nextPage(`1855`)'><p>1855</p></section>
         <section onclick='nextPage(`%C3%89tats-Unis`)'><p>États-Unis</p></section>
-        <section onclick='nextPage(`Pakistan`)'><p>Pakistan</p></section>
-        <section onclick='nextPage(`Nouvelle-Z%C3%A9lande`)'><p>Nouvelle-Zélande</p></section>
-        <section onclick='nextPage(`Allemagne`)'><p>Allemagne</p></section>
-        <section onclick='nextPage(`France`)'><p>France</p></section>
-        <section onclick='nextPage(`Russie`)'><p>Russie</p></section>
-        <section onclick='nextPage(`Iran`)'><p>Iran</p></section>
-        <section onclick='nextPage(`Turquie`)'><p>Turquie</p></section>
-        <section onclick='nextPage(`Pologne`)'><p>Pologne</p></section>
-        <section onclick='nextPage(`Irlande_(pays)`)'><p>Irlande</p></section>
-        <section onclick='nextPage(`Royaume-Uni`)'><p>Royaume-Uni</p></section>
-        <section onclick='nextPage(`Pays-Bas`)'><p>Pays-Bas</p></section>
-        <section onclick='nextPage(`%C3%89gypte`)'><p>Égypte</p></section>
-        <section onclick='nextPage(`Australie`)'><p>Australie</p></section>
-        <section onclick='nextPage(`Triglyc%C3%A9ride`)'><p>triglycérides</p></section>
-        <section onclick='nextPage(`Glyc%C3%A9rol`)'><p>glycérol</p></section>
-        <section onclick='nextPage(`Acides_gras`)'><p>acides gras</p></section>
-        <section onclick='nextPage(`Liste_de_beurres`)'><p>liste de beurres</p></section>
-        <section onclick='nextPage(`Philippe_Le_Sueur_Mourant`)'><p>Philippe Le Sueur Mourant</p></section>
-        <section onclick='nextPage(`Beurre_sal%C3%A9`)'><p>beurre salé</p></section>
-        <section onclick='nextPage(`Beurre_demi-sel`)'><p>beurre demi-sel</p></section>
-        <section onclick='nextPage(`Pasteuris%C3%A9`)'><p>pasteurisée</p></section>
-        <section onclick='nextPage(`Pasteurisation`)'><p>pasteurisés</p></section>
-        <section onclick='nextPage(`Pasteurisation`)'><p>pasteurisation</p></section>
-        <section onclick='nextPage(`Vache`)'><p>vaches</p></section>
-        <section onclick='nextPage(`Foin`)'><p>foin</p></section>
-        <section onclick='nextPage(`Pigment`)'><p>pigments</p></section>
-        <section onclick='nextPage(`Carot%C3%A8ne`)'><p>β-carotène</p></section>
-        <section onclick='nextPage(`Chlorophylle`)'><p>chlorophylle</p></section>
-        <section onclick='nextPage(`Herbe`)'><p>herbe</p></section>
-        <section onclick='nextPage(`P%C3%A2te_feuillet%C3%A9e`)'><p>beurre de tourage</p></section>
-        <section onclick='nextPage(`P%C3%A2tisserie`)'><p>pâtisserie</p></section>
-        <section onclick='nextPage(`Beurre_Charentes-Poitou`)'><p>beurre Charentes-Poitou</p></section>
-        <section onclick='nextPage(`Normandie`)'><p>Normandie</p></section>
-        <section onclick='nextPage(`Bretagne`)'><p>Bretagne</p></section>
-        <section onclick='nextPage(`Culture_bact%C3%A9rienne`)'><p>culture bactérienne</p></section>
-        <section onclick='nextPage(`R%C3%A9frig%C3%A9rateur`)'><p>réfrigérateur</p></section>
-        <section onclick='nextPage(`Oxydation`)'><p>oxydation</p></section>
-        <section onclick='nextPage(`Oxyg%C3%A8ne`)'><p>oxygène</p></section>
-        <section onclick='nextPage(`Air`)'><p>air</p></section>
-        <section onclick='nextPage(`Ultraviolet`)'><p>ultraviolets</p></section>
-        <section onclick='nextPage(`Transfert_thermique`)'><p>chaleur</p></section>
-        <section onclick='nextPage(`Tibet`)'><p>Tibet</p></section>
-        <section onclick='nextPage(`Th%C3%A9_au_beurre`)'><p>thé</p></section>
-        <section onclick='nextPage(`Rancissement`)'><p>rancissement</p></section>
-        <section onclick='nextPage(`Lumi%C3%A8re`)'><p>lumière</p></section>
-        <section onclick='nextPage(`Conservateur_alimentaire`)'><p>conservateur</p></section>
-        <section onclick='nextPage(`Gabelle_du_sel`)'><p>gabelle</p></section>
-        <section onclick='nextPage(`Butanal`)'><p>butanal</p></section>
-        <section onclick='nextPage(`Ald%C3%A9hyde`)'><p>aldéhyde</p></section>
-        <section onclick='nextPage(`Dioxyg%C3%A8ne`)'><p>dioxygène</p></section>
-        <section onclick='nextPage(`Acide_butano%C3%AFque`)'><p>acide butanoïque</p></section>
-        <section onclick='nextPage(`Acide_carboxylique`)'><p>acide carboxylique</p></section>
-        <section onclick='nextPage(`Cong%C3%A9lation`)'><p>congelé</p></section>
-        <section onclick='nextPage(`Union_europ%C3%A9enne`)'><p>Union européenne</p></section>
-        <section onclick='nextPage(`Appellation_d%27origine`)'><p>appellations d'origine</p></section>
-        <section onclick='nextPage(`Commission_europ%C3%A9enne`)'><p>Commission européenne</p></section>
-        <section onclick='nextPage(`Appellation_d%27origine_prot%C3%A9g%C3%A9e`)'><p>AOP</p></section>
-        <section onclick='nextPage(`Appellation_d%27origine_contr%C3%B4l%C3%A9e`)'><p>AOC</p></section>
-        <section onclick='nextPage(`Beurre_d%27Isigny`)'><p>beurre d'Isigny</p></section>
-        <section onclick='nextPage(`Vend%C3%A9e_(d%C3%A9partement)`)'><p>Vendée</p></section>
-        <section onclick='nextPage(`Cr%C3%A8me_et_beurre_de_Bresse`)'><p>beurre de Bresse</p></section>
-        <section onclick='nextPage(`Bresse`)'><p>Bresse</p></section>
-        <section onclick='nextPage(`Ain_(d%C3%A9partement)`)'><p>Ain</p></section>
-        <section onclick='nextPage(`Beurre_d%27Ardenne`)'><p>beurre d'Ardenne</p></section>
-        <section onclick='nextPage(`Num%C3%A9ro_CAS`)'><p>N<sup>o</sup> CAS</p></section>
-        <section onclick='nextPage(`Indice_d%27iode`)'><p>Indice d’iode</p></section>
-        <section onclick='nextPage(`Indice_d%27acide`)'><p>Indice d’acide</p></section>
-        <section onclick='nextPage(`Indice_de_saponification`)'><p>Indice de saponification</p></section>
-        <section onclick='nextPage(`Point_de_fusion`)'><p><abbr class="abbr" title="Température">T°</abbr> fusion</p></section>
-        <section onclick='nextPage(`Masse_volumique`)'><p>Masse volumique</p></section>
-        <section onclick='nextPage(`Indice_de_r%C3%A9fraction`)'><p>Indice de réfraction</p></section>
-        <section onclick='nextPage(`Syst%C3%A8me_international_d%27unit%C3%A9s`)'><p>SI</p></section>
-        <section onclick='nextPage(`Conditions_normales_de_temp%C3%A9rature_et_de_pression`)'><p><abbr title="conditions normales de température et de pression">CNTP</abbr></p></section>
-        <section onclick='nextPage(`Vitamine_A`)'><p>vitamine A</p></section>
-        <section onclick='nextPage(`Vitamine_D`)'><p>vitamine D</p></section>
-        <section onclick='nextPage(`Vitamine_E`)'><p>vitamine E</p></section>
-        <section onclick='nextPage(`Kcal`)'><p>kcal</p></section>
-        <section onclick='nextPage(`Gramme`)'><p>g</p></section>
-        <section onclick='nextPage(`Acide_gras_satur%C3%A9`)'><p>acides gras saturés</p></section>
-        <section onclick='nextPage(`Cholest%C3%A9rol`)'><p>cholestérol</p></section>
-        <section onclick='nextPage(`Acide_gras`)'><p>Acide gras</p></section>
-        <section onclick='nextPage(`Acide_palmitique`)'><p>Acide palmitique</p></section>
-        <section onclick='nextPage(`Acide_ol%C3%A9ique`)'><p>Acide oléique</p></section>
-        <section onclick='nextPage(`Acide_st%C3%A9arique`)'><p>Acide stéarique</p></section>
-        <section onclick='nextPage(`Acide_myristique`)'><p>Acide myristique</p></section>
-        <section onclick='nextPage(`Acide_butyrique`)'><p>Acide butyrique</p></section>
-        <section onclick='nextPage(`Acide_linol%C3%A9ique`)'><p>Acide linoléique</p></section>
-        <section onclick='nextPage(`Acide_alpha-linol%C3%A9nique`)'><p>Acide alpha-linolénique</p></section>
-        <section onclick='nextPage(`Acide_laurique`)'><p>Acide laurique</p></section>
-        <section onclick='nextPage(`Acide_caprique`)'><p>Acide caprique</p></section>
-        <section onclick='nextPage(`Acide_capro%C3%AFque`)'><p>Acide caproïque</p></section>
-        <section onclick='nextPage(`Acide_caprylique`)'><p>Acide caprylique</p></section>
-        <section onclick='nextPage(`Revue_syst%C3%A9matique`)'><p>revue systématique</p></section>
-        <section onclick='nextPage(`Maladie_cardio-vasculaire`)'><p>maladie cardio-vasculaire</p></section>
-        <section onclick='nextPage(`Diab%C3%A8te_sucr%C3%A9`)'><p>diabète</p></section>
-        <section onclick='nextPage(`R%C3%A9volution_fran%C3%A7aise`)'><p>Révolution</p></section>
-        <section onclick='nextPage(`Code_p%C3%A9nal_de_1810`)'><p>Code pénal de 1810</p></section>
-        <section onclick='nextPage(`Vin`)'><p>vin</p></section>
-        <section onclick='nextPage(`Engrais`)'><p>engrais</p></section>
-        <section onclick='nextPage(`1810`)'><p>1810</p></section>
-        <section onclick='nextPage(`1887`)'><p>1887</p></section>
-        <section onclick='nextPage(`1897`)'><p>1897</p></section>
-        <section onclick='nextPage(`1980`)'><p>1980</p></section>
-        <section onclick='nextPage(`Appellation_d%E2%80%99origine_contr%C3%B4l%C3%A9e`)'><p>appellation d’origine contrôlée</p></section>
-        <section onclick='nextPage(`R%C3%A9volution_fran%C3%A7aise`)'><p>Révolution française</p></section>
-        <section onclick='nextPage(`Pomme_de_terre`)'><p>pommes de terre</p></section>
-        <section onclick='nextPage(`Suif`)'><p>suif</p></section>
-        <section onclick='nextPage(`Farine`)'><p>farine</p></section>
-        <section onclick='nextPage(`Craie`)'><p>craie</p></section>
-        <section onclick='nextPage(`Ac%C3%A9tate_de_plomb`)'><p>acétate de plomb</p></section>
-        <section onclick='nextPage(`1851`)'><p>1851</p></section>
-        <section onclick='nextPage(`Sanction_p%C3%A9nale_en_France`)'><p>sanction pénale</p></section>
-        <section onclick='nextPage(`1848`)'><p>1848</p></section>
-        <section onclick='nextPage(`24_octobre`)'><p>24</p></section>
-        <section onclick='nextPage(`Octobre_1817`)'><p>octobre</p></section>
-        <section onclick='nextPage(`1817`)'><p>1817</p></section>
-        <section onclick='nextPage(`Draguignan`)'><p>Draguignan</p></section>
-        <section onclick='nextPage(`Ferme_de_la_Faisanderie`)'><p>Ferme impériale de la Faisanderie</p></section>
-        <section onclick='nextPage(`Bois_de_Vincennes`)'><p>bois de Vincennes</p></section>
-        <section onclick='nextPage(`St%C3%A9arine`)'><p>stéarine</p></section>
-        <section onclick='nextPage(`Tromperie`)'><p>tromperie</p></section>
-        <section onclick='nextPage(`Rancissement`)'><p>rances</p></section>
-        <section onclick='nextPage(`Fraude`)'><p>fraudes</p></section>
-        <section onclick='nextPage(`13_avril`)'><p>13</p></section>
-        <section onclick='nextPage(`Avril_1886`)'><p>avril</p></section>
-        <section onclick='nextPage(`1886`)'><p>1886</p></section>
-        <section onclick='nextPage(`Huile_d%E2%80%99olive`)'><p>huile d’olive</p></section>
-        <section onclick='nextPage(`Coton`)'><p>coton</p></section>
-        <section onclick='nextPage(`S%C3%A9same`)'><p>sésame</p></section>
-        <section onclick='nextPage(`Graisse`)'><p>graisse</p></section>
-        <section onclick='nextPage(`Ma%C3%AFs`)'><p>maïs</p></section>
-        <section onclick='nextPage(`13_f%C3%A9vrier`)'><p>13</p></section>
-        <section onclick='nextPage(`F%C3%A9vrier_1898`)'><p>février</p></section>
-        <section onclick='nextPage(`1898`)'><p>1898</p></section>
-        <section onclick='nextPage(`Surg%C3%A8res`)'><p>Surgères</p></section>
-        <section onclick='nextPage(`1906`)'><p>1906</p></section>
-        <section onclick='nextPage(`Huile_alimentaire`)'><p>huile végétale</p></section>
-        <section onclick='nextPage(`Poitou-Charentes`)'><p>Charentes-Poitou</p></section>
-        <section onclick='nextPage(`Charente_(d%C3%A9partement)`)'><p>Charente</p></section>
-        <section onclick='nextPage(`Deux-S%C3%A8vres`)'><p>Deux-Sèvres</p></section>
-        <section onclick='nextPage(`Industrie`)'><p>industrie</p></section>
-        <section onclick='nextPage(`Artisanat`)'><p>artisanat</p></section>
-        <section onclick='nextPage(`Beurre_de_cacahu%C3%A8te`)'><p>beurre de cacahuète</p></section>
-        <section onclick='nextPage(`AOC`)'><p>AOC</p></section>
-        <section onclick='nextPage(`Indication_g%C3%A9ographique_prot%C3%A9g%C3%A9e`)'><p>IGP</p></section>
-        <section onclick='nextPage(`Appellation_d%27origine_prot%C3%A9g%C3%A9e`)'><p>Appellation d'Origine Protégée</p></section>
-        <section onclick='nextPage(`Taxe_sur_la_valeur_ajout%C3%A9e_en_France`)'><p>TVA à taux réduit</p></section>
-        <section onclick='nextPage(`Margarine`)'><p>margarines</p></section>
-        <section onclick='nextPage(`La_Tartine_de_beurre`)'><p>La Tartine de beurre</p></section>
-        <section onclick='nextPage(`Catalogue_K%C3%B6chel`)'><p>KV Anh. 284n C 27.09</p></section>
-        <section onclick='nextPage(`Composition_musicale`)'><p>composition</p></section>
-        <section onclick='nextPage(`Apocryphe`)'><p>apocryphe</p></section>
-        <section onclick='nextPage(`Piano`)'><p>piano</p></section>
-        <section onclick='nextPage(`Wolfgang_Amadeus_Mozart`)'><p>Wolfgang Amadeus Mozart</p></section>
-        <section onclick='nextPage(`Motte_de_beurre`)'><p>Motte de beurre</p></section>
-        <section onclick='nextPage(`La_Cuisine_au_beurre`)'><p>La Cuisine au beurre</p></section>
-        <section onclick='nextPage(`Gilles_Grangier`)'><p>Gilles Grangier</p></section>
-        <section onclick='nextPage(`1963_au_cin%C3%A9ma`)'><p>1963</p></section>
-        <section onclick='nextPage(`Bourvil`)'><p>Bourvil</p></section>
-        <section onclick='nextPage(`Fernandel`)'><p>Fernandel</p></section>
-        <section onclick='nextPage(`Au_bon_beurre`)'><p>Au bon beurre</p></section>
-        <section onclick='nextPage(`Jean_Dutourd`)'><p>Jean Dutourd</p></section>
+        <section onclick='nextPage(`Matthew_Fontaine_Maury`)'><p>Matthew Fontaine Maury</p></section>
+        <section onclick='nextPage(`Climat`)'><p>climat</p></section>
+        <section onclick='nextPage(`Canada`)'><p>canadien</p></section>
+        <section onclick='nextPage(`Soleil`)'><p>solaire</p></section>
+        <section onclick='nextPage(`Encyclop%C3%A9die`)'><p>encyclopédies</p></section>
+        <section onclick='nextPage(`Force_de_Coriolis`)'><p>force de Coriolis</p></section>
+        <section onclick='nextPage(`Universit%C3%A9_Columbia`)'><p>Université Columbia</p></section>
+        <section onclick='nextPage(`Am%C3%A9rique_du_Nord`)'><p>Amérique du Nord</p></section>
+        <section onclick='nextPage(`Europe_de_l%27Ouest`)'><p>Europe de l'Ouest</p></section>
+        <section onclick='nextPage(`Montagnes_Rocheuses`)'><p>montagnes Rocheuses</p></section>
+        <section onclick='nextPage(`Vents_d%27ouest_(m%C3%A9t%C3%A9orologie)`)'><p>vent d'ouest</p></section>
+        <section onclick='nextPage(`R%C3%A9chauffement_climatique`)'><p>réchauffement climatique</p></section>
+        <section onclick='nextPage(`Oc%C3%A9an_Arctique`)'><p>océan Arctique</p></section>
+        <section onclick='nextPage(`D%C3%A9bit_(hydrologie)`)'><p>débits</p></section>
+        <section onclick='nextPage(`Gyre_oc%C3%A9anique`)'><p>gyre océanique</p></section>
+        <section onclick='nextPage(`Anticyclone_des_A%C3%A7ores`)'><p>anticyclone des Açores</p></section>
+        <section onclick='nextPage(`%C3%89quateur_terrestre`)'><p>équateur</p></section>
+        <section onclick='nextPage(`P%C3%B4le_Nord`)'><p>pôle Nord</p></section>
+        <section onclick='nextPage(`Deepwater_Horizon`)'><p>Deepwater Horizon</p></section>
+        <section onclick='nextPage(`Golfe_du_Mexique`)'><p>golfe du Mexique</p></section>
+        <section onclick='nextPage(`Key_West`)'><p>Key West</p></section>
+        <section onclick='nextPage(`Keys_(Floride)`)'><p>Keys</p></section>
         <section onclick='nextPage(`International_Standard_Book_Number`)'><p>ISBN</p></section>
-        <section onclick='nextPage(`Fran%C3%A7ois_Truffaut`)'><p>François Truffaut</p></section>
-        <section onclick='nextPage(`La_Nuit_am%C3%A9ricaine_(film)`)'><p>La Nuit Américaine</p></section>
-        <section onclick='nextPage(`L%27Assiette_au_beurre`)'><p>L'Assiette au beurre</p></section>
-        <section onclick='nextPage(`Cath%C3%A9drale_de_Rouen`)'><p>cathédrale de Rouen</p></section>
-        <section onclick='nextPage(`Rouen`)'><p>rouennais</p></section>
-        <section onclick='nextPage(`Car%C3%AAme`)'><p>carême</p></section>
-        <section onclick='nextPage(`Pardon_(c%C3%A9r%C3%A9monie)`)'><p>pardon</p></section>
-        <section onclick='nextPage(`Sp%C3%A9zet`)'><p>Spézet</p></section>
-        <section onclick='nextPage(`Encyclop%C3%A6dia_Universalis`)'><p>Encyclopædia Universalis</p></section>
-        <section onclick='nextPage(`Dictionnaire_de_l%27Acad%C3%A9mie_fran%C3%A7aise`)'><p>Dictionnaire de l'Académie française</p></section>
-        <section onclick='nextPage(`Centre_national_de_ressources_textuelles_et_lexicales`)'><p>Centre national de ressources textuelles et lexicales</p></section>
-        <section onclick='nextPage(`Tr%C3%A9sor_de_la_langue_fran%C3%A7aise_informatis%C3%A9`)'><p>Trésor de la langue française informatisé</p></section>
-        <section onclick='nextPage(`Le_Petit_Larousse`)'><p>Dictionnaires de français</p></section>
-        <section onclick='nextPage(`%C3%89ditions_Larousse`)'><p>éditions Larousse</p></section>
-        <section onclick='nextPage(`Alain_Rey`)'><p>Alain <span class="nom_auteur">Rey</span></p></section>
-        <section onclick='nextPage(`Dictionnaire_historique_de_la_langue_fran%C3%A7aise`)'><p>Dictionnaire historique de la langue française</p></section>
-        <section onclick='nextPage(`Dictionnaires_Le_Robert`)'><p>Dictionnaires Le Robert</p></section>
         <section onclick='nextPage(`Online_Computer_Library_Center`)'><p>OCLC</p></section>
         <section onclick='nextPage(`Biblioth%C3%A8que_nationale_de_France`)'><p>BnF</p></section>
-        <section onclick='nextPage(`Syst%C3%A8me_universitaire_de_documentation`)'><p>SUDOC</p></section>
-        <section onclick='nextPage(`Mer_%C3%89g%C3%A9e`)'><p>Égée</p></section>
-        <section onclick='nextPage(`Ath%C3%A9n%C3%A9e_de_Naucratis`)'><p>Athénée</p></section>
-        <section onclick='nextPage(`Les_Deipnosophistes`)'><p>Deipnosophistes</p></section>
-        <section onclick='nextPage(`International_Standard_Serial_Number`)'><p>ISSN</p></section>
-        <section onclick='nextPage(`Journal_officiel_de_la_R%C3%A9publique_fran%C3%A7aise`)'><p>Journal officiel</p></section>
-        <section onclick='nextPage(`PubMed`)'><p>PMID</p></section>
-        <section onclick='nextPage(`PubMed_Central`)'><p>PMCID</p></section>
-        <section onclick='nextPage(`Digital_Object_Identifier`)'><p>DOI</p></section>
-        <section onclick='nextPage(`Baratte`)'><p>Baratte</p></section>
-        <section onclick='nextPage(`Petit_lait`)'><p>petit lait</p></section>
-        <section onclick='nextPage(`Beurre_compos%C3%A9`)'><p>Beurre composé</p></section>
-        <section onclick='nextPage(`Margarine`)'><p>Margarine</p></section>
-        <section onclick='nextPage(`Mati%C3%A8re_grasse_alimentaire`)'><p>Matière grasse alimentaire</p></section>
-        <section onclick='nextPage(`Industrie_laiti%C3%A8re`)'><p>Industrie laitière</p></section>
-        <section onclick='nextPage(`CNIEL`)'><p>CNIEL</p></section>
-        <section onclick='nextPage(`Idiotisme_gastronomique`)'><p>Idiotisme gastronomique</p></section>
-        <section onclick='nextPage(`Beurre_(couleur)`)'><p>Beurre (couleur)</p></section>
-        <section onclick='nextPage(`Liste_de_beurres`)'><p>Liste de beurres</p></section>
-        <section onclick='nextPage(`Moule_%C3%A0_beurre`)'><p>Moule à beurre</p></section>
-        <section onclick='nextPage(`Crise_du_beurre_de_2017`)'><p>Crise du beurre de 2017</p></section>
-        <section onclick='nextPage(`Arcisse_de_Caumont`)'><p>Arcisse de Caumont</p></section>
-        <section onclick='nextPage(`Autorit%C3%A9_(sciences_de_l%27information)`)'><p>Notices d'autorité</p></section>
-        <section onclick='nextPage(`Graisse_alimentaire`)'><p>Graisses</p></section>
-        <section onclick='nextPage(`Beurre_clarifi%C3%A9`)'><p>Beurre clarifié</p></section>
-        <section onclick='nextPage(`Beurre_de_cacao`)'><p>Beurre de cacao</p></section>
-        <section onclick='nextPage(`Beurre_de_karit%C3%A9`)'><p>Beurre de karité</p></section>
-        <section onclick='nextPage(`Ghi`)'><p>Ghi</p></section>
-        <section onclick='nextPage(`Lard`)'><p>Lard</p></section>
-        <section onclick='nextPage(`Niter_kibbeh`)'><p>Niter kibbeh</p></section>
-        <section onclick='nextPage(`Saindoux`)'><p>Saindoux</p></section>
-        <section onclick='nextPage(`Smen`)'><p>Smen</p></section>
-        <section onclick='nextPage(`Suif`)'><p>Suif</p></section>
-        <section onclick='nextPage(`Huile_alimentaire`)'><p>Huiles</p></section>
-        <section onclick='nextPage(`Huile_d%27amande`)'><p>Huile d'amande</p></section>
-        <section onclick='nextPage(`Huile_d%27arachide`)'><p>Huile d'arachide</p></section>
-        <section onclick='nextPage(`Huile_d%27argane`)'><p>Huile d'argane</p></section>
-        <section onclick='nextPage(`Huile_d%27avocat`)'><p>Huile d'avocat</p></section>
-        <section onclick='nextPage(`Huile_de_carthame`)'><p>Huile de carthame</p></section>
-        <section onclick='nextPage(`Huile_de_chanvre`)'><p>Huile de chanvre</p></section>
-        <section onclick='nextPage(`Huile_de_coco`)'><p>Huile de coco</p></section>
-        <section onclick='nextPage(`Huile_de_colza`)'><p>Huile de colza</p></section>
-        <section onclick='nextPage(`Huile_de_coton`)'><p>Huile de coton</p></section>
-        <section onclick='nextPage(`Huile_de_germe_de_bl%C3%A9`)'><p>Huile de germe de blé</p></section>
-        <section onclick='nextPage(`Huile_de_lin`)'><p>Huile de lin</p></section>
-        <section onclick='nextPage(`Huile_de_ma%C3%AFs`)'><p>Huile de maïs</p></section>
-        <section onclick='nextPage(`Huile_de_noisette`)'><p>Huile de noisette</p></section>
-        <section onclick='nextPage(`Huile_de_noix`)'><p>Huile de noix</p></section>
-        <section onclick='nextPage(`Huile_de_noyaux`)'><p>Huile de noyaux</p></section>
-        <section onclick='nextPage(`Huile_d%27%C5%93illette`)'><p>Huile d'œillette</p></section>
-        <section onclick='nextPage(`Huile_d%27olive`)'><p>Huile d'olive</p></section>
-        <section onclick='nextPage(`Huile_de_palme`)'><p>Huile de palme</p></section>
-        <section onclick='nextPage(`Huile_de_palmiste`)'><p>Huile de palmiste</p></section>
-        <section onclick='nextPage(`Huile_de_graines_de_courge`)'><p>Huile de graines de courge</p></section>
-        <section onclick='nextPage(`Huile_de_p%C3%A9pins_de_raisin`)'><p>Huile de pépins de raisin</p></section>
-        <section onclick='nextPage(`Huile_de_ricin`)'><p>Huile de ricin</p></section>
-        <section onclick='nextPage(`Huile_de_riz`)'><p>Huile de riz</p></section>
-        <section onclick='nextPage(`Huile_de_s%C3%A9same`)'><p>Huile de sésame</p></section>
-        <section onclick='nextPage(`Huile_de_soja`)'><p>Huile de soja</p></section>
-        <section onclick='nextPage(`Huile_de_tournesol`)'><p>Huile de tournesol</p></section>
-        <section onclick='nextPage(`Graisse_animale`)'><p>Graisse animale</p></section>
-        <section onclick='nextPage(`Composition_nutritionnelle_des_corps_gras`)'><p>Composition nutritionnelle</p></section>
-        <section onclick='nextPage(`Liste_d%27indices_en_chimie_et_physique`)'><p>Indices chimiques</p></section>
-        <section onclick='nextPage(`Huile_de_cumin_noir`)'><p>Huile de cumin noir</p></section>
-        <section onclick='nextPage(`Lait`)'><p>Lait</p></section>
-        <section onclick='nextPage(`Lait_d%27%C3%A2nesse`)'><p>Ânesse</p></section>
-        <section onclick='nextPage(`Lait_de_brebis`)'><p>Brebis</p></section>
-        <section onclick='nextPage(`Lait_de_bufflonne`)'><p>Bufflonne</p></section>
-        <section onclick='nextPage(`Lait_de_chamelle`)'><p>Chamelle</p></section>
-        <section onclick='nextPage(`Lait_de_ch%C3%A8vre`)'><p>Chèvre</p></section>
-        <section onclick='nextPage(`Lait_d%27%C3%A9lan`)'><p>Élan</p></section>
-        <section onclick='nextPage(`Lait_maternel_humain`)'><p>Humain</p></section>
-        <section onclick='nextPage(`Lait_de_jument`)'><p>Jument</p></section>
-        <section onclick='nextPage(`Lait_de_renne`)'><p>Renne</p></section>
-        <section onclick='nextPage(`Lait_de_sorci%C3%A8re`)'><p>Lait de sorcière</p></section>
-        <section onclick='nextPage(`Lait_de_truie`)'><p>Truie</p></section>
-        <section onclick='nextPage(`Lait_de_vache`)'><p>Vache</p></section>
-        <section onclick='nextPage(`Lait_de_yack`)'><p>Yack</p></section>
-        <section onclick='nextPage(`Lait_v%C3%A9g%C3%A9tal`)'><p>Végétal</p></section>
-        <section onclick='nextPage(`Horchata_de_chufa`)'><p>Horchata de chufa</p></section>
-        <section onclick='nextPage(`Lait_d%27amande`)'><p>Lait d'amande</p></section>
-        <section onclick='nextPage(`Lait_d%27avoine`)'><p>Lait d'avoine</p></section>
-        <section onclick='nextPage(`Lait_de_coco`)'><p>Lait de coco</p></section>
-        <section onclick='nextPage(`Jus_de_riz`)'><p>Lait de riz</p></section>
-        <section onclick='nextPage(`Lait_de_soja`)'><p>Lait de soja</p></section>
-        <section onclick='nextPage(`Substitut_du_lait_maternel`)'><p>Lait artificiel</p></section>
-        <section onclick='nextPage(`Caf%C3%A9_au_lait`)'><p>Café au lait</p></section>
-        <section onclick='nextPage(`Confiture_de_lait`)'><p>Confiture de lait</p></section>
-        <section onclick='nextPage(`Lait_concentr%C3%A9_sucr%C3%A9`)'><p>Lait concentré sucré</p></section>
-        <section onclick='nextPage(`Lait_concentr%C3%A9_non_sucr%C3%A9`)'><p>Lait concentré non sucré</p></section>
-        <section onclick='nextPage(`Lait_demi-%C3%A9cr%C3%A9m%C3%A9`)'><p>Lait demi-écrémé</p></section>
-        <section onclick='nextPage(`Lait_entier`)'><p>Lait entier</p></section>
-        <section onclick='nextPage(`Lait_thermis%C3%A9`)'><p>Lait thermisé</p></section>
-        <section onclick='nextPage(`Lait_UHT`)'><p>Lait UHT</p></section>
-        <section onclick='nextPage(`Lait_au_chocolat`)'><p>Lait au chocolat</p></section>
-        <section onclick='nextPage(`Lait_de_poule`)'><p>Lait de poule</p></section>
-        <section onclick='nextPage(`Lait_au_four`)'><p>Lait au four</p></section>
-        <section onclick='nextPage(`Lait_biologique`)'><p>Lait biologique</p></section>
-        <section onclick='nextPage(`Lait_en_poudre`)'><p>Lait en poudre</p></section>
-        <section onclick='nextPage(`Lait_cru`)'><p>Lait cru</p></section>
-        <section onclick='nextPage(`Lait_%C3%A9cr%C3%A9m%C3%A9`)'><p>Lait écrémé</p></section>
-        <section onclick='nextPage(`Lait_ferment%C3%A9`)'><p>Lait fermenté</p></section>
-        <section onclick='nextPage(`Produit_laitier`)'><p>Produits laitiers</p></section>
-        <section onclick='nextPage(`Yaourt`)'><p>Yaourt</p></section>
-        <section onclick='nextPage(`Cr%C3%A8me_(produit_laitier)`)'><p>Crème</p></section>
-        <section onclick='nextPage(`Babeurre`)'><p>Babeurre</p></section>
-        <section onclick='nextPage(`Fromage`)'><p>Fromage</p></section>
-        <section onclick='nextPage(`Lactos%C3%A9rum`)'><p>Lactosérum</p></section>
-        <section onclick='nextPage(`Fromage_de_lactos%C3%A9rum`)'><p>Fromage de lactosérum</p></section>
-        <section onclick='nextPage(`Pr%C3%A9sure`)'><p>Présure</p></section>
-        <section onclick='nextPage(`Intol%C3%A9rance_au_lactose`)'><p>Intolérance au lactose</p></section>
-        <section onclick='nextPage(`Sac_de_lait`)'><p>Sac de lait</p></section>
-        <section onclick='nextPage(`Caisse_%C3%A0_lait`)'><p>Caisse à lait</p></section>
-        <section onclick='nextPage(`Lait_de_jabot`)'><p>Lait de jabot</p></section>
-        <section onclick='nextPage(`Laiterie_(agriculture)`)'><p>Laiterie</p></section>
-        <section onclick='nextPage(`Lactation`)'><p>Lactation</p></section>
-        <section onclick='nextPage(`Traite_du_b%C3%A9tail`)'><p>Traite du bétail</p></section>
-        <section onclick='nextPage(`Lactoduc`)'><p>Lactoduc</p></section>
-        <section onclick='nextPage(`Pasteurisation`)'><p>Pasteurisation</p></section>
-        <section onclick='nextPage(`Livreur_de_lait`)'><p>Livreur de lait</p></section>
-        <section onclick='nextPage(`Allergie_au_lait`)'><p>Allergie au lait</p></section>
-        <section onclick='nextPage(`Up%C3%A9risation`)'><p>Upérisation</p></section>
+        <section onclick='nextPage(`Spirale_d%27Ekman`)'><p>Spirale d'Ekman</p></section>
+        <section onclick='nextPage(`Erik_Orsenna`)'><p>Erik Orsenna</p></section>
+        <section onclick='nextPage(`%C3%89ditions_du_Seuil`)'><p>Seuil</p></section>
+        <section onclick='nextPage(`Oc%C3%A9anographie_physique`)'><p>Océanographie physique</p></section>
+        <section onclick='nextPage(`Vague`)'><p>Vagues</p></section>
+        <section onclick='nextPage(`Approximation_de_Boussinesq`)'><p>Approximation de Boussinesq</p></section>
+        <section onclick='nextPage(`Batillage`)'><p>Batillage</p></section>
+        <section onclick='nextPage(`Clapotis`)'><p>Clapotis</p></section>
+        <section onclick='nextPage(`Vague_d%C3%A9ferlante`)'><p>Déferlante</p></section>
+        <section onclick='nextPage(`D%C3%A9rive_de_Stokes`)'><p>Dérive de Stokes</p></section>
+        <section onclick='nextPage(`D%C3%A9rive_littorale`)'><p>Dérive littorale</p></section>
+        <section onclick='nextPage(`%C3%89quations_de_Barr%C3%A9_de_Saint-Venant`)'><p>Équations de Barré de Saint-Venant</p></section>
+        <section onclick='nextPage(`%C3%89tat_de_la_mer`)'><p>État de la mer</p></section>
+        <section onclick='nextPage(`Fetch`)'><p>Fetch</p></section>
+        <section onclick='nextPage(`Hauteur_significative`)'><p>Hauteur significative</p></section>
+        <section onclick='nextPage(`Houle`)'><p>Houle</p></section>
+        <section onclick='nextPage(`Instabilit%C3%A9_modulationnelle`)'><p>Instabilité de Benjamin-Feir</p></section>
+        <section onclick='nextPage(`Mer_crois%C3%A9e`)'><p>Mer croisée</p></section>
+        <section onclick='nextPage(`Nombre_d%27Ursell`)'><p>Nombre d'Ursell</p></section>
+        <section onclick='nextPage(`Onde_cno%C3%AFdale`)'><p>Onde cnoïdale</p></section>
+        <section onclick='nextPage(`Onde_de_gravit%C3%A9`)'><p>Onde de gravité</p></section>
+        <section onclick='nextPage(`Onde_de_Kelvin`)'><p>Onde de Kelvin</p></section>
+        <section onclick='nextPage(`Onde_de_Rossby`)'><p>Onde de Rossby</p></section>
+        <section onclick='nextPage(`Onde_de_Stokes`)'><p>Onde de Stokes</p></section>
+        <section onclick='nextPage(`%C3%89nergie_des_vagues`)'><p>Énergie des vagues</p></section>
+        <section onclick='nextPage(`Seiche_(hydrodynamique)`)'><p>Seiche</p></section>
+        <section onclick='nextPage(`Soliton`)'><p>Soliton</p></section>
+        <section onclick='nextPage(`Tsunami`)'><p>Tsunami</p></section>
+        <section onclick='nextPage(`M%C3%A9gatsunami`)'><p>Mégatsunami</p></section>
+        <section onclick='nextPage(`Vague`)'><p>Vague</p></section>
+        <section onclick='nextPage(`Vague_sc%C3%A9l%C3%A9rate`)'><p>Vague scélérate</p></section>
+        <section onclick='nextPage(`Courant_marin`)'><p>Courants marins</p></section>
+        <section onclick='nextPage(`Arr%C3%AAt_de_la_circulation_thermohaline`)'><p>Arrêt de la circulation thermohaline (<i>Shutdown</i>)</p></section>
+        <section onclick='nextPage(`Barocline`)'><p>Barocline</p></section>
+        <section onclick='nextPage(`Circulation_atmosph%C3%A9rique`)'><p>Circulation atmosphérique</p></section>
+        <section onclick='nextPage(`Circulation_thermohaline`)'><p>Circulation thermohaline</p></section>
+        <section onclick='nextPage(`Spirale_d%27Ekman#Couche_d'Ekman`)'><p>Couche d'Ekman</p></section>
+        <section onclick='nextPage(`Courant_d%27arrachement`)'><p>Courant d'arrachement</p></section>
+        <section onclick='nextPage(`Courant_de_Humboldt`)'><p>Courant de Humboldt</p></section>
+        <section onclick='nextPage(`ENSO`)'><p>ENSO</p></section>
+        <section onclick='nextPage(`Force_de_Coriolis`)'><p>Force de Coriolis</p></section>
+        <section onclick='nextPage(`Global_Ocean_Data_Analysis_Project`)'><p>Global Ocean Data Analysis Project</p></section>
+        <section onclick='nextPage(`Gyre_oc%C3%A9anique`)'><p>Gyre océanique</p></section>
+        <section onclick='nextPage(`Hydrothermalisme`)'><p>Hydrothermalisme</p></section>
+        <section onclick='nextPage(`Loop_Current`)'><p>Loop Current</p></section>
+        <section onclick='nextPage(`Maelstrom`)'><p>Maelstrom</p></section>
+        <section onclick='nextPage(`Mod%C3%A8le_de_circulation_g%C3%A9n%C3%A9rale`)'><p>Modèle de circulation générale</p></section>
+        <section onclick='nextPage(`Plong%C3%A9e_d%27eau`)'><p>Plongée d'eau</p></section>
+        <section onclick='nextPage(`Remont%C3%A9e_d%27eau`)'><p>Remontée d'eau (<i>Upwelling</i>)</p></section>
+        <section onclick='nextPage(`Tourbillon_(physique)`)'><p>Tourbillon</p></section>
+        <section onclick='nextPage(`Tourbillon_de_turbulence`)'><p>Tourbillon de turbulence</p></section>
+        <section onclick='nextPage(`Transport_d%27Ekman`)'><p>Transport d'Ekman</p></section>
+        <section onclick='nextPage(`Vent_g%C3%A9ostrophique`)'><p>Vent géostrophique</p></section>
+        <section onclick='nextPage(`Mar%C3%A9e`)'><p>Marées</p></section>
+        <section onclick='nextPage(`Point_amphidromique`)'><p>Point amphidromique</p></section>
+        <section onclick='nextPage(`Courant_de_mar%C3%A9e`)'><p>Courant de marée</p></section>
+        <section onclick='nextPage(`%C3%89nergie_mar%C3%A9motrice`)'><p>Énergie marémotrice</p></section>
+        <section onclick='nextPage(`%C3%89tablissement_du_port`)'><p>Établissement du port</p></section>
+        <section onclick='nextPage(`%C3%89tale`)'><p>Étale</p></section>
+        <section onclick='nextPage(`Force_de_mar%C3%A9e`)'><p>Force de marée</p></section>
+        <section onclick='nextPage(`Hauteur_d%27eau`)'><p>Hauteur d'eau</p></section>
+        <section onclick='nextPage(`Marnage_(mar%C3%A9e)`)'><p>Marnage</p></section>
+        <section onclick='nextPage(`Mar%C3%A9e_terrestre`)'><p>Marée terrestre</p></section>
+        <section onclick='nextPage(`Mar%C3%A9graphe`)'><p>Marégraphe</p></section>
+        <section onclick='nextPage(`Mascaret`)'><p>Mascaret</p></section>
+        <section onclick='nextPage(`Model%C3%A9`)'><p>Impacts sur le paysage</p></section>
+        <section onclick='nextPage(`Atoll`)'><p>Atoll</p></section>
+        <section onclick='nextPage(`Bassin_oc%C3%A9anique`)'><p>Bassin océanique</p></section>
+        <section onclick='nextPage(`Canyon_sous-marin`)'><p>Canyon sous-marin</p></section>
+        <section onclick='nextPage(`Fond_marin`)'><p>Fond marin</p></section>
+        <section onclick='nextPage(`Fosse_oc%C3%A9anique`)'><p>Fosse océanique</p></section>
+        <section onclick='nextPage(`G%C3%A9ographie_littorale`)'><p>Géographie littorale</p></section>
+        <section onclick='nextPage(`Glacis_continental`)'><p>Glacis continental</p></section>
+        <section onclick='nextPage(`Guyot_(g%C3%A9ologie)`)'><p>Guyot</p></section>
+        <section onclick='nextPage(`Hydrographie`)'><p>Hydrographie</p></section>
+        <section onclick='nextPage(`Marge_continentale`)'><p>Marge continentale</p></section>
+        <section onclick='nextPage(`Marge_passive`)'><p>Marge passive</p></section>
+        <section onclick='nextPage(`Mont_sous-marin`)'><p>Mont sous-marin</p></section>
+        <section onclick='nextPage(`Plaine_abyssale`)'><p>Plaine abyssale</p></section>
+        <section onclick='nextPage(`Plateau_continental_(g%C3%A9ophysique)`)'><p>Plateau continental</p></section>
+        <section onclick='nextPage(`Suintement_froid`)'><p>Suintement froid</p></section>
+        <section onclick='nextPage(`Volcan_sous-marin`)'><p>Volcan sous-marin</p></section>
+        <section onclick='nextPage(`Tectonique_des_plaques`)'><p>Tectonique des plaques</p></section>
+        <section onclick='nextPage(`Arc_volcanique`)'><p>Arc volcanique</p></section>
+        <section onclick='nextPage(`Dorsale_(g%C3%A9ologie)`)'><p>Dorsale océanique</p></section>
+        <section onclick='nextPage(`Expansion_des_fonds_oc%C3%A9aniques`)'><p>Expansion des fonds océaniques</p></section>
+        <section onclick='nextPage(`Faille_transformante`)'><p>Faille transformante</p></section>
+        <section onclick='nextPage(`G%C3%A9ologie_marine`)'><p>Géologie marine</p></section>
+        <section onclick='nextPage(`Lithosph%C3%A8re_oc%C3%A9anique`)'><p>Lithosphère océanique</p></section>
+        <section onclick='nextPage(`Moho`)'><p>Discontinuité de Mohorovičić</p></section>
+        <section onclick='nextPage(`Mont_hydrothermal`)'><p>Mont hydrothermal</p></section>
+        <section onclick='nextPage(`Fen%C3%AAtre_asth%C3%A9nosph%C3%A9rique`)'><p>Fenêtre asthénosphérique</p></section>
+        <section onclick='nextPage(`Subduction`)'><p>Subduction</p></section>
+        <section onclick='nextPage(`Tectonique_des_plaques#Zones_de_convergence`)'><p>Zone de convergence</p></section>
+        <section onclick='nextPage(`Tectonique_des_plaques#Zones_de_divergence`)'><p>Zone de divergence</p></section>
+        <section onclick='nextPage(`Tectonique_des_plaques#Zones_de_décrochement`)'><p>Zones de décrochement</p></section>
+        <section onclick='nextPage(`Abysse`)'><p>Abysse</p></section>
+        <section onclick='nextPage(`Littoral`)'><p>Littoral</p></section>
+        <section onclick='nextPage(`Zone_aphotique`)'><p>Zone aphotique</p></section>
+        <section onclick='nextPage(`Zone_p%C3%A9lagique`)'><p>Zone pélagique</p></section>
+        <section onclick='nextPage(`Zone_photique`)'><p>Zone photique</p></section>
+        <section onclick='nextPage(`Niveau_de_la_mer`)'><p>Niveau de la mer</p></section>
+        <section onclick='nextPage(`%C3%89l%C3%A9vation_du_niveau_de_la_mer`)'><p>Élévation du niveau de la mer</p></section>
+        <section onclick='nextPage(`Acoustique`)'><p>Acoustique</p></section>
+        <section onclick='nextPage(`Acoustique_sous-marine`)'><p>Acoustique sous-marine</p></section>
+        <section onclick='nextPage(`Canal_SOFAR`)'><p>Canal SOFAR</p></section>
+        <section onclick='nextPage(`Jason_(satellite)`)'><p>Jason</p></section>
+        <section onclick='nextPage(`Jason_(satellite)#La_mission_Jason-1`)'><p>Jason-1</p></section>
+        <section onclick='nextPage(`Jason_(satellite)#La_mission_Jason-2`)'><p>Jason-2</p></section>
+        <section onclick='nextPage(`Jason_(satellite)#La_mission_Jason-3`)'><p>Jason-3</p></section>
+        <section onclick='nextPage(`Alvin_(DSV-2)`)'><p>DSV <i>Alvin</i></p></section>
+        <section onclick='nextPage(`Argo_(oc%C3%A9anographie)`)'><p>Argo</p></section>
+        <section onclick='nextPage(`Colonne_d%27eau`)'><p>Colonne d'eau</p></section>
+        <section onclick='nextPage(`Eau_de_mer`)'><p>Eau de mer</p></section>
+        <section onclick='nextPage(`%C3%89nergie_marine`)'><p>Énergie marine</p></section>
+        <section onclick='nextPage(`%C3%89nergie_thermique_des_mers`)'><p>Énergie thermique des mers</p></section>
+        <section onclick='nextPage(`Exploration_des_abysses`)'><p>Exploration des abysses</p></section>
+        <section onclick='nextPage(`Mer_bordi%C3%A8re`)'><p>Mer bordière</p></section>
+        <section onclick='nextPage(`Mouillage`)'><p>Mouillage</p></section>
+        <section onclick='nextPage(`Oc%C3%A9an`)'><p>Océan</p></section>
+        <section onclick='nextPage(`Oc%C3%A9anographie`)'><p>Océanographie</p></section>
+        <section onclick='nextPage(`Planeur_sous-marin`)'><p>Planeur sous-marin</p></section>
+        <section onclick='nextPage(`Pollution_marine`)'><p>Pollution marine</p></section>
+        <section onclick='nextPage(`Temp%C3%A9rature_de_surface_de_la_mer`)'><p>Température de surface de la mer</p></section>
+        <section onclick='nextPage(`Thermocline`)'><p>Thermocline</p></section>
+        <section onclick='nextPage(`World_Ocean_Atlas`)'><p>World Ocean Atlas</p></section>
 
-            </article>
-                    <script>
-                        const hideLinks = document.querySelector('.wiki-links');
-                        const loading = document.querySelector('.loading');
-
-                        eel.expose(reloadPage);
-                        function reloadPage() {
-                         document.location.reload();
-                        }
-
-                        const hideLinksFunction = () => {
-                            hideLinks.classList.add('hide');
-                            loading.style.animationPlayState = "running";
-                            loading.classList.remove('hide');
-                        }
-
-                        const nextPage = (url) => {
-                            hideLinksFunction();
-                            eel.getLinks(url);
-                        }
-
-                        const goBackJS = (url) => {
-                            hideLinksFunction();
-                            eel.goBack(url);
-                        }
-                    </script>
-                </body>
-            </html>
-            
+    </article>
+            <script src="js/main.js"></script>
+        </body>
+    </html>
+    
