@@ -25,8 +25,8 @@ div = "" # Div html de la page actuelle
 allLinksVisited = [] # Tableau contenant tous les liens des pages visitées
 allTitlesVisited = [] # Tableau contenant tous les titres des pages visitées
 currentTitle = "" # Titre de la page actuelle
-currentUrl = "" # Litre de la page actuelle
-counterIncrement = 1 # Incrément du counter, de base à 1 mais à deux quand on reviens en arière
+currentUrl = "" # Titre de la page actuelle
+counterIncrement = 1 # Incrément du counter, de base à 1 mais à deux quand on reviens en arrière
 addTab = True # Détermine si le lien et le titre d'une page et ajouté dans les tableaux ci dessus
 
 
@@ -394,7 +394,6 @@ firstBorneUrl = "Gnocchi"
 lastBorne = "Grenoble"
 lastBorneURL = "Grenoble"
 """
-
 
 print("{} > {}".format(firstBorne, lastBorne))
 
